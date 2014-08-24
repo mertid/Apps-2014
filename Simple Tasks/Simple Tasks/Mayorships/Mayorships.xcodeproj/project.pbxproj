@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2235F2C619A3879600AC802D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F2C519A3879600AC802D /* Foundation.framework */; };
+		2235F2C819A3879600AC802D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F2C719A3879600AC802D /* CoreGraphics.framework */; };
+		2235F2CA19A3879600AC802D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F2C919A3879600AC802D /* UIKit.framework */; };
+		2235F2D019A3879600AC802D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2235F2CE19A3879600AC802D /* InfoPlist.strings */; };
+		2235F2D219A3879600AC802D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235F2D119A3879600AC802D /* main.m */; };
+		2235F2D619A3879600AC802D /* MSAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235F2D519A3879600AC802D /* MSAAppDelegate.m */; };
+		2235F2D919A3879600AC802D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2235F2D719A3879600AC802D /* Main_iPhone.storyboard */; };
+		2235F2DF19A3879600AC802D /* MSAFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235F2DE19A3879600AC802D /* MSAFirstViewController.m */; };
+		2235F2E219A3879600AC802D /* MSASecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235F2E119A3879600AC802D /* MSASecondViewController.m */; };
+		2235F2E419A3879600AC802D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2235F2E319A3879600AC802D /* Images.xcassets */; };
+		2235F2EB19A3879600AC802D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F2EA19A3879600AC802D /* XCTest.framework */; };
+		2235F2EC19A3879600AC802D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F2C519A3879600AC802D /* Foundation.framework */; };
+		2235F2ED19A3879600AC802D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F2C919A3879600AC802D /* UIKit.framework */; };
+		2235F2F519A3879600AC802D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2235F2F319A3879600AC802D /* InfoPlist.strings */; };
+		2235F2F719A3879600AC802D /* MayorshipsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235F2F619A3879600AC802D /* MayorshipsTests.m */; };
+		2235F30719A38DC400AC802D /* MSARequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235F30619A38DC400AC802D /* MSARequest.m */; };
+		2235F30919A4DD7000AC802D /* game.png in Resources */ = {isa = PBXBuildFile; fileRef = 2235F30819A4DD7000AC802D /* game.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2235F2EE19A3879600AC802D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2235F2BA19A3879600AC802D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2235F2C119A3879600AC802D;
+			remoteInfo = Mayorships;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2235F2C219A3879600AC802D /* Mayorships.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mayorships.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2235F2C519A3879600AC802D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2235F2C719A3879600AC802D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2235F2C919A3879600AC802D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2235F2CD19A3879600AC802D /* Mayorships-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Mayorships-Info.plist"; sourceTree = "<group>"; };
+		2235F2CF19A3879600AC802D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2235F2D119A3879600AC802D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2235F2D319A3879600AC802D /* Mayorships-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mayorships-Prefix.pch"; sourceTree = "<group>"; };
+		2235F2D419A3879600AC802D /* MSAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAAppDelegate.h; sourceTree = "<group>"; };
+		2235F2D519A3879600AC802D /* MSAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAAppDelegate.m; sourceTree = "<group>"; };
+		2235F2D819A3879600AC802D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		2235F2DD19A3879600AC802D /* MSAFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAFirstViewController.h; sourceTree = "<group>"; };
+		2235F2DE19A3879600AC802D /* MSAFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAFirstViewController.m; sourceTree = "<group>"; };
+		2235F2E019A3879600AC802D /* MSASecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSASecondViewController.h; sourceTree = "<group>"; };
+		2235F2E119A3879600AC802D /* MSASecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSASecondViewController.m; sourceTree = "<group>"; };
+		2235F2E319A3879600AC802D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2235F2E919A3879600AC802D /* MayorshipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayorshipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2235F2EA19A3879600AC802D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		2235F2F219A3879600AC802D /* MayorshipsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MayorshipsTests-Info.plist"; sourceTree = "<group>"; };
+		2235F2F419A3879600AC802D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2235F2F619A3879600AC802D /* MayorshipsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MayorshipsTests.m; sourceTree = "<group>"; };
+		2235F30519A38DC400AC802D /* MSARequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSARequest.h; sourceTree = "<group>"; };
+		2235F30619A38DC400AC802D /* MSARequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSARequest.m; sourceTree = "<group>"; };
+		2235F30819A4DD7000AC802D /* game.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = game.png; path = ../../../../game.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2235F2BF19A3879600AC802D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2235F2C819A3879600AC802D /* CoreGraphics.framework in Frameworks */,
+				2235F2CA19A3879600AC802D /* UIKit.framework in Frameworks */,
+				2235F2C619A3879600AC802D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2235F2E619A3879600AC802D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2235F2EB19A3879600AC802D /* XCTest.framework in Frameworks */,
+				2235F2ED19A3879600AC802D /* UIKit.framework in Frameworks */,
+				2235F2EC19A3879600AC802D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2235F2B919A3879600AC802D = {
+			isa = PBXGroup;
+			children = (
+				2235F30419A38CAC00AC802D /* Random */,
+				2235F2CB19A3879600AC802D /* Mayorships */,
+				2235F2F019A3879600AC802D /* MayorshipsTests */,
+				2235F2C419A3879600AC802D /* Frameworks */,
+				2235F2C319A3879600AC802D /* Products */,
+				2235F30819A4DD7000AC802D /* game.png */,
+			);
+			sourceTree = "<group>";
+		};
+		2235F2C319A3879600AC802D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2235F2C219A3879600AC802D /* Mayorships.app */,
+				2235F2E919A3879600AC802D /* MayorshipsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2235F2C419A3879600AC802D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2235F2C519A3879600AC802D /* Foundation.framework */,
+				2235F2C719A3879600AC802D /* CoreGraphics.framework */,
+				2235F2C919A3879600AC802D /* UIKit.framework */,
+				2235F2EA19A3879600AC802D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2235F2CB19A3879600AC802D /* Mayorships */ = {
+			isa = PBXGroup;
+			children = (
+				2235F2D419A3879600AC802D /* MSAAppDelegate.h */,
+				2235F2D519A3879600AC802D /* MSAAppDelegate.m */,
+				2235F2D719A3879600AC802D /* Main_iPhone.storyboard */,
+				2235F2DD19A3879600AC802D /* MSAFirstViewController.h */,
+				2235F2DE19A3879600AC802D /* MSAFirstViewController.m */,
+				2235F2E019A3879600AC802D /* MSASecondViewController.h */,
+				2235F2E119A3879600AC802D /* MSASecondViewController.m */,
+				2235F2E319A3879600AC802D /* Images.xcassets */,
+				2235F2CC19A3879600AC802D /* Supporting Files */,
+			);
+			path = Mayorships;
+			sourceTree = "<group>";
+		};
+		2235F2CC19A3879600AC802D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2235F2CD19A3879600AC802D /* Mayorships-Info.plist */,
+				2235F2CE19A3879600AC802D /* InfoPlist.strings */,
+				2235F2D119A3879600AC802D /* main.m */,
+				2235F2D319A3879600AC802D /* Mayorships-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2235F2F019A3879600AC802D /* MayorshipsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2235F2F619A3879600AC802D /* MayorshipsTests.m */,
+				2235F2F119A3879600AC802D /* Supporting Files */,
+			);
+			path = MayorshipsTests;
+			sourceTree = "<group>";
+		};
+		2235F2F119A3879600AC802D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2235F2F219A3879600AC802D /* MayorshipsTests-Info.plist */,
+				2235F2F319A3879600AC802D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2235F30419A38CAC00AC802D /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				2235F30519A38DC400AC802D /* MSARequest.h */,
+				2235F30619A38DC400AC802D /* MSARequest.m */,
+			);
+			name = Random;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2235F2C119A3879600AC802D /* Mayorships */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2235F2FA19A3879600AC802D /* Build configuration list for PBXNativeTarget "Mayorships" */;
+			buildPhases = (
+				2235F2BE19A3879600AC802D /* Sources */,
+				2235F2BF19A3879600AC802D /* Frameworks */,
+				2235F2C019A3879600AC802D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mayorships;
+			productName = Mayorships;
+			productReference = 2235F2C219A3879600AC802D /* Mayorships.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2235F2E819A3879600AC802D /* MayorshipsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2235F2FD19A3879600AC802D /* Build configuration list for PBXNativeTarget "MayorshipsTests" */;
+			buildPhases = (
+				2235F2E519A3879600AC802D /* Sources */,
+				2235F2E619A3879600AC802D /* Frameworks */,
+				2235F2E719A3879600AC802D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2235F2EF19A3879600AC802D /* PBXTargetDependency */,
+			);
+			name = MayorshipsTests;
+			productName = MayorshipsTests;
+			productReference = 2235F2E919A3879600AC802D /* MayorshipsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2235F2BA19A3879600AC802D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MSA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Merritt Tidwell";
+				TargetAttributes = {
+					2235F2E819A3879600AC802D = {
+						TestTargetID = 2235F2C119A3879600AC802D;
+					};
+				};
+			};
+			buildConfigurationList = 2235F2BD19A3879600AC802D /* Build configuration list for PBXProject "Mayorships" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2235F2B919A3879600AC802D;
+			productRefGroup = 2235F2C319A3879600AC802D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2235F2C119A3879600AC802D /* Mayorships */,
+				2235F2E819A3879600AC802D /* MayorshipsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2235F2C019A3879600AC802D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2235F2E419A3879600AC802D /* Images.xcassets in Resources */,
+				2235F30919A4DD7000AC802D /* game.png in Resources */,
+				2235F2D919A3879600AC802D /* Main_iPhone.storyboard in Resources */,
+				2235F2D019A3879600AC802D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2235F2E719A3879600AC802D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2235F2F519A3879600AC802D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2235F2BE19A3879600AC802D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2235F2E219A3879600AC802D /* MSASecondViewController.m in Sources */,
+				2235F30719A38DC400AC802D /* MSARequest.m in Sources */,
+				2235F2D619A3879600AC802D /* MSAAppDelegate.m in Sources */,
+				2235F2D219A3879600AC802D /* main.m in Sources */,
+				2235F2DF19A3879600AC802D /* MSAFirstViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2235F2E519A3879600AC802D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2235F2F719A3879600AC802D /* MayorshipsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2235F2EF19A3879600AC802D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2235F2C119A3879600AC802D /* Mayorships */;
+			targetProxy = 2235F2EE19A3879600AC802D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2235F2CE19A3879600AC802D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2235F2CF19A3879600AC802D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2235F2D719A3879600AC802D /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2235F2D819A3879600AC802D /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		2235F2F319A3879600AC802D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2235F2F419A3879600AC802D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2235F2F819A3879600AC802D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2235F2F919A3879600AC802D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2235F2FB19A3879600AC802D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mayorships/Mayorships-Prefix.pch";
+				INFOPLIST_FILE = "Mayorships/Mayorships-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2235F2FC19A3879600AC802D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mayorships/Mayorships-Prefix.pch";
+				INFOPLIST_FILE = "Mayorships/Mayorships-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2235F2FE19A3879600AC802D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mayorships.app/Mayorships";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mayorships/Mayorships-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MayorshipsTests/MayorshipsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		2235F2FF19A3879600AC802D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Mayorships.app/Mayorships";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Mayorships/Mayorships-Prefix.pch";
+				INFOPLIST_FILE = "MayorshipsTests/MayorshipsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2235F2BD19A3879600AC802D /* Build configuration list for PBXProject "Mayorships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2235F2F819A3879600AC802D /* Debug */,
+				2235F2F919A3879600AC802D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2235F2FA19A3879600AC802D /* Build configuration list for PBXNativeTarget "Mayorships" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2235F2FB19A3879600AC802D /* Debug */,
+				2235F2FC19A3879600AC802D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2235F2FD19A3879600AC802D /* Build configuration list for PBXNativeTarget "MayorshipsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2235F2FE19A3879600AC802D /* Debug */,
+				2235F2FF19A3879600AC802D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2235F2BA19A3879600AC802D /* Project object */;
+}
