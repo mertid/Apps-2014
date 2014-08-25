@@ -8,6 +8,7 @@
 
 #import "IWAViewController.h"
 #import "AssetsLibrary/AssetsLibrary.h"
+#import "IWAFilterViewController.h"
 @interface IWAViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate,UICollectionViewDataSource,UICollectionViewDelegate>
 
 @end
@@ -16,6 +17,8 @@
 
 {
     UIImagePickerController * imagePicker;
+    
+    
     NSMutableArray * photos;
     ALAssetsLibrary * library;
 
@@ -97,14 +100,18 @@
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 
 {
-    UIImageView  * bigView = [[UIImageView alloc]initWithFrame:imagePicker.view.frame];
+//    UIImageView  * bigView = [[UIImageView alloc]initWithFrame:imagePicker.view.frame];
     ALAsset * photo = photos[indexPath.item];
     ALAssetRepresentation * representation = photo.defaultRepresentation;
     
-    bigView.image = [UIImage imageWithCGImage:representation.fullResolutionImage];
+//    bigView.image = [UIImage imageWithCGImage:representation.fullResolutionImage];
+//    
+//    [self.view addSubview:bigView];
+//
+    // push a view controller
     
-    [self.view addSubview:bigView];
-
+    [self showFilterWithImage:[UIImage imageWithCGImage:representation.fullResolutionImage]];
+    
 }
 
 
@@ -134,15 +141,30 @@
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
 
-    UIImageView * imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
+//    UIImageView * imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
+//    
+//    imageView.image = info[UIImagePickerControllerOriginalImage];
+//    
+//    [self.view addSubview:imageView];
     
-    imageView.image = info[UIImagePickerControllerOriginalImage];
+    // push a view controller
     
-    [self.view addSubview:imageView];
+    [self showFilterWithImage:info[UIImagePickerControllerOriginalImage]];
     
     
 }
 
+-(void)showFilterWithImage:(UIImage *)image
+{
+
+    IWAFilterViewController * filterVC = [[IWAFilterViewController alloc]init];
+    
+    filterVC.orginalImage = image;
+    
+    [self.navigationController pushViewController:filterVC animated:YES];
+    
+
+}
 
 
 - (void)didReceiveMemoryWarning

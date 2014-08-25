@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>9E29719D-DAEA-4931-9096-4E90A5BD3BF0</string>
+	<string>B1B281B9-C5C3-417D-827D-771BF99DA3AB</string>
 	<key>IDESourceControlProjectName</key>
-	<string>InstaWhat?</string>
+	<string>labyrinth</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>7AFE266152EE52B55A03844FD1A42AEA35545C65</key>
+		<key>C1DBD06B-E255-4C7F-832E-30D788A6DE9F</key>
 		<string>https://github.com/mertid/IOS_IronYard.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>InstaWhat?/InstaWhat?.xcodeproj/project.xcworkspace</string>
+	<string>labyrinth/labyrinth.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>7AFE266152EE52B55A03844FD1A42AEA35545C65</key>
+		<key>C1DBD06B-E255-4C7F-832E-30D788A6DE9F</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mertid/IOS_IronYard.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>111</integer>
+	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>7AFE266152EE52B55A03844FD1A42AEA35545C65</string>
+	<string>C1DBD06B-E255-4C7F-832E-30D788A6DE9F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>7AFE266152EE52B55A03844FD1A42AEA35545C65</string>
+			<string>C1DBD06B-E255-4C7F-832E-30D788A6DE9F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>IOS_IronYard</string>
 		</dict>

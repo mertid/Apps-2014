@@ -21,6 +21,7 @@
 		2235F37619A628F300AC802D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F35819A628F300AC802D /* UIKit.framework */; };
 		2235F37E19A628F300AC802D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2235F37C19A628F300AC802D /* InfoPlist.strings */; };
 		2235F38019A628F300AC802D /* InstaWhat_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2235F37F19A628F300AC802D /* InstaWhat_Tests.m */; };
+		22EC3B6019AB7AC800FBBD24 /* IWAFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22EC3B5F19AB7AC800FBBD24 /* IWAFilterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		2235F37B19A628F300AC802D /* InstaWhat?Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InstaWhat?Tests-Info.plist"; sourceTree = "<group>"; };
 		2235F37D19A628F300AC802D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2235F37F19A628F300AC802D /* InstaWhat_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstaWhat_Tests.m; sourceTree = "<group>"; };
+		22EC3B5E19AB7AC800FBBD24 /* IWAFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWAFilterViewController.h; sourceTree = "<group>"; };
+		22EC3B5F19AB7AC800FBBD24 /* IWAFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWAFilterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				2235F36619A628F300AC802D /* Main.storyboard */,
 				2235F36919A628F300AC802D /* IWAViewController.h */,
 				2235F36A19A628F300AC802D /* IWAViewController.m */,
+				22EC3B5E19AB7AC800FBBD24 /* IWAFilterViewController.h */,
+				22EC3B5F19AB7AC800FBBD24 /* IWAFilterViewController.m */,
 				2235F36C19A628F300AC802D /* Images.xcassets */,
 				2235F35B19A628F300AC802D /* Supporting Files */,
 			);
@@ -252,6 +257,7 @@
 			files = (
 				2235F36B19A628F300AC802D /* IWAViewController.m in Sources */,
 				2235F36519A628F300AC802D /* IWAAppDelegate.m in Sources */,
+				22EC3B6019AB7AC800FBBD24 /* IWAFilterViewController.m in Sources */,
 				2235F36119A628F300AC802D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -457,6 +463,7 @@
 				2235F38519A628F300AC802D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2235F38619A628F300AC802D /* Build configuration list for PBXNativeTarget "InstaWhat?Tests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				2235F38819A628F300AC802D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

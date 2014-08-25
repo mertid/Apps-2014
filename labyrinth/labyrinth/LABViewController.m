@@ -23,7 +23,9 @@
     UICollisionBehavior * collisionBehavior;
     UIDynamicItemBehavior * wallBehavior;
     UIView * finishPoint;
-
+    UICollisionBehavior * winCollisionBehavior;
+    UIView * ball;
+    
     
     float xRotation;
     float yRotation;
@@ -54,91 +56,89 @@
     [animator addBehavior:collisionBehavior];
     
     wallBehavior =[[UIDynamicItemBehavior alloc]init];
-    wallBehavior.density = 10000000000000;
+    wallBehavior.density = 1000000;
+    
     [animator addBehavior:wallBehavior];
     
     collisionBehavior.collisionDelegate = self;
 
-    [collisionBehavior addBoundaryWithIdentifier:@"finish" fromPoint: CGPointMake(SCREEN_WIDTH +90,460 ) toPoint:CGPointMake(SCREEN_WIDTH + 80, SCREEN_HEIGHT -40)];
+   // [collisionBehavior addBoundaryWithIdentifier:@"finish" fromPoint: CGPointMake(SCREEN_WIDTH +90,460 ) toPoint:CGPointMake(SCREEN_WIDTH + 80, SCREEN_HEIGHT -40)];
     
+    winCollisionBehavior = [[UICollisionBehavior alloc]init];
+    winCollisionBehavior.translatesReferenceBoundsIntoBoundary = YES;
+    winCollisionBehavior.collisionDelegate = self;
+    
+    [animator addBehavior:winCollisionBehavior];
     
     
     [super viewDidLoad];
    
 //    LABGraphView * graphView = [[LABGraphView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width)];
     
-    UIView * ball = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 30 ,30)];
+    ball = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 30 ,30)];
    // ball.center = self.view.center;
     ball.backgroundColor = [UIColor magentaColor];
     ball.layer.cornerRadius = 15;
 
     
     [self.view addSubview:ball];
-    
-    
+   
     [gravityBehavior addItem:ball];
     [collisionBehavior addItem:ball];
-
-    finishPoint = [[UIView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH +190, SCREEN_HEIGHT-550 , 30, 30)];
+    [winCollisionBehavior addItem:ball];
+    
+    
+    finishPoint = [[UIView alloc]initWithFrame:CGRectMake(SCREEN_WIDTH +190, SCREEN_HEIGHT-550 , 50, 50)];
     finishPoint.layer.cornerRadius = 15;
     finishPoint.backgroundColor = [UIColor greenColor];
     [self.view addSubview:finishPoint];
-   
-    
+    [wallBehavior addItem:finishPoint];
+        [winCollisionBehavior addItem:finishPoint];
     
     
     UIView * wall = [[UIView alloc]initWithFrame:CGRectMake(70, -10, 50,220)];
     wall.backgroundColor =  [UIColor colorWithRed:0.714f green:0.651f blue:0.490f alpha:1.0f];
     wall.layer.cornerRadius= 15;
     [self.view addSubview:wall];
-    
-
     [collisionBehavior addItem:wall];
-    
-    
+    [wallBehavior addItem:wall];
    
     
     UIView * wall2 = [[UIView alloc]initWithFrame:CGRectMake(270, -10, 50,220)];
     wall2.backgroundColor =  [UIColor colorWithRed:0.714f green:0.651f blue:0.490f alpha:1.0f];
     wall2.layer.cornerRadius = 15;
     [self.view addSubview:wall2];
-    
-    
+    [wallBehavior addItem:wall2];
     [collisionBehavior addItem:wall2];
 
     UIView * wall3 = [[UIView alloc]initWithFrame:CGRectMake(410, 65, 100,50)];
     wall3.backgroundColor =  [UIColor colorWithRed:0.714f green:0.651f blue:0.490f alpha:1.0f];
     wall3.layer.cornerRadius = 15;
     [self.view addSubview:wall3];
-    
-    
+    [wallBehavior addItem:wall3];
     [collisionBehavior addItem:wall3];
     
     UIView * wall4 = [[UIView alloc]initWithFrame:CGRectMake(320, 170, 100,50)];
     wall4.backgroundColor =  [UIColor colorWithRed:0.714f green:0.651f blue:0.490f alpha:1.0f];
     wall4.layer.cornerRadius = 15;
     [self.view addSubview:wall4];
-
-    
+    [wallBehavior addItem:wall4];
     [collisionBehavior addItem:wall4];
     
     UIView * wall5 = [[UIView alloc]initWithFrame:CGRectMake(165, 240, 50,100)];
     wall5.backgroundColor =  [UIColor colorWithRed:0.714f green:0.651f blue:0.490f alpha:1.0f];
     wall5.layer.cornerRadius = 15;
     [self.view addSubview:wall5];
-    
-    
+    [wallBehavior addItem:wall5];
     [collisionBehavior addItem:wall5];
     
+  
     UIView * wall6 = [[UIView alloc]initWithFrame:CGRectMake(165, 120, 50,100)];
     wall6.backgroundColor =  [UIColor colorWithRed:0.714f green:0.651f blue:0.490f alpha:1.0f];
     wall6.layer.cornerRadius = 15;
     [self.view addSubview:wall6];
-    
-    
+    [wallBehavior addItem:wall6];
     [collisionBehavior addItem:wall6];
-    
-    
    
     
     
@@ -152,10 +152,10 @@
 
    [motionManager startDeviceMotionUpdatesToQueue:[NSOperationQueue mainQueue] withHandler:^(CMDeviceMotion *motion, NSError *error) {
     
-       NSLog(@"x %f y %f z %f",motion.rotationRate.x, motion.rotationRate.y, motion.rotationRate.z);
+       //NSLog(@"x %f y %f z %f",motion.rotationRate.x, motion.rotationRate.y, motion.rotationRate.z);
 
-       xRotation += motion.rotationRate.y/30;
-       yRotation += motion.rotationRate.x/30;
+       xRotation -= motion.rotationRate.x/20;
+       yRotation += motion.rotationRate.y/20;
        
        [self updateGravity];
     
@@ -175,16 +175,16 @@
     
 }
 
--(void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p
+-(void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item1 withItem:(id<UIDynamicItem>)item2 atPoint:(CGPoint)p
 {
-    if([@"finish" isEqualToString:(NSString *)identifier])
+  
+    if ([item1 isEqual:finishPoint]|| [item2 isEqual:finishPoint])
+    
     {
-        UIView * finishPoint2 = (UIView *) item;
-        
-        [collisionBehavior removeItem:finishPoint2];
-        [finishPoint2 removeFromSuperview];
+        [ball removeFromSuperview];
     }
-        
+    
+    
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
