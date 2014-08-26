@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221C8A9119ABB0D400B8DEEA /* IWAImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 221C8A9019ABB0D400B8DEEA /* IWAImageViewController.m */; };
 		2235F35519A628F300AC802D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F35419A628F300AC802D /* Foundation.framework */; };
 		2235F35719A628F300AC802D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F35619A628F300AC802D /* CoreGraphics.framework */; };
 		2235F35919A628F300AC802D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2235F35819A628F300AC802D /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221C8A8F19ABB0D400B8DEEA /* IWAImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWAImageViewController.h; sourceTree = "<group>"; };
+		221C8A9019ABB0D400B8DEEA /* IWAImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWAImageViewController.m; sourceTree = "<group>"; };
 		2235F35119A628F300AC802D /* InstaWhat?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstaWhat?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2235F35419A628F300AC802D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2235F35619A628F300AC802D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -122,6 +125,8 @@
 				2235F36A19A628F300AC802D /* IWAViewController.m */,
 				22EC3B5E19AB7AC800FBBD24 /* IWAFilterViewController.h */,
 				22EC3B5F19AB7AC800FBBD24 /* IWAFilterViewController.m */,
+				221C8A8F19ABB0D400B8DEEA /* IWAImageViewController.h */,
+				221C8A9019ABB0D400B8DEEA /* IWAImageViewController.m */,
 				2235F36C19A628F300AC802D /* Images.xcassets */,
 				2235F35B19A628F300AC802D /* Supporting Files */,
 			);
@@ -258,6 +263,7 @@
 				2235F36B19A628F300AC802D /* IWAViewController.m in Sources */,
 				2235F36519A628F300AC802D /* IWAAppDelegate.m in Sources */,
 				22EC3B6019AB7AC800FBBD24 /* IWAFilterViewController.m in Sources */,
+				221C8A9119ABB0D400B8DEEA /* IWAImageViewController.m in Sources */,
 				2235F36119A628F300AC802D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
