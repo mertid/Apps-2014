@@ -17,11 +17,9 @@
 
 {
     UIImagePickerController * imagePicker;
-    
-    
     NSMutableArray * photos;
     ALAssetsLibrary * library;
-
+    UIButton * imageButton;
 }
 
 
@@ -30,7 +28,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
+    
     photos= [@[]mutableCopy];
 
     imagePicker = [[UIImagePickerController alloc]init];
@@ -43,6 +41,7 @@
     
     imagePicker.delegate = self;
     
+    
     [self.view addSubview: imagePicker.view];
 
     
@@ -51,17 +50,24 @@
     
     imagePicker.view.frame = CGRectMake(0,0,320,320);
     
-    UIButton * takePictureButton = [[UIButton alloc]initWithFrame:CGRectMake(50, 370, 100, 100)];
-    takePictureButton.backgroundColor = [UIColor blackColor];
-    [takePictureButton addTarget:self action:@selector(takePicture) forControlEvents:UIControlEventTouchUpInside];
-
+   
     UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc]init];
     
+    
+    
     layout.itemSize = CGSizeMake(100,100);
+  
+    
+    
     
     UICollectionView * photoCollection = [[UICollectionView alloc]initWithFrame:CGRectMake(0, 320, 320, [UIScreen mainScreen].bounds.size.height -320)collectionViewLayout:layout];
+    
+    photoCollection.backgroundColor = [UIColor colorWithRed:0.984f green:0.435f blue:0.192f alpha:1.0f];
+
+    
     photoCollection.dataSource = self;
     photoCollection.delegate = self;
+    
     [photoCollection registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     
     [self.view addSubview:photoCollection];
@@ -85,8 +91,27 @@
         }];
         
     } failureBlock:^(NSError *error) {
+
+    
+    
     }];
+
+    UIButton * takePictureButton = [[UIButton alloc]initWithFrame:CGRectMake(120, 280, 90, 90)];
+    
+    takePictureButton.backgroundColor = [UIColor colorWithRed:200.0/255.0 green:200.0/255.0 blue:200.0/255.0 alpha:0.5];
+    [takePictureButton addTarget:self action:@selector(takePicture) forControlEvents:UIControlEventTouchUpInside];
+
+    takePictureButton.layer.borderWidth = 4;
+    takePictureButton.layer.borderColor = [UIColor colorWithRed:0.984f green:0.435f blue:0.192f alpha:1.0f].CGColor;
+    
+    takePictureButton.layer.cornerRadius = 90/2;
+    
+    [self.view addSubview:takePictureButton];
+
 }
+
+
+
 
 -(void)takePicture
 
@@ -141,8 +166,8 @@
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
 
-//    UIImageView * imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
-//    
+  // UIImageView * imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
+    
 //    imageView.image = info[UIImagePickerControllerOriginalImage];
 //    
 //    [self.view addSubview:imageView];
