@@ -1,0 +1,410 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22D30FCF19AE1726002F2365 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D30FCE19AE1726002F2365 /* AppDelegate.swift */; };
+		22D30FD119AE1726002F2365 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D30FD019AE1726002F2365 /* ViewController.swift */; };
+		22D30FD419AE1726002F2365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D30FD219AE1726002F2365 /* Main.storyboard */; };
+		22D30FD619AE1726002F2365 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D30FD519AE1726002F2365 /* Images.xcassets */; };
+		22D30FE219AE1726002F2365 /* Lets_Be_FriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D30FE119AE1726002F2365 /* Lets_Be_FriendsTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22D30FDC19AE1726002F2365 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D30FC119AE1726002F2365 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D30FC819AE1726002F2365;
+			remoteInfo = "Lets Be Friends";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22D30FC919AE1726002F2365 /* Lets Be Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lets Be Friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D30FCD19AE1726002F2365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D30FCE19AE1726002F2365 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22D30FD019AE1726002F2365 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		22D30FD319AE1726002F2365 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22D30FD519AE1726002F2365 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22D30FDB19AE1726002F2365 /* Lets Be FriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lets Be FriendsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D30FE019AE1726002F2365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D30FE119AE1726002F2365 /* Lets_Be_FriendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lets_Be_FriendsTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22D30FC619AE1726002F2365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D30FD819AE1726002F2365 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22D30FC019AE1726002F2365 = {
+			isa = PBXGroup;
+			children = (
+				22D30FCB19AE1726002F2365 /* Lets Be Friends */,
+				22D30FDE19AE1726002F2365 /* Lets Be FriendsTests */,
+				22D30FCA19AE1726002F2365 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22D30FCA19AE1726002F2365 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D30FC919AE1726002F2365 /* Lets Be Friends.app */,
+				22D30FDB19AE1726002F2365 /* Lets Be FriendsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22D30FCB19AE1726002F2365 /* Lets Be Friends */ = {
+			isa = PBXGroup;
+			children = (
+				22D30FCE19AE1726002F2365 /* AppDelegate.swift */,
+				22D30FD019AE1726002F2365 /* ViewController.swift */,
+				22D30FD219AE1726002F2365 /* Main.storyboard */,
+				22D30FD519AE1726002F2365 /* Images.xcassets */,
+				22D30FCC19AE1726002F2365 /* Supporting Files */,
+			);
+			path = "Lets Be Friends";
+			sourceTree = "<group>";
+		};
+		22D30FCC19AE1726002F2365 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22D30FCD19AE1726002F2365 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22D30FDE19AE1726002F2365 /* Lets Be FriendsTests */ = {
+			isa = PBXGroup;
+			children = (
+				22D30FE119AE1726002F2365 /* Lets_Be_FriendsTests.swift */,
+				22D30FDF19AE1726002F2365 /* Supporting Files */,
+			);
+			path = "Lets Be FriendsTests";
+			sourceTree = "<group>";
+		};
+		22D30FDF19AE1726002F2365 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22D30FE019AE1726002F2365 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22D30FC819AE1726002F2365 /* Lets Be Friends */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D30FE519AE1726002F2365 /* Build configuration list for PBXNativeTarget "Lets Be Friends" */;
+			buildPhases = (
+				22D30FC519AE1726002F2365 /* Sources */,
+				22D30FC619AE1726002F2365 /* Frameworks */,
+				22D30FC719AE1726002F2365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Lets Be Friends";
+			productName = "Lets Be Friends";
+			productReference = 22D30FC919AE1726002F2365 /* Lets Be Friends.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22D30FDA19AE1726002F2365 /* Lets Be FriendsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D30FE819AE1726002F2365 /* Build configuration list for PBXNativeTarget "Lets Be FriendsTests" */;
+			buildPhases = (
+				22D30FD719AE1726002F2365 /* Sources */,
+				22D30FD819AE1726002F2365 /* Frameworks */,
+				22D30FD919AE1726002F2365 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D30FDD19AE1726002F2365 /* PBXTargetDependency */,
+			);
+			name = "Lets Be FriendsTests";
+			productName = "Lets Be FriendsTests";
+			productReference = 22D30FDB19AE1726002F2365 /* Lets Be FriendsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22D30FC119AE1726002F2365 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Merritt Tidwell";
+				TargetAttributes = {
+					22D30FC819AE1726002F2365 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					22D30FDA19AE1726002F2365 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 22D30FC819AE1726002F2365;
+					};
+				};
+			};
+			buildConfigurationList = 22D30FC419AE1726002F2365 /* Build configuration list for PBXProject "Lets Be Friends" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22D30FC019AE1726002F2365;
+			productRefGroup = 22D30FCA19AE1726002F2365 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22D30FC819AE1726002F2365 /* Lets Be Friends */,
+				22D30FDA19AE1726002F2365 /* Lets Be FriendsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22D30FC719AE1726002F2365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D30FD419AE1726002F2365 /* Main.storyboard in Resources */,
+				22D30FD619AE1726002F2365 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D30FD919AE1726002F2365 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D30FC519AE1726002F2365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D30FD119AE1726002F2365 /* ViewController.swift in Sources */,
+				22D30FCF19AE1726002F2365 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D30FD719AE1726002F2365 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D30FE219AE1726002F2365 /* Lets_Be_FriendsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22D30FDD19AE1726002F2365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D30FC819AE1726002F2365 /* Lets Be Friends */;
+			targetProxy = 22D30FDC19AE1726002F2365 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22D30FD219AE1726002F2365 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D30FD319AE1726002F2365 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22D30FE319AE1726002F2365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		22D30FE419AE1726002F2365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22D30FE619AE1726002F2365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Lets Be Friends/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22D30FE719AE1726002F2365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Lets Be Friends/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22D30FE919AE1726002F2365 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lets Be FriendsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lets Be Friends.app/Lets Be Friends";
+			};
+			name = Debug;
+		};
+		22D30FEA19AE1726002F2365 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lets Be FriendsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lets Be Friends.app/Lets Be Friends";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22D30FC419AE1726002F2365 /* Build configuration list for PBXProject "Lets Be Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D30FE319AE1726002F2365 /* Debug */,
+				22D30FE419AE1726002F2365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D30FE519AE1726002F2365 /* Build configuration list for PBXNativeTarget "Lets Be Friends" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D30FE619AE1726002F2365 /* Debug */,
+				22D30FE719AE1726002F2365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22D30FE819AE1726002F2365 /* Build configuration list for PBXNativeTarget "Lets Be FriendsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D30FE919AE1726002F2365 /* Debug */,
+				22D30FEA19AE1726002F2365 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22D30FC119AE1726002F2365 /* Project object */;
+}
