@@ -10,14 +10,42 @@ import UIKit
 
 class FacesTVC: UITableViewController {
 
+    var faces: [AnyObject] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var someHeight = SCREEN_HEIGHT - 100
+        
+        Parse.setApplicationId("GECM1qrBUlFCKqjKRRx7lmVkjJWV6YRYHIGLnXL7", clientKey: "JAaCmuUisDqWKwUzTdGtofv0hylxcZMisi3WdbfV")
+        
+        self.refreshData()
+        
+        var nc = NSNotificationCenter.defaultCenter()
+        
+        nc.addObserverForName("faceSaved", object: nil, queue: NSOperationQueue.mainQueue()) { (notification: NSNotification!) -> Void in
+            
+            self.refreshData()
+            
+        }
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+   
+    
+        func refreshData () {
+            var query = PFQuery(className: "Faces")
+            query.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!,error: NSError!) -> Void in
+                
+                self.faces = objects
+                self.tableView.reloadData()
+        }
+ 
     }
 
     override func didReceiveMemoryWarning() {

@@ -8,16 +8,17 @@
 
 #import "IWAImageViewController.h"
 
-@interface IWAImageViewController ()
+@interface IWAImageViewController () <UITextViewDelegate>
 
 @end
 
 @implementation IWAImageViewController
 {
-    UIButton * button;
+    UIButton * submitbutton;
     UITextField * text;
     UIImageView * imageView;
-
+    UIView * captionHolder;
+ 
 
 }
 
@@ -26,7 +27,31 @@
     
     imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, 320)];
     imageView.contentMode = UIViewContentModeScaleAspectFill;
+    
+    captionHolder = [[UIView alloc]initWithFrame:CGRectMake(0, 310, 320, [UIScreen mainScreen].bounds.size.height-310)];
+    captionHolder.backgroundColor = [UIColor lightGrayColor];
+    captionHolder.layer.borderWidth= 10;
+    captionHolder.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    [self.view addSubview:captionHolder];
 
+    
+    UITextView * captionView = [[UITextView alloc]initWithFrame:CGRectMake(20, 20, 280, captionHolder.frame.size.height-70)];
+    
+    captionView.delegate = self;
+    
+    
+    submitbutton = [[UIButton alloc]initWithFrame:CGRectMake(20, 490 , 280, 60)];
+    submitbutton.backgroundColor =[UIColor orangeColor];
+    [submitbutton setTitle:@"SUBMIT" forState:UIControlStateNormal];
+    
+    [submitbutton.titleLabel setFont:[UIFont systemFontOfSize:28]];
+    [captionHolder addSubview:captionView];
+
+    
+    
+    [self.view addSubview:submitbutton];
+    
     [self.view addSubview:imageView];
     
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -35,6 +60,15 @@
         // Custom initialization
     }
     return self;
+}
+
+-(void)saveFace
+{
+    PFObject * face = [PFObject objectwithClassName:"Faces"];
+    
+    [face setObject : captionView.text forKey: ]
+
+
 }
 
 
