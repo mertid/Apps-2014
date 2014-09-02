@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
   
+    let tabBarC = UITabBarController()
+    
     var niceArray = ["Helpful Robots", "Some Humans"]
     var naughtyArray = ["Invading Aliens", "Killer Robots"]
     
@@ -91,11 +93,28 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     func addNewItem() {
     
-    var itemArray = (Bool(listOption.selectedSegmentIndex)) ? naughtyArray : niceArray
+   // var itemArray = (Bool(listOption.selectedSegmentIndex)) ? naughtyArray : niceArray
     
-       itemArray += [listNameField.text]
+     //  itemArray += [listNameField.text]
     
-        (tabBarC.viewControllers[listOption.selectedSegmentIndex] as UITableViewController).tableView.reloadData()
+        switch listOption.selectedSegmentIndex
+            {
+            
+        case 0:
+            niceArray += [listNameField.text]
+            
+        case 1 :
+            naughtyArray.append(listNameField.text)
+            
+        default :
+            print("default")
+            
+        }
+        
+        listNameField.text = ""
+        listNameField.resignFirstResponder()
+        
+      (tabBarC.viewControllers[listOption.selectedSegmentIndex] as UITableViewController).tableView.reloadData()
         
     
     }
@@ -119,7 +138,20 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
     }
     
-
+    func tableView(tableView: UITableView!, canEditRowAtIndexPath indexPath: NSIndexPath!) -> Bool {
+        return true
+    }
+    
+    func tableView(tableView: UITableView!, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath!) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            // handle delete (by removing the data from your array and updating the tableview)
+     
+            
+            
+            
+            
+         }
+    }
     
     
 }

@@ -7,7 +7,6 @@
 //
 
 #import "SIGRootViewController.h"
-
 #import "SIGDrawViewController.h"
 #import "SIGListTableViewController.h"
 
@@ -89,6 +88,12 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(BOOL)prefersStatusBarHidden
+{
+  return YES;
+}
+
 
 /*
 #pragma mark - Navigation

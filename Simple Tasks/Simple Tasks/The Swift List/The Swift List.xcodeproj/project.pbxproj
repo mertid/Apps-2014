@@ -403,6 +403,7 @@
 				223EE4E519A78516004219DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		223EE4E619A78516004219DB /* Build configuration list for PBXNativeTarget "The Swift ListTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +412,7 @@
 				223EE4E819A78516004219DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

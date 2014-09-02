@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22DE674D19AEBB23003815BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE674C19AEBB23003815BC /* Foundation.framework */; };
+		22DE674F19AEBB23003815BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE674E19AEBB23003815BC /* CoreGraphics.framework */; };
+		22DE675119AEBB23003815BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE675019AEBB23003815BC /* UIKit.framework */; };
+		22DE675719AEBB23003815BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22DE675519AEBB23003815BC /* InfoPlist.strings */; };
+		22DE675919AEBB23003815BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE675819AEBB23003815BC /* main.m */; };
+		22DE675D19AEBB23003815BC /* GFHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE675C19AEBB23003815BC /* GFHAppDelegate.m */; };
+		22DE675F19AEBB23003815BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DE675E19AEBB23003815BC /* Images.xcassets */; };
+		22DE676619AEBB23003815BC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE676519AEBB23003815BC /* XCTest.framework */; };
+		22DE676719AEBB23003815BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE674C19AEBB23003815BC /* Foundation.framework */; };
+		22DE676819AEBB23003815BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22DE675019AEBB23003815BC /* UIKit.framework */; };
+		22DE677019AEBB23003815BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22DE676E19AEBB23003815BC /* InfoPlist.strings */; };
+		22DE677219AEBB23003815BC /* Good_For_HimTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE677119AEBB23003815BC /* Good_For_HimTests.m */; };
+		22DE678619AEBF75003815BC /* GFHMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE678519AEBF75003815BC /* GFHMainView.m */; };
+		22DE678919AEBFF0003815BC /* GFHTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE678819AEBFF0003815BC /* GFHTableViewController.m */; };
+		22DE678C19AEC0BC003815BC /* GFHMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 22DE678B19AEC0BC003815BC /* GFHMapView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22DE676919AEBB23003815BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22DE674119AEBB23003815BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22DE674819AEBB23003815BC;
+			remoteInfo = "Good For Him";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22DE674919AEBB23003815BC /* Good For Him.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Good For Him.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE674C19AEBB23003815BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22DE674E19AEBB23003815BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22DE675019AEBB23003815BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		22DE675419AEBB23003815BC /* Good For Him-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Good For Him-Info.plist"; sourceTree = "<group>"; };
+		22DE675619AEBB23003815BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22DE675819AEBB23003815BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22DE675A19AEBB23003815BC /* Good For Him-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Good For Him-Prefix.pch"; sourceTree = "<group>"; };
+		22DE675B19AEBB23003815BC /* GFHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFHAppDelegate.h; sourceTree = "<group>"; };
+		22DE675C19AEBB23003815BC /* GFHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GFHAppDelegate.m; sourceTree = "<group>"; };
+		22DE675E19AEBB23003815BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		22DE676419AEBB23003815BC /* Good For HimTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Good For HimTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22DE676519AEBB23003815BC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		22DE676D19AEBB23003815BC /* Good For HimTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Good For HimTests-Info.plist"; sourceTree = "<group>"; };
+		22DE676F19AEBB23003815BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22DE677119AEBB23003815BC /* Good_For_HimTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Good_For_HimTests.m; sourceTree = "<group>"; };
+		22DE678419AEBF75003815BC /* GFHMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMainView.h; sourceTree = "<group>"; };
+		22DE678519AEBF75003815BC /* GFHMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMainView.m; sourceTree = "<group>"; };
+		22DE678719AEBFF0003815BC /* GFHTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHTableViewController.h; sourceTree = "<group>"; };
+		22DE678819AEBFF0003815BC /* GFHTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHTableViewController.m; sourceTree = "<group>"; };
+		22DE678A19AEC0BC003815BC /* GFHMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFHMapView.h; sourceTree = "<group>"; };
+		22DE678B19AEC0BC003815BC /* GFHMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFHMapView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22DE674619AEBB23003815BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE674F19AEBB23003815BC /* CoreGraphics.framework in Frameworks */,
+				22DE675119AEBB23003815BC /* UIKit.framework in Frameworks */,
+				22DE674D19AEBB23003815BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE676119AEBB23003815BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE676619AEBB23003815BC /* XCTest.framework in Frameworks */,
+				22DE676819AEBB23003815BC /* UIKit.framework in Frameworks */,
+				22DE676719AEBB23003815BC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22DE674019AEBB23003815BC = {
+			isa = PBXGroup;
+			children = (
+				22DE678719AEBFF0003815BC /* GFHTableViewController.h */,
+				22DE678819AEBFF0003815BC /* GFHTableViewController.m */,
+				22DE678A19AEC0BC003815BC /* GFHMapView.h */,
+				22DE678B19AEC0BC003815BC /* GFHMapView.m */,
+				22DE678419AEBF75003815BC /* GFHMainView.h */,
+				22DE678519AEBF75003815BC /* GFHMainView.m */,
+				22DE675219AEBB23003815BC /* Good For Him */,
+				22DE676B19AEBB23003815BC /* Good For HimTests */,
+				22DE674B19AEBB23003815BC /* Frameworks */,
+				22DE674A19AEBB23003815BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22DE674A19AEBB23003815BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22DE674919AEBB23003815BC /* Good For Him.app */,
+				22DE676419AEBB23003815BC /* Good For HimTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22DE674B19AEBB23003815BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22DE674C19AEBB23003815BC /* Foundation.framework */,
+				22DE674E19AEBB23003815BC /* CoreGraphics.framework */,
+				22DE675019AEBB23003815BC /* UIKit.framework */,
+				22DE676519AEBB23003815BC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22DE675219AEBB23003815BC /* Good For Him */ = {
+			isa = PBXGroup;
+			children = (
+				22DE675B19AEBB23003815BC /* GFHAppDelegate.h */,
+				22DE675C19AEBB23003815BC /* GFHAppDelegate.m */,
+				22DE675E19AEBB23003815BC /* Images.xcassets */,
+				22DE675319AEBB23003815BC /* Supporting Files */,
+			);
+			path = "Good For Him";
+			sourceTree = "<group>";
+		};
+		22DE675319AEBB23003815BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22DE675419AEBB23003815BC /* Good For Him-Info.plist */,
+				22DE675519AEBB23003815BC /* InfoPlist.strings */,
+				22DE675819AEBB23003815BC /* main.m */,
+				22DE675A19AEBB23003815BC /* Good For Him-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22DE676B19AEBB23003815BC /* Good For HimTests */ = {
+			isa = PBXGroup;
+			children = (
+				22DE677119AEBB23003815BC /* Good_For_HimTests.m */,
+				22DE676C19AEBB23003815BC /* Supporting Files */,
+			);
+			path = "Good For HimTests";
+			sourceTree = "<group>";
+		};
+		22DE676C19AEBB23003815BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22DE676D19AEBB23003815BC /* Good For HimTests-Info.plist */,
+				22DE676E19AEBB23003815BC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22DE674819AEBB23003815BC /* Good For Him */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DE677519AEBB23003815BC /* Build configuration list for PBXNativeTarget "Good For Him" */;
+			buildPhases = (
+				22DE674519AEBB23003815BC /* Sources */,
+				22DE674619AEBB23003815BC /* Frameworks */,
+				22DE674719AEBB23003815BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Good For Him";
+			productName = "Good For Him";
+			productReference = 22DE674919AEBB23003815BC /* Good For Him.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22DE676319AEBB23003815BC /* Good For HimTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22DE677819AEBB23003815BC /* Build configuration list for PBXNativeTarget "Good For HimTests" */;
+			buildPhases = (
+				22DE676019AEBB23003815BC /* Sources */,
+				22DE676119AEBB23003815BC /* Frameworks */,
+				22DE676219AEBB23003815BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22DE676A19AEBB23003815BC /* PBXTargetDependency */,
+			);
+			name = "Good For HimTests";
+			productName = "Good For HimTests";
+			productReference = 22DE676419AEBB23003815BC /* Good For HimTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22DE674119AEBB23003815BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GFH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Merritt Tidwell";
+				TargetAttributes = {
+					22DE676319AEBB23003815BC = {
+						TestTargetID = 22DE674819AEBB23003815BC;
+					};
+				};
+			};
+			buildConfigurationList = 22DE674419AEBB23003815BC /* Build configuration list for PBXProject "Good For Him" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22DE674019AEBB23003815BC;
+			productRefGroup = 22DE674A19AEBB23003815BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22DE674819AEBB23003815BC /* Good For Him */,
+				22DE676319AEBB23003815BC /* Good For HimTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22DE674719AEBB23003815BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE675719AEBB23003815BC /* InfoPlist.strings in Resources */,
+				22DE675F19AEBB23003815BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE676219AEBB23003815BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE677019AEBB23003815BC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22DE674519AEBB23003815BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE675D19AEBB23003815BC /* GFHAppDelegate.m in Sources */,
+				22DE675919AEBB23003815BC /* main.m in Sources */,
+				22DE678C19AEC0BC003815BC /* GFHMapView.m in Sources */,
+				22DE678619AEBF75003815BC /* GFHMainView.m in Sources */,
+				22DE678919AEBFF0003815BC /* GFHTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22DE676019AEBB23003815BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DE677219AEBB23003815BC /* Good_For_HimTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22DE676A19AEBB23003815BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22DE674819AEBB23003815BC /* Good For Him */;
+			targetProxy = 22DE676919AEBB23003815BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22DE675519AEBB23003815BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22DE675619AEBB23003815BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22DE676E19AEBB23003815BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22DE676F19AEBB23003815BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22DE677319AEBB23003815BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22DE677419AEBB23003815BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22DE677619AEBB23003815BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Good For Him/Good For Him-Prefix.pch";
+				INFOPLIST_FILE = "Good For Him/Good For Him-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22DE677719AEBB23003815BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Good For Him/Good For Him-Prefix.pch";
+				INFOPLIST_FILE = "Good For Him/Good For Him-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		22DE677919AEBB23003815BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Good For Him.app/Good For Him";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Good For Him/Good For Him-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Good For HimTests/Good For HimTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		22DE677A19AEBB23003815BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Good For Him.app/Good For Him";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Good For Him/Good For Him-Prefix.pch";
+				INFOPLIST_FILE = "Good For HimTests/Good For HimTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22DE674419AEBB23003815BC /* Build configuration list for PBXProject "Good For Him" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DE677319AEBB23003815BC /* Debug */,
+				22DE677419AEBB23003815BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22DE677519AEBB23003815BC /* Build configuration list for PBXNativeTarget "Good For Him" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DE677619AEBB23003815BC /* Debug */,
+				22DE677719AEBB23003815BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		22DE677819AEBB23003815BC /* Build configuration list for PBXNativeTarget "Good For HimTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22DE677919AEBB23003815BC /* Debug */,
+				22DE677A19AEBB23003815BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22DE674119AEBB23003815BC /* Project object */;
+}

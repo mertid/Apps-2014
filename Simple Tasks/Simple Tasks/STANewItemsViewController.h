@@ -10,7 +10,6 @@
 
 @interface STANewItemsViewController : UIViewController
 @property (nonatomic) NSMutableArray * items;
-
 @property (nonatomic) NSMutableDictionary * itemInfo;
 
 

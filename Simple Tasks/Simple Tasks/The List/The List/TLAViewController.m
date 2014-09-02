@@ -30,6 +30,8 @@
    naughtyArray = [@[@"Invading Aliens",@"Killer Robots",@"Jaws",]mutableCopy];
     
     
+    
+    
     UITabBarController * tabBarC = [[UITabBarController alloc]init];
     
     [self.view addSubview:tabBarC.view];

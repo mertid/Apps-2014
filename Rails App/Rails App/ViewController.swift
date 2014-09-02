@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Swifty Parse
+//  Rails App
 //
-//  Created by Merritt Tidwell on 8/26/14.
+//  Created by Merritt Tidwell on 9/2/14.
 //  Copyright (c) 2014 Merritt Tidwell. All rights reserved.
 //
 

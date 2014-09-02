@@ -12,6 +12,19 @@
 		22D30FD419AE1726002F2365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D30FD219AE1726002F2365 /* Main.storyboard */; };
 		22D30FD619AE1726002F2365 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22D30FD519AE1726002F2365 /* Images.xcassets */; };
 		22D30FE219AE1726002F2365 /* Lets_Be_FriendsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D30FE119AE1726002F2365 /* Lets_Be_FriendsTests.swift */; };
+		22D30FF219AE1805002F2365 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FEF19AE1805002F2365 /* Bolts.framework */; };
+		22D30FF319AE1805002F2365 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FF019AE1805002F2365 /* Parse.framework */; };
+		22D30FF419AE1805002F2365 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FF119AE1805002F2365 /* ParseFacebookUtils.framework */; };
+		22D30FFF19AE18EB002F2365 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FF519AE18EB002F2365 /* SystemConfiguration.framework */; };
+		22D3100019AE18EB002F2365 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FF619AE18EB002F2365 /* StoreKit.framework */; };
+		22D3100119AE18EB002F2365 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FF719AE18EB002F2365 /* Security.framework */; };
+		22D3100219AE18EB002F2365 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FF819AE18EB002F2365 /* QuartzCore.framework */; };
+		22D3100319AE18EB002F2365 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FF919AE18EB002F2365 /* MobileCoreServices.framework */; };
+		22D3100419AE18EB002F2365 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FFA19AE18EB002F2365 /* libz.dylib */; };
+		22D3100519AE18EB002F2365 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FFB19AE18EB002F2365 /* CoreLocation.framework */; };
+		22D3100619AE18EC002F2365 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FFC19AE18EB002F2365 /* CoreGraphics.framework */; };
+		22D3100719AE18EC002F2365 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FFD19AE18EB002F2365 /* CFNetwork.framework */; };
+		22D3100819AE18EC002F2365 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D30FFE19AE18EB002F2365 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,20 @@
 		22D30FDB19AE1726002F2365 /* Lets Be FriendsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lets Be FriendsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D30FE019AE1726002F2365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22D30FE119AE1726002F2365 /* Lets_Be_FriendsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lets_Be_FriendsTests.swift; sourceTree = "<group>"; };
+		22D30FEB19AE1781002F2365 /* Lets Be Friends-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lets Be Friends-Bridging-Header.h"; sourceTree = "<group>"; };
+		22D30FEF19AE1805002F2365 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Downloads/parse-library-1.2.21/Bolts.framework"; sourceTree = "<group>"; };
+		22D30FF019AE1805002F2365 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.2.21/Parse.framework"; sourceTree = "<group>"; };
+		22D30FF119AE1805002F2365 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "../../../../Downloads/parse-library-1.2.21/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		22D30FF519AE18EB002F2365 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22D30FF619AE18EB002F2365 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		22D30FF719AE18EB002F2365 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		22D30FF819AE18EB002F2365 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		22D30FF919AE18EB002F2365 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		22D30FFA19AE18EB002F2365 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		22D30FFB19AE18EB002F2365 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		22D30FFC19AE18EB002F2365 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		22D30FFD19AE18EB002F2365 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		22D30FFE19AE18EB002F2365 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +68,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D30FF319AE1805002F2365 /* Parse.framework in Frameworks */,
+				22D30FF219AE1805002F2365 /* Bolts.framework in Frameworks */,
+				22D3100219AE18EB002F2365 /* QuartzCore.framework in Frameworks */,
+				22D3100019AE18EB002F2365 /* StoreKit.framework in Frameworks */,
+				22D30FFF19AE18EB002F2365 /* SystemConfiguration.framework in Frameworks */,
+				22D3100819AE18EC002F2365 /* AudioToolbox.framework in Frameworks */,
+				22D3100419AE18EB002F2365 /* libz.dylib in Frameworks */,
+				22D3100719AE18EC002F2365 /* CFNetwork.framework in Frameworks */,
+				22D3100519AE18EB002F2365 /* CoreLocation.framework in Frameworks */,
+				22D3100319AE18EB002F2365 /* MobileCoreServices.framework in Frameworks */,
+				22D3100119AE18EB002F2365 /* Security.framework in Frameworks */,
+				22D3100619AE18EC002F2365 /* CoreGraphics.framework in Frameworks */,
+				22D30FF419AE1805002F2365 /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +100,7 @@
 				22D30FCB19AE1726002F2365 /* Lets Be Friends */,
 				22D30FDE19AE1726002F2365 /* Lets Be FriendsTests */,
 				22D30FCA19AE1726002F2365 /* Products */,
+				22D30FEE19AE17CF002F2365 /* frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -80,6 +121,7 @@
 				22D30FD219AE1726002F2365 /* Main.storyboard */,
 				22D30FD519AE1726002F2365 /* Images.xcassets */,
 				22D30FCC19AE1726002F2365 /* Supporting Files */,
+				22D30FEB19AE1781002F2365 /* Lets Be Friends-Bridging-Header.h */,
 			);
 			path = "Lets Be Friends";
 			sourceTree = "<group>";
@@ -107,6 +149,26 @@
 				22D30FE019AE1726002F2365 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22D30FEE19AE17CF002F2365 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22D30FF519AE18EB002F2365 /* SystemConfiguration.framework */,
+				22D30FF619AE18EB002F2365 /* StoreKit.framework */,
+				22D30FF719AE18EB002F2365 /* Security.framework */,
+				22D30FF819AE18EB002F2365 /* QuartzCore.framework */,
+				22D30FF919AE18EB002F2365 /* MobileCoreServices.framework */,
+				22D30FFA19AE18EB002F2365 /* libz.dylib */,
+				22D30FFB19AE18EB002F2365 /* CoreLocation.framework */,
+				22D30FFC19AE18EB002F2365 /* CoreGraphics.framework */,
+				22D30FFD19AE18EB002F2365 /* CFNetwork.framework */,
+				22D30FFE19AE18EB002F2365 /* AudioToolbox.framework */,
+				22D30FEF19AE1805002F2365 /* Bolts.framework */,
+				22D30FF019AE1805002F2365 /* Parse.framework */,
+				22D30FF119AE1805002F2365 /* ParseFacebookUtils.framework */,
+			);
+			name = frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,9 +387,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Merritt/Downloads/parse-library-1.2.21",
+				);
 				INFOPLIST_FILE = "Lets Be Friends/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lets Be Friends/Lets Be Friends-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -336,9 +405,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Merritt/Downloads/parse-library-1.2.21",
+				);
 				INFOPLIST_FILE = "Lets Be Friends/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Lets Be Friends/Lets Be Friends-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -395,6 +470,7 @@
 				22D30FE719AE1726002F2365 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22D30FE819AE1726002F2365 /* Build configuration list for PBXNativeTarget "Lets Be FriendsTests" */ = {
 			isa = XCConfigurationList;
@@ -403,6 +479,7 @@
 				22D30FEA19AE1726002F2365 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

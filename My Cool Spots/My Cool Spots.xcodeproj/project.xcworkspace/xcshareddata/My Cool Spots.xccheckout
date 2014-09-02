@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DF764FFE-BF17-4790-81D5-1F2D8BA495F9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>My Cool Spots</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>821A5DC2-C796-4775-ADDC-F8F99A542163</key>
+		<string>https://github.com/mertid/IOS_IronYard.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>My Cool Spots/My Cool Spots.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>821A5DC2-C796-4775-ADDC-F8F99A542163</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mertid/IOS_IronYard.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>821A5DC2-C796-4775-ADDC-F8F99A542163</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>821A5DC2-C796-4775-ADDC-F8F99A542163</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IOS_IronYard</string>
+		</dict>
+	</array>
+</dict>
+</plist>
