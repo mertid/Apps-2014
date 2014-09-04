@@ -24,6 +24,7 @@
 		229D13BC199CF0B600E240FD /* SIGDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D13BB199CF0B600E240FD /* SIGDrawView.m */; };
 		229D13BF199CF0E100E240FD /* SIGListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D13BE199CF0E100E240FD /* SIGListTableViewCell.m */; };
 		229D13C3199CF14000E240FD /* SIGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D13C2199CF14000E240FD /* SIGDrawViewController.m */; };
+		22A1B5C219B772F100D6EB16 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1B5C119B772F100D6EB16 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		229D13BE199CF0E100E240FD /* SIGListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGListTableViewCell.m; path = Signatures/SIGListTableViewCell.m; sourceTree = "<group>"; };
 		229D13C1199CF14000E240FD /* SIGDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGDrawViewController.h; path = Signatures/SIGDrawViewController.h; sourceTree = "<group>"; };
 		229D13C2199CF14000E240FD /* SIGDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGDrawViewController.m; path = Signatures/SIGDrawViewController.m; sourceTree = "<group>"; };
+		22A1B5C119B772F100D6EB16 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			files = (
 				229D1384199CEE8400E240FD /* CoreGraphics.framework in Frameworks */,
 				229D1386199CEE8400E240FD /* UIKit.framework in Frameworks */,
+				22A1B5C219B772F100D6EB16 /* Crashlytics.framework in Frameworks */,
 				229D1382199CEE8400E240FD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,6 +117,7 @@
 		229D1380199CEE8400E240FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22A1B5C119B772F100D6EB16 /* Crashlytics.framework */,
 				229D1381199CEE8400E240FD /* Foundation.framework */,
 				229D1383199CEE8400E240FD /* CoreGraphics.framework */,
 				229D1385199CEE8400E240FD /* UIKit.framework */,
@@ -203,6 +207,7 @@
 				229D137A199CEE8400E240FD /* Sources */,
 				229D137B199CEE8400E240FD /* Frameworks */,
 				229D137C199CEE8400E240FD /* Resources */,
+				22A1B5C019B772A200D6EB16 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -283,6 +288,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22A1B5C019B772A200D6EB16 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run f812e6cfe1ed18971a0b5b12e52ece240e3eefef dbe2a9bc9896d64e0677beb5b33771f3de1d30db8be32c558dc9b1aa77892740";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		229D137A199CEE8400E240FD /* Sources */ = {
@@ -412,6 +433,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Signatures/Signatures-Prefix.pch";
 				INFOPLIST_FILE = "Signatures/Signatures-Info.plist";
@@ -425,6 +450,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Signatures/Signatures-Prefix.pch";
 				INFOPLIST_FILE = "Signatures/Signatures-Info.plist";
@@ -492,6 +521,7 @@
 				229D13AC199CEE8400E240FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		229D13AD199CEE8400E240FD /* Build configuration list for PBXNativeTarget "SignaturesTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +530,7 @@
 				229D13AF199CEE8400E240FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

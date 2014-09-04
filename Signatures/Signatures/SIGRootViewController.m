@@ -9,6 +9,8 @@
 #import "SIGRootViewController.h"
 #import "SIGDrawViewController.h"
 #import "SIGListTableViewController.h"
+#import <Crashlytics/Crashlytics.h>
+
 
 
 @interface SIGRootViewController ()
@@ -80,7 +82,8 @@
     
     [listTVC.signatures addObject:image];
     [listTVC.tableView reloadData];
-    
+    //[[Crashlytics sharedInstance] crash];
+ 
 }
 
 - (void)didReceiveMemoryWarning
