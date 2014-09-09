@@ -8,7 +8,6 @@
 
 #import "SIGAppDelegate.h"
 #import "SIGRootViewController.h"
-#import <Crashlytics/Crashlytics.h>
 
 @implementation SIGAppDelegate
 
@@ -19,7 +18,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.rootViewController = [[SIGRootViewController alloc]init];
     
-    [Crashlytics startWithAPIKey:@"f812e6cfe1ed18971a0b5b12e52ece240e3eefef"];
    
     
     // Override point for customization after application launch.

@@ -13,6 +13,9 @@
 		226A6F9319B92D0D0083E553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226A6F9119B92D0D0083E553 /* Main.storyboard */; };
 		226A6F9519B92D0D0083E553 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226A6F9419B92D0D0083E553 /* Images.xcassets */; };
 		226A6FA119B92D0D0083E553 /* robotpartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226A6FA019B92D0D0083E553 /* robotpartTests.swift */; };
+		226A6FAB19B92D840083E553 /* part.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226A6FAA19B92D840083E553 /* part.swift */; };
+		226A6FAD19B933B20083E553 /* eyeRobot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226A6FAC19B933B20083E553 /* eyeRobot.swift */; };
+		226A6FAF19B9EEB50083E553 /* RobotEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226A6FAE19B9EEB50083E553 /* RobotEye.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		226A6F9A19B92D0D0083E553 /* robotpartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = robotpartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		226A6F9F19B92D0D0083E553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		226A6FA019B92D0D0083E553 /* robotpartTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = robotpartTests.swift; sourceTree = "<group>"; };
+		226A6FAA19B92D840083E553 /* part.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = part.swift; sourceTree = "<group>"; };
+		226A6FAC19B933B20083E553 /* eyeRobot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = eyeRobot.swift; sourceTree = "<group>"; };
+		226A6FAE19B9EEB50083E553 /* RobotEye.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotEye.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 		226A6F7C19B92D0D0083E553 = {
 			isa = PBXGroup;
 			children = (
+				226A6FAE19B9EEB50083E553 /* RobotEye.swift */,
+				226A6FAC19B933B20083E553 /* eyeRobot.swift */,
 				226A6F8719B92D0D0083E553 /* robotpart */,
 				226A6F9D19B92D0D0083E553 /* robotpartTests */,
 				226A6F8619B92D0D0083E553 /* Products */,
@@ -79,6 +87,7 @@
 			children = (
 				226A6F8A19B92D0D0083E553 /* AppDelegate.swift */,
 				226A6F8F19B92D0D0083E553 /* ViewController.swift */,
+				226A6FAA19B92D840083E553 /* part.swift */,
 				226A6F9119B92D0D0083E553 /* Main.storyboard */,
 				226A6F9419B92D0D0083E553 /* Images.xcassets */,
 				226A6F8C19B92D0D0083E553 /* robotpart.xcdatamodeld */,
@@ -211,9 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				226A6FAB19B92D840083E553 /* part.swift in Sources */,
 				226A6F9019B92D0D0083E553 /* ViewController.swift in Sources */,
+				226A6FAF19B9EEB50083E553 /* RobotEye.swift in Sources */,
 				226A6F8B19B92D0D0083E553 /* AppDelegate.swift in Sources */,
 				226A6F8E19B92D0D0083E553 /* robotpart.xcdatamodeld in Sources */,
+				226A6FAD19B933B20083E553 /* eyeRobot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +411,7 @@
 				226A6FA619B92D0D0083E553 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		226A6FA719B92D0D0083E553 /* Build configuration list for PBXNativeTarget "robotpartTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +420,7 @@
 				226A6FA919B92D0D0083E553 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -7,7 +7,6 @@
 //
 
 #import "IWAImageViewController.h"
-
 @interface IWAImageViewController () <UITextViewDelegate>
 
 @end
