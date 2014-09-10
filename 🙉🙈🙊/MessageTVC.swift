@@ -12,14 +12,19 @@ class MessageTVC:
 
 UITableViewController {
 
-    @IBOutlet weak var
-    messageTableView:
-    UITableView!
+    @IBOutlet weak var messageTableView:UITableView!
    
+    @IBOutlet weak var fieldField: UITextField!
     
+    @IBOutlet weak var formHolder: UIView!
+    
+    @IBOutlet weak var formButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        self.messageTableView = self.tableView
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -27,7 +32,12 @@ UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+//
+//    func override func viewWillLayoutSubviews() {
+//        self.formButton.layer.cornerRadius = 8
+//    }
+//    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -65,7 +65,12 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nQ4-cs-U7G">
                                 <rect key="frame" x="0.0" y="415" width="320" height="71"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZe-VX-eoP">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6AY-Qd-p8I">
+                                        <rect key="frame" x="16" y="21" width="226" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZe-VX-eoP" customClass="Button" customModule="___" customModuleProvider="target">
                                         <rect key="frame" x="250" y="21" width="62" height="30"/>
                                         <color key="backgroundColor" red="0.44313728810000003" green="0.89019614459999996" blue="0.59215688710000003" alpha="1" colorSpace="deviceRGB"/>
                                         <state key="normal" title="Button">
@@ -73,11 +78,6 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6AY-Qd-p8I">
-                                        <rect key="frame" x="16" y="21" width="226" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -99,6 +99,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="b7M-wn-wlS"/>
                     <connections>
+                        <outlet property="fieldField" destination="6AY-Qd-p8I" id="WO4-B2-1wc"/>
+                        <outlet property="formButton" destination="mZe-VX-eoP" id="71n-k2-Fta"/>
+                        <outlet property="formHolder" destination="nQ4-cs-U7G" id="uhP-a7-IVC"/>
                         <outlet property="messageTableView" destination="hTR-Uz-izc" id="AYR-s2-unM"/>
                     </connections>
                 </viewController>
