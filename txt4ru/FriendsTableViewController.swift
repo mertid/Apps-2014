@@ -11,14 +11,33 @@ import UIKit
 class FriendsTableViewController: UITableViewController {
 
     
-    var friends: [PFUser]! = []
-    
+    var friends: [PFUser] = []
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+
+        if reflect(self).summary == "txt4u.FriendsTableViewController" {
+            var queryMe = PFUser.query()
+            queryMe.whereKey("username", equalTo: PFUser.currentUser().username)
+            queryMe.includeKey("friends")
+            
+            queryMe.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!,
+                error: NSError!) -> Void in
+                
+                println(objects)
+                
+                //this first pfuser is me and then we return my friends//
+               
+                self.friends = objects[0]["friends"] as [PFUser]
+                self.tableView.reloadData()
+            
+            }
+        
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,11 +45,17 @@ class FriendsTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(animated: Bool) {
+       
+        super.viewWillAppear(animated)
+        
+        super.tableView.reloadData()
+        
     }
-
+ 
+   
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -47,6 +72,7 @@ class FriendsTableViewController: UITableViewController {
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+     
         let cell = tableView.dequeueReusableCellWithIdentifier("friendCell", forIndexPath: indexPath) as UITableViewCell
 
         var friend = friends[indexPath.row] as PFUser
@@ -96,14 +122,30 @@ class FriendsTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+     
+        
+        if segue.identifier == "showConversation" {
+        
+            var messageVC = segue.destinationViewController as MessageViewController
+            
+            messageVC.friend = friends[self.tableView.indexPathForCell(sender as UITableViewCell)!.row]
+        
+        
+        }
+        
+        
+        
+        
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
     }
-    */
+
 
 }

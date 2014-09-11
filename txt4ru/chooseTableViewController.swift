@@ -23,6 +23,55 @@ class chooseTableViewController: FriendsTableViewController {
     
     
     }
+   
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+      
+        
+  //     var myFriends = ((self.navigationController?.presentingViewController as UINavigationController).viewControllers[0] as FriendsTableViewController).friends
+   
+       
+        // the bottom three lines are the above line explained
+        
+        
+        var presentingNavC = self.navigationController?.presentingViewController as UINavigationController
+        
+        var friendsTVC = presentingNavC.viewControllers[0] as FriendsTableViewController
+        
+//        var myFriends = friendsTVC.friends
+        
+    
+        friendsTVC.friends += [friends[indexPath.row]]
+    
+        
+        
+        var user = PFUser.currentUser()
+        user["friends"] = friendsTVC.friends
+        user.saveInBackground()
+        
+        
+        
+        
+        self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        
+        
+        super.viewWillAppear(animated)
+        
+        var friendQuery = PFUser.query()
+        friendQuery.findObjectsInBackgroundWithBlock { (users: [AnyObject]!, error: NSError!) -> Void in
+            self.friends = users as [PFUser]
+            self.tableView.reloadData()
+        }
+        
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
