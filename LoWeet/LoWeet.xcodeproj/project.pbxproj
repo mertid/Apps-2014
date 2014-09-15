@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		2291754519C71CEA009BA43E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291754419C71CEA009BA43E /* AppDelegate.swift */; };
-		2291754719C71CEA009BA43E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291754619C71CEA009BA43E /* FirstViewController.swift */; };
-		2291754919C71CEA009BA43E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291754819C71CEA009BA43E /* SecondViewController.swift */; };
-		2291754C19C71CEA009BA43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2291754A19C71CEA009BA43E /* Main.storyboard */; };
 		2291754E19C71CEA009BA43E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2291754D19C71CEA009BA43E /* Images.xcassets */; };
 		2291755119C71CEA009BA43E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2291754F19C71CEA009BA43E /* LaunchScreen.xib */; };
 		2291755D19C71CEB009BA43E /* LoWeetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291755C19C71CEB009BA43E /* LoWeetTests.swift */; };
+		2291756719C72171009BA43E /* TweetLocTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291756619C72171009BA43E /* TweetLocTVC.swift */; };
+		2291756919C72198009BA43E /* TweetLOCTVController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291756819C72198009BA43E /* TweetLOCTVController.swift */; };
+		2291756B19C721C6009BA43E /* MapLocViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291756A19C721C6009BA43E /* MapLocViewController.swift */; };
+		2291756E19C725CF009BA43E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2291756C19C725CF009BA43E /* Main.storyboard */; };
+		2291757019C734A1009BA43E /* NewLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291756F19C734A1009BA43E /* NewLocationViewController.swift */; };
+		2291757219C73A52009BA43E /* LocationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291757119C73A52009BA43E /* LocationData.swift */; };
+		2291757419C76ED9009BA43E /* Marker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2291757319C76ED9009BA43E /* Marker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +34,18 @@
 		2291753F19C71CEA009BA43E /* LoWeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoWeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2291754319C71CEA009BA43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2291754419C71CEA009BA43E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2291754619C71CEA009BA43E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		2291754819C71CEA009BA43E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		2291754B19C71CEA009BA43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2291754D19C71CEA009BA43E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2291755019C71CEA009BA43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		2291755619C71CEB009BA43E /* LoWeetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoWeetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2291755B19C71CEB009BA43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2291755C19C71CEB009BA43E /* LoWeetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoWeetTests.swift; sourceTree = "<group>"; };
+		2291756619C72171009BA43E /* TweetLocTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetLocTVC.swift; path = ../TweetLocTVC.swift; sourceTree = "<group>"; };
+		2291756819C72198009BA43E /* TweetLOCTVController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TweetLOCTVController.swift; path = ../TweetLOCTVController.swift; sourceTree = "<group>"; };
+		2291756A19C721C6009BA43E /* MapLocViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MapLocViewController.swift; path = ../MapLocViewController.swift; sourceTree = "<group>"; };
+		2291756D19C725CF009BA43E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LoWeet/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2291756F19C734A1009BA43E /* NewLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewLocationViewController.swift; path = ../NewLocationViewController.swift; sourceTree = "<group>"; };
+		2291757119C73A52009BA43E /* LocationData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationData.swift; sourceTree = "<group>"; };
+		2291757319C76ED9009BA43E /* Marker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Marker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,8 @@
 		2291753619C71CEA009BA43E = {
 			isa = PBXGroup;
 			children = (
+				2291757319C76ED9009BA43E /* Marker.swift */,
+				2291757119C73A52009BA43E /* LocationData.swift */,
 				2291754119C71CEA009BA43E /* LoWeet */,
 				2291755919C71CEB009BA43E /* LoWeetTests */,
 				2291754019C71CEA009BA43E /* Products */,
@@ -79,10 +89,12 @@
 		2291754119C71CEA009BA43E /* LoWeet */ = {
 			isa = PBXGroup;
 			children = (
+				2291756619C72171009BA43E /* TweetLocTVC.swift */,
+				2291756819C72198009BA43E /* TweetLOCTVController.swift */,
+				2291756F19C734A1009BA43E /* NewLocationViewController.swift */,
+				2291756A19C721C6009BA43E /* MapLocViewController.swift */,
 				2291754419C71CEA009BA43E /* AppDelegate.swift */,
-				2291754619C71CEA009BA43E /* FirstViewController.swift */,
-				2291754819C71CEA009BA43E /* SecondViewController.swift */,
-				2291754A19C71CEA009BA43E /* Main.storyboard */,
+				2291756C19C725CF009BA43E /* Main.storyboard */,
 				2291754D19C71CEA009BA43E /* Images.xcassets */,
 				2291754F19C71CEA009BA43E /* LaunchScreen.xib */,
 				2291754219C71CEA009BA43E /* Supporting Files */,
@@ -195,7 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2291754C19C71CEA009BA43E /* Main.storyboard in Resources */,
+				2291756E19C725CF009BA43E /* Main.storyboard in Resources */,
 				2291755119C71CEA009BA43E /* LaunchScreen.xib in Resources */,
 				2291754E19C71CEA009BA43E /* Images.xcassets in Resources */,
 			);
@@ -215,9 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2291754919C71CEA009BA43E /* SecondViewController.swift in Sources */,
+				2291757219C73A52009BA43E /* LocationData.swift in Sources */,
+				2291756719C72171009BA43E /* TweetLocTVC.swift in Sources */,
+				2291756919C72198009BA43E /* TweetLOCTVController.swift in Sources */,
+				2291757019C734A1009BA43E /* NewLocationViewController.swift in Sources */,
+				2291756B19C721C6009BA43E /* MapLocViewController.swift in Sources */,
 				2291754519C71CEA009BA43E /* AppDelegate.swift in Sources */,
-				2291754719C71CEA009BA43E /* FirstViewController.swift in Sources */,
+				2291757419C76ED9009BA43E /* Marker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,20 +256,21 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2291754A19C71CEA009BA43E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2291754B19C71CEA009BA43E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2291754F19C71CEA009BA43E /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				2291755019C71CEA009BA43E /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		2291756C19C725CF009BA43E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2291756D19C725CF009BA43E /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -409,6 +426,7 @@
 				2291756219C71CEB009BA43E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2291756319C71CEB009BA43E /* Build configuration list for PBXNativeTarget "LoWeetTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +435,7 @@
 				2291756519C71CEB009BA43E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
