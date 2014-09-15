@@ -26,10 +26,6 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
         didSet(user){
             println()
         }
-        
-        
-        
-        
     }
     
     var conversation : [PFObject] = []
@@ -42,9 +38,49 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
         tableview.dataSource = self
         
         tableview.delegate = self
-        
         messageField.delegate = self
+    
+        var nc = NSNotificationCenter.defaultCenter()
         
+        nc.addObserverForName("newMessage", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification: NSNotification!) -> Void in
+            
+            var relationOption1 = PFUser.currentUser().username + self.friend.username
+            var relationOption2 = self.friend.username + PFUser.currentUser().username
+            var possibleRelations = [relationOption1, relationOption2]
+            
+
+            
+            var messageQuery = PFQuery(className: "Message")
+            
+            messageQuery.whereKey("receiver", equalTo: PFUser.currentUser())
+            messageQuery.whereKey("sender", equalTo: self.friend)
+            messageQuery.limit = 1
+            messageQuery.orderByDescending("createdAt")
+            
+            messageQuery.whereKey("relation", containedIn: possibleRelations)
+            
+            messageQuery.findObjectsInBackgroundWithBlock {
+                
+                (messages: [AnyObject]!, error: NSError!) -> Void in
+                println("Loaded \(messages.count) messages")
+                if messages.count > 0 {
+                    self.conversation = messages as [PFObject]
+                    self.tableview.reloadData()
+                    
+                    var indexPath = NSIndexPath(forRow: self.conversation.count - 1, inSection: 0)
+                    
+                    self.tableview.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Bottom, animated:false)
+                    
+                }
+                
+            }
+            
+
+    
+        })
+    
+    
+    
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,17 +91,19 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        var cell = tableview.dequeueReusableCellWithIdentifier("messageCell", forIndexPath: indexPath) as UITableViewCell
+    
         
-        cell.textLabel?.text = conversation[indexPath.row]["content"] as? String
+        var cell = tableview.dequeueReusableCellWithIdentifier("messageCell", forIndexPath: indexPath) as MessageCell
+        
+        cell.messageInfo = conversation[indexPath.row]
+     
+        
+      //  cell.textLabel?.text = conversation[indexPath.row]["content"] as? String
         
         
         return cell
         
     }
-    
-    
-    
     
     
     var defaults = NSUserDefaults.standardUserDefaults()
@@ -81,14 +119,21 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
         
         var possibleRelations = [PFUser.currentUser().username + friend.username, friend.username + PFUser.currentUser().username]
         
+            messageQuery.whereKey("relation", containedIn: possibleRelations)
         
+            messageQuery.orderByAscending("createdAt")
             messageQuery.findObjectsInBackgroundWithBlock {
-        
+            
             (messages: [AnyObject]!, error: NSError!) -> Void in
             println("Loaded \(messages.count) messages")
             if messages.count > 0 {
                 self.conversation = messages as [PFObject]
                 self.tableview.reloadData()
+                
+                var indexPath = NSIndexPath(forRow: self.conversation.count - 1, inSection: 0)
+                
+                self.tableview.scrollToRowAtIndexPath(indexPath, atScrollPosition: UITableViewScrollPosition.Bottom, animated:false)
+                
             }
         
         }
@@ -99,13 +144,15 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
    
         
         
-        formHolder.frame.origin.y = UIScreen.mainScreen().bounds.size.height - 281
+        formHolder.frame.origin.y = SCREEN_HEIGHT - 281
         
 
     
     }
    
   func textFieldShouldReturn(textField: UITextField) -> Bool {
+    
+    
             self.sendMessage(textField)
             return true
     
@@ -115,12 +162,14 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBAction func sendMessage(sender: AnyObject) {
    
         
+        formHolder.frame.origin.y = SCREEN_HEIGHT - formHolder.frame.size.height
+        
+        
         var message = PFObject(className: "Message")
         message["sender"] = PFUser.currentUser()
         message["receiver"] = friend
         message["content"] = messageField.text
         message["relation"] = PFUser.currentUser().username + friend.username
-    
         message["read"] = false
         
         conversation.append(message)
@@ -131,26 +180,29 @@ class MessageViewController: UIViewController, UITableViewDataSource, UITableVie
         var deviceQuery = PFInstallation.query()
      
         deviceQuery.whereKey("user", equalTo: friend)
+//        
+//        deviceQuery.findObjectsInBackgroundWithBlock { (devices: [AnyObject]!, error: NSError!) -> Void in
+//            if devices.count > 0 {
+//                
+//                var badgeCount = (devices[0]as PFInstallation).badge
         
-        var push = PFPush()
-        push.setMessage(messageField.text)
-        push.setQuery(deviceQuery)
-        push.setData(NSDictionary(object: friend, forKey: "sender"))
-        push.sendPushInBackground()
         
-    
+            var data = NSDictionary(objects: [self.messageField.text,self.friend,"Increment"], forKeys: ["alert","sender"])
+                
+                var push = PFPush()
+                push.setQuery(deviceQuery)
+                push.setData(data)
+                push.sendPushInBackground()
+                
+
+    //                }
+   
+
+
         messageField.resignFirstResponder()
         messageField.text = ""
-
-    }
    
-  
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
+}

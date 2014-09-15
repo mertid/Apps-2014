@@ -7,6 +7,13 @@
 //
 
 import UIKit
+// remove lines in tableview
+// make two different bubble colors for messages per user
+// have tableview automatcially scroll to bottom
+// show timestamp below message
+
+
+
 
 class FriendsTableViewController: UITableViewController {
 
@@ -20,6 +27,8 @@ class FriendsTableViewController: UITableViewController {
 
 
         if reflect(self).summary == "txt4u.FriendsTableViewController" {
+          
+            if PFUser.currentUser()["friends"] != nil{
             var queryMe = PFUser.query()
             queryMe.whereKey("username", equalTo: PFUser.currentUser().username)
             queryMe.includeKey("friends")
@@ -34,9 +43,11 @@ class FriendsTableViewController: UITableViewController {
                 self.friends = objects[0]["friends"] as [PFUser]
                 self.tableView.reloadData()
             
+            
+                }
             }
         
-        }
+    }
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

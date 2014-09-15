@@ -18,7 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        Parse.setApplicationId("rJ2CePYfKz2YpcAUZy08cCFSDDF0XWr69O4ezUkq", clientKey: "m6pjGAQurlCvx9BLmHB1tJlEyPh4NeqUlewS5TR4")
+        Parse.setApplicationId("rJ2CePYfKz2YpcAUZy08cCFSDDF0XWr69O4ezUkq",
+            clientKey: "m6pjGAQurlCvx9BLmHB1tJlEyPh4NeqUlewS5TR4")
             
         
         PFUser.enableAutomaticUser ()
@@ -33,16 +34,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
         
-        UIApplication.sharedApplication().applicationIconBadgeNumber = 2
+        UIApplication.sharedApplication().registerForRemoteNotifications()
 
-            
         return true
   
-        
-    
     
     }
 
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        
+        println(userInfo)
+        var notification:NSDictionary = userInfo["aps"] as NSDictionary
+       
+        
+        //TODO print it out so you can see why we do this!
+        
+        var alert = notification["alert"] as String
+        var sender = userInfo["sender"] as NSDictionary
+        var senderName = sender["objectId"] as String
+        
+        UIApplication.sharedApplication().applicationIconBadgeNumber++
+        
+        //badge goes up here
+        
+        // TODO when messageVC shows unread messages change badge count
+        
+        if UIApplication.sharedApplication().applicationState == UIApplicationState.Background {
+            
+            var localNotification = UILocalNotification()
+            localNotification.alertBody = "\(senderName) : " + alert
+            localNotification.alertAction = "Reply"
+            
+            UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+        } else {
+            var nc = NSNotificationCenter.defaultCenter()
+            nc.postNotificationName("newMessage", object: nil, userInfo: userInfo) // need to listen to this from 2 places (friends table &
+        }
+    }
+    
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData)
     {
         var currentInstallation = PFInstallation.currentInstallation()

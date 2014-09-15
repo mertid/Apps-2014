@@ -22,6 +22,7 @@
 		221707F119C098A000C7CD12 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221707ED19C0984D00C7CD12 /* MobileCoreServices.framework */; };
 		221707F319C098C500C7CD12 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221707F219C098C500C7CD12 /* SystemConfiguration.framework */; };
 		221707F419C098CB00C7CD12 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 221707EF19C0986300C7CD12 /* Security.framework */; };
+		22BE0D2C19C32CCE00732D01 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BE0D2B19C32CCE00732D01 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		221707EF19C0986300C7CD12 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		221707F219C098C500C7CD12 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		2222701619C0AC5D00561FD4 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		22BE0D2B19C32CCE00732D01 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageCell.swift; path = ../MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				221707D619C08C2700C7CD12 /* chooseTableViewController.swift */,
+				22BE0D2B19C32CCE00732D01 /* MessageCell.swift */,
 				221707D419C08B4600C7CD12 /* FriendsTableViewController.swift */,
 				221707B719C0866D00C7CD12 /* AppDelegate.swift */,
 				221707B919C0866D00C7CD12 /* MessageViewController.swift */,
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				221707BA19C0866D00C7CD12 /* MessageViewController.swift in Sources */,
+				22BE0D2C19C32CCE00732D01 /* MessageCell.swift in Sources */,
 				221707B819C0866D00C7CD12 /* AppDelegate.swift in Sources */,
 				221707D719C08C2700C7CD12 /* chooseTableViewController.swift in Sources */,
 				221707D519C08B4600C7CD12 /* FriendsTableViewController.swift in Sources */,
