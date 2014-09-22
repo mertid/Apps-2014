@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B147FF4A-5708-4D85-A88B-C5561DD96764</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SwifterTweet</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C7A58BE2AA3034E56441C238391011C7D29F8C78</key>
+		<string>https://github.com/justagirlcoding/theironyard_projects.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SwifterTweet/SwifterTweet.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C7A58BE2AA3034E56441C238391011C7D29F8C78</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/justagirlcoding/theironyard_projects.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C7A58BE2AA3034E56441C238391011C7D29F8C78</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C7A58BE2AA3034E56441C238391011C7D29F8C78</string>
+			<key>IDESourceControlWCCName</key>
+			<string>theironyard_projects</string>
+		</dict>
+	</array>
+</dict>
+</plist>

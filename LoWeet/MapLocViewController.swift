@@ -18,9 +18,10 @@ class MapLocViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-   
-    
+        let nc = NSNotificationCenter.defaultCenter()
+        nc.addObserverForName("tweetLocationsUpdated", object: nil, queue: NSOperationQueue.mainQueue()) { (notification: NSNotification!) -> Void in
+            self.markUpTheMap()
+        }
     
     
     }
@@ -28,12 +29,18 @@ class MapLocViewController: UIViewController {
 
     func markUpTheMap() {
         
-        for location in LocationData.mainData().locations {
+        for location in LocationData.mainData().tweetLocations {
            
-            var annotation: MKAnnotation!
+           var marker = Marker()
             
-        
-        
+            var coordinate = CLLocationCoordinate2D(latitude:location["latitude"]! as CLLocationDegrees, longitude: location["longitude"]! as CLLocationDegrees)
+            
+            marker.setCoordinate(coordinate)
+            
+            self.locationMapView.addAnnotation(marker)
+         
+            
+            
         }
         
     }

@@ -9,9 +9,24 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Swifter.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>226BA1AE19C9C0A90017BC2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>226BA1B819C9C0A90017BC2F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>2291753E19C71CEA009BA43E</key>
 		<dict>
 			<key>primary</key>

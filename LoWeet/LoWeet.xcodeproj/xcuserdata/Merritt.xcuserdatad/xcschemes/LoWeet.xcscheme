@@ -34,6 +34,20 @@
                ReferencedContainer = "container:LoWeet.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "226BA1B819C9C0A90017BC2F"
+               BuildableName = "SwifterTests.xctest"
+               BlueprintName = "SwifterTests"
+               ReferencedContainer = "container:LoWeet.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -49,6 +63,16 @@
                BlueprintIdentifier = "2291755519C71CEB009BA43E"
                BuildableName = "LoWeetTests.xctest"
                BlueprintName = "LoWeetTests"
+               ReferencedContainer = "container:LoWeet.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "226BA1B819C9C0A90017BC2F"
+               BuildableName = "SwifterTests.xctest"
+               BlueprintName = "SwifterTests"
                ReferencedContainer = "container:LoWeet.xcodeproj">
             </BuildableReference>
          </TestableReference>

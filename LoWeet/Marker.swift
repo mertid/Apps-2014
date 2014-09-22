@@ -11,9 +11,20 @@ import MapKit
 
 
 class Marker: NSObject, MKAnnotation {
-   
-
-    var coordinate : CLLocationCoordinate2D {
+           
+        var hiddenCoordinate: CLLocationCoordinate2D!
+        
+        var coordinate: CLLocationCoordinate2D {
+            get {
+                return self.hiddenCoordinate
+            }
+        }
+        
+    func setCoordinate(newCoordinate: CLLocationCoordinate2D) {
+            self.hiddenCoordinate = newCoordinate
+    
+        
+        }
 
 
 }

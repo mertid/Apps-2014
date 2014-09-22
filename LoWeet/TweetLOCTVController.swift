@@ -25,14 +25,14 @@ class TweetLOCTVController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return LocationData.mainData().locations.count
+        return LocationData.mainData().tweetLocations.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("tweetLocationCell", forIndexPath: indexPath) as TweetLocTVC
 
-        var tweetLocation = LocationData.mainData().locations[indexPath.row]
+        var tweetLocation = LocationData.mainData().tweetLocations[indexPath.row]
         
         if let tweet: AnyObject = tweetLocation["tweet"] {
             cell.tweetTextView.text = tweetLocation["tweet"]! as String
