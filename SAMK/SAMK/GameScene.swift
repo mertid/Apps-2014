@@ -8,38 +8,91 @@
 
 import SpriteKit
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
+
+    var player1 = Character(animal: "bunny")
+    var player2 = Character(animal: "panda")
+   
+    var sun = SKSpriteNode(imageNamed: "sun")
+    
+    
     override func didMoveToView(view: SKView) {
+      
         /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
         
-        self.addChild(myLabel)
+        self.backgroundColor = UIColor(red:0.078, green:0.827, blue:0.949, alpha:1.0)
+        
+        self.physicsBody = SKPhysicsBody(edgeLoopFromRect: self.frame)
+        self.physicsWorld.contactDelegate = self
+    
+        sun.size = CGSizeMake(SCREEN_HEIGHT, SCREEN_HEIGHT)
+        sun.position = CGPointMake(SCREEN_WIDTH / 2.0, SCREEN_HEIGHT / 2.0)
+        
+        self.addChild(sun)
+        
+        var bg = SKSpriteNode(imageNamed: "bg_front")
+        bg.size = self.size
+        bg.position = sun.position
+        self.addChild(bg)
+        
+        player1.body.position = CGPointMake(SCREEN_WIDTH / 2.0 , 100)
+        
+        
+        self.addChild(player1.body)
+    
+        player2.body.position = CGPointMake(SCREEN_WIDTH / 2.0 , 300)
+        self.addChild(player2.body)
+        
+        var floor = SKShapeNode(rectOfSize: CGSizeMake(SCREEN_WIDTH,10))
+        floor.fillColor = UIColor.darkGrayColor()
+        floor.position = CGPointMake(SCREEN_WIDTH / 2.0, 6)
+    
+        self.addChild(floor)
+         println(floor)
+    
+        floor.physicsBody = SKPhysicsBody(rectangleOfSize: floor.frame.size)
+        floor.physicsBody?.affectedByGravity = false
+        floor.physicsBody?.dynamic = false
+        
+       //player1.body.physicsBody?.contactTestBitMask = 1
+        
+        var floor1 = SKSpriteNode(imageNamed: "cloud")
+        floor1.size = CGSizeMake(212, 55)
+        floor1.position = CGPointMake(SCREEN_WIDTH / 2.0, 120)
+        
+        floor1.physicsBody = SKPhysicsBody(rectangleOfSize: floor1.frame.size)
+        floor1.physicsBody?.affectedByGravity = false
+        floor1.physicsBody?.dynamic = false
+
+        self.addChild(floor1)
+
+    
+    
     }
     
-    override func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-        /* Called when a touch begins */
+    func didBeginContact(contact: SKPhysicsContact) {
         
-        for touch: AnyObject in touches {
-            let location = touch.locationInNode(self)
+        if contact.bodyA.node == self {
             
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
-            
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
+            contact.bodyB.node?.removeFromParent()
         }
+        
+        player1.checkHit(contact.bodyA, bodyB: contact.bodyB)
+        player1.checkHit(contact.bodyB, bodyB: contact.bodyA)
+        
+        player2.checkHit(contact.bodyA, bodyB: contact.bodyB)
+        player2.checkHit(contact.bodyB, bodyB: contact.bodyA)
+
     }
-   
+    
+    
     override func update(currentTime: CFTimeInterval) {
         /* Called before each frame is rendered */
+    
+    
+        sun.zRotation += 0.01
+    
     }
+    
+    
 }

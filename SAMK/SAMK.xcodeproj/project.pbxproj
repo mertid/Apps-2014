@@ -15,10 +15,16 @@
 		22C48A7E19D064FE006CF453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C48A7D19D064FE006CF453 /* Images.xcassets */; };
 		22C48A8119D064FE006CF453 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22C48A7F19D064FE006CF453 /* LaunchScreen.xib */; };
 		22C48A8D19D064FE006CF453 /* SAMKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C48A8C19D064FE006CF453 /* SAMKTests.swift */; };
-		22C48A9719D06737006CF453 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C48A9619D06737006CF453 /* Character.swift */; };
 		22C48A9919D06786006CF453 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C48A9819D06785006CF453 /* StatusViewController.swift */; };
 		22C48A9B19D067AD006CF453 /* ControlsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C48A9A19D067AD006CF453 /* ControlsViewController.swift */; };
 		22C48A9D19D06800006CF453 /* PlayerConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C48A9C19D06800006CF453 /* PlayerConnect.swift */; };
+		22C48A9F19D06E78006CF453 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C48A9E19D06E78006CF453 /* Constants.swift */; };
+		22D01DFF19D2FB7C00D20E0E /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D01DFC19D2FB7C00D20E0E /* cloud.png */; };
+		22D01E0019D2FB7C00D20E0E /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D01DFD19D2FB7C00D20E0E /* sun.png */; };
+		22D01E0519D2FEC200D20E0E /* bg_front.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D01E0419D2FEC200D20E0E /* bg_front.png */; };
+		22D01E0819D3031C00D20E0E /* bunny.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 22D01E0619D3031C00D20E0E /* bunny.atlas */; };
+		22D01E0919D3031C00D20E0E /* panda.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 22D01E0719D3031C00D20E0E /* panda.atlas */; };
+		22D01E0B19D317EC00D20E0E /* 500px-Fireball_NSMB.png in Resources */ = {isa = PBXBuildFile; fileRef = 22D01E0A19D317EC00D20E0E /* 500px-Fireball_NSMB.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,13 @@
 		22C48A9819D06785006CF453 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		22C48A9A19D067AD006CF453 /* ControlsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControlsViewController.swift; sourceTree = "<group>"; };
 		22C48A9C19D06800006CF453 /* PlayerConnect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerConnect.swift; sourceTree = "<group>"; };
+		22C48A9E19D06E78006CF453 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		22D01DFC19D2FB7C00D20E0E /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud.png; path = ../../../../SAMK_files/cloud.png; sourceTree = "<group>"; };
+		22D01DFD19D2FB7C00D20E0E /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sun.png; path = ../../../../SAMK_files/sun.png; sourceTree = "<group>"; };
+		22D01E0419D2FEC200D20E0E /* bg_front.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_front.png; path = ../../../../bg_front.png; sourceTree = "<group>"; };
+		22D01E0619D3031C00D20E0E /* bunny.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = bunny.atlas; path = ../../../../SAMK_files/bunny.atlas; sourceTree = "<group>"; };
+		22D01E0719D3031C00D20E0E /* panda.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = panda.atlas; path = ../../../../SAMK_files/panda.atlas; sourceTree = "<group>"; };
+		22D01E0A19D317EC00D20E0E /* 500px-Fireball_NSMB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "500px-Fireball_NSMB.png"; path = "../../../../500px-Fireball_NSMB.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +84,11 @@
 		22C48A6419D064FE006CF453 = {
 			isa = PBXGroup;
 			children = (
+				22C48A9E19D06E78006CF453 /* Constants.swift */,
 				22C48A6F19D064FE006CF453 /* SAMK */,
 				22C48A8919D064FE006CF453 /* SAMKTests */,
 				22C48A6E19D064FE006CF453 /* Products */,
+				22D01E0119D2FB8C00D20E0E /* Images */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +143,20 @@
 				22C48A8B19D064FE006CF453 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22D01E0119D2FB8C00D20E0E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				22D01DFC19D2FB7C00D20E0E /* cloud.png */,
+				22D01DFD19D2FB7C00D20E0E /* sun.png */,
+				22D01E0A19D317EC00D20E0E /* 500px-Fireball_NSMB.png */,
+				22D01E0419D2FEC200D20E0E /* bg_front.png */,
+				22D01E0619D3031C00D20E0E /* bunny.atlas */,
+				22D01E0719D3031C00D20E0E /* panda.atlas */,
+			);
+			name = Images;
+			path = SAMK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +239,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22D01E0B19D317EC00D20E0E /* 500px-Fireball_NSMB.png in Resources */,
+				22D01E0919D3031C00D20E0E /* panda.atlas in Resources */,
+				22D01E0019D2FB7C00D20E0E /* sun.png in Resources */,
 				22C48A8119D064FE006CF453 /* LaunchScreen.xib in Resources */,
+				22D01E0819D3031C00D20E0E /* bunny.atlas in Resources */,
 				22C48A7E19D064FE006CF453 /* Images.xcassets in Resources */,
+				22D01DFF19D2FB7C00D20E0E /* cloud.png in Resources */,
+				22D01E0519D2FEC200D20E0E /* bg_front.png in Resources */,
 				22C48A7519D064FE006CF453 /* GameScene.sks in Resources */,
 				22C48A7C19D064FE006CF453 /* Main.storyboard in Resources */,
 			);
@@ -236,8 +271,8 @@
 				22C48A9B19D067AD006CF453 /* ControlsViewController.swift in Sources */,
 				22C48A7319D064FE006CF453 /* AppDelegate.swift in Sources */,
 				22C48A9D19D06800006CF453 /* PlayerConnect.swift in Sources */,
-				22C48A9719D06737006CF453 /* Character.swift in Sources */,
 				22C48A9919D06786006CF453 /* StatusViewController.swift in Sources */,
+				22C48A9F19D06E78006CF453 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +464,7 @@
 				22C48A9219D064FE006CF453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22C48A9319D064FE006CF453 /* Build configuration list for PBXNativeTarget "SAMKTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +473,7 @@
 				22C48A9519D064FE006CF453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

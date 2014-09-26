@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QUB-Xg-Nsf">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Ipad View Controller-->
+        <scene sceneID="DiH-FV-0zt">
+            <objects>
+                <viewController id="QUB-Xg-Nsf" customClass="IpadViewController" customModule="Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cEH-Gy-j7r"/>
+                        <viewControllerLayoutGuide type="bottom" id="eyx-E2-zAI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QUM-f7-3aE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Hd2-jy-vnd">
+                                <rect key="frame" x="-16" y="-8" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="047-8H-HEg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yyw-cu-RTj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1598" y="596"/>
+        </scene>
+    </scenes>
+</document>

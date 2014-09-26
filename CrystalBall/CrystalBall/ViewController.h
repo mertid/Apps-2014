@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+@class CrystalBall;
 
 @interface ViewController : UIViewController
+
+- (IBAction)buttonPressed;
+
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+
+@property (strong, nonatomic) CrystalBall * crystalBall;
 
 
 @end
