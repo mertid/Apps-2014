@@ -7,8 +7,17 @@
 //
 
 #import "AppDelegate.h"
+#import "Reachability.h"
+#import <Parse/Parse.h>
+#import <FacebookSDK/FacebookSDK.h>
+#import <ParseFacebookUtils/PFFacebookUtils.h>
+#import "WelcomeVC.h"
+#import <UIKit/UIKit.h>
 
 @interface AppDelegate ()
+
+@property (nonatomic, strong) WelcomeVC *welcomeViewController;
+
 
 @end
 
@@ -16,6 +25,21 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  
+    [Parse setApplicationId:@"gXOiGkvm5G4pFLT5xfbNr6h6BLfM2IkvOaRw1wGe" clientKey:@"2Y89k0epT75rHpJZknoiF0lrtb4HfvEoBEfUFVPZ"];
+    [PFFacebookUtils initializeFacebook];
+ 
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+
+    self.welcomeViewController = [[WelcomeVC alloc] init];
+    
+    self.navController = [[UINavigationController alloc] initWithRootViewController:self.welcomeViewController];
+    self.navController.navigationBarHidden = YES;
+    
+    self.window.rootViewController = self.navController;
+    [self.window makeKeyAndVisible];
+
+    
     // Override point for customization after application launch.
     return YES;
 }

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221CFB2019D89FDC001FC261 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB1F19D89FDC001FC261 /* Constants.m */; };
+		221CFB2319D8A56B001FC261 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2219D8A56B001FC261 /* Utility.m */; };
+		221CFB2719D8A6CE001FC261 /* UIImage+ResizeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2619D8A6CE001FC261 /* UIImage+ResizeAdditions.m */; };
+		221CFB2A19D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2919D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m */; };
+		221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2C19D8A737001FC261 /* UIImage+AlphaAdditions.m */; };
+		221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2F19D8A746001FC261 /* UIImage+Alpha.m */; };
 		22F05A6819D89352005C0622 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6719D89352005C0622 /* main.m */; };
 		22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6A19D89352005C0622 /* AppDelegate.m */; };
 		22F05A6E19D89352005C0622 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6D19D89352005C0622 /* ViewController.m */; };
@@ -17,9 +23,12 @@
 		22F05A8E19D89437005C0622 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A8C19D89437005C0622 /* Parse.framework */; };
 		22F05A8F19D89437005C0622 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */; };
 		22F05A9119D89456005C0622 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A9019D89456005C0622 /* FacebookSDK.framework */; };
+		22F05A9419D8954C005C0622 /* WelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A9319D8954C005C0622 /* WelcomeVC.m */; };
 		22F05A9B19D896FE005C0622 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A9A19D896FE005C0622 /* Reachability.m */; };
 		22F05A9D19D89A31005C0622 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A9C19D89A31005C0622 /* Bolts.framework */; };
 		22F05A9F19D89A70005C0622 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A9E19D89A70005C0622 /* MobileCoreServices.framework */; };
+		22F05AA219D89BD1005C0622 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05AA119D89BD1005C0622 /* LoginVC.m */; };
+		22F05AA419D89D36005C0622 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05AA319D89D36005C0622 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		221CFB1E19D89FDC001FC261 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		221CFB1F19D89FDC001FC261 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		221CFB2119D8A56B001FC261 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
+		221CFB2219D8A56B001FC261 /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
+		221CFB2519D8A6CE001FC261 /* UIImage+ResizeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ResizeAdditions.h"; sourceTree = "<group>"; };
+		221CFB2619D8A6CE001FC261 /* UIImage+ResizeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ResizeAdditions.m"; sourceTree = "<group>"; };
+		221CFB2819D8A72E001FC261 /* UIImage+RoundedCornerAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+RoundedCornerAdditions.h"; sourceTree = "<group>"; };
+		221CFB2919D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RoundedCornerAdditions.m"; sourceTree = "<group>"; };
+		221CFB2B19D8A737001FC261 /* UIImage+AlphaAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AlphaAdditions.h"; sourceTree = "<group>"; };
+		221CFB2C19D8A737001FC261 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
+		221CFB2E19D8A746001FC261 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
+		221CFB2F19D8A746001FC261 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		22F05A6219D89352005C0622 /* tix4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tix4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F05A6619D89352005C0622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F05A6719D89352005C0622 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,10 +70,15 @@
 		22F05A8C19D89437005C0622 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		22F05A9019D89456005C0622 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		22F05A9219D8954C005C0622 /* WelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeVC.h; sourceTree = "<group>"; };
+		22F05A9319D8954C005C0622 /* WelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeVC.m; sourceTree = "<group>"; };
 		22F05A9919D896FE005C0622 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		22F05A9A19D896FE005C0622 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		22F05A9C19D89A31005C0622 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		22F05A9E19D89A70005C0622 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		22F05AA019D89BD1005C0622 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		22F05AA119D89BD1005C0622 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		22F05AA319D89D36005C0622 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F05AA419D89D36005C0622 /* Social.framework in Frameworks */,
 				22F05A9F19D89A70005C0622 /* MobileCoreServices.framework in Frameworks */,
 				22F05A9119D89456005C0622 /* FacebookSDK.framework in Frameworks */,
 				22F05A9D19D89A31005C0622 /* Bolts.framework in Frameworks */,
@@ -78,13 +105,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		221CFB2419D8A6C1001FC261 /* categories */ = {
+			isa = PBXGroup;
+			children = (
+				221CFB2E19D8A746001FC261 /* UIImage+Alpha.h */,
+				221CFB2F19D8A746001FC261 /* UIImage+Alpha.m */,
+				221CFB2B19D8A737001FC261 /* UIImage+AlphaAdditions.h */,
+				221CFB2C19D8A737001FC261 /* UIImage+AlphaAdditions.m */,
+				221CFB2819D8A72E001FC261 /* UIImage+RoundedCornerAdditions.h */,
+				221CFB2919D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m */,
+				221CFB2519D8A6CE001FC261 /* UIImage+ResizeAdditions.h */,
+				221CFB2619D8A6CE001FC261 /* UIImage+ResizeAdditions.m */,
+			);
+			name = categories;
+			sourceTree = "<group>";
+		};
 		22F05A5919D89352005C0622 = {
 			isa = PBXGroup;
 			children = (
-				22F05A9519D895FC005C0622 /* Vendor */,
 				22F05A6419D89352005C0622 /* tix4u */,
 				22F05A7E19D89352005C0622 /* tix4uTests */,
 				22F05A6319D89352005C0622 /* Products */,
+				22F05A9519D895FC005C0622 /* Vendor */,
 				22F05A8B19D89410005C0622 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -101,14 +143,23 @@
 		22F05A6419D89352005C0622 /* tix4u */ = {
 			isa = PBXGroup;
 			children = (
+				221CFB2419D8A6C1001FC261 /* categories */,
 				22F05A6919D89352005C0622 /* AppDelegate.h */,
 				22F05A6A19D89352005C0622 /* AppDelegate.m */,
 				22F05A6C19D89352005C0622 /* ViewController.h */,
 				22F05A6D19D89352005C0622 /* ViewController.m */,
+				22F05A9219D8954C005C0622 /* WelcomeVC.h */,
+				22F05A9319D8954C005C0622 /* WelcomeVC.m */,
 				22F05A6F19D89352005C0622 /* Main.storyboard */,
 				22F05A7219D89352005C0622 /* Images.xcassets */,
 				22F05A7419D89352005C0622 /* LaunchScreen.xib */,
 				22F05A6519D89352005C0622 /* Supporting Files */,
+				22F05AA019D89BD1005C0622 /* LoginVC.h */,
+				22F05AA119D89BD1005C0622 /* LoginVC.m */,
+				221CFB1E19D89FDC001FC261 /* Constants.h */,
+				221CFB1F19D89FDC001FC261 /* Constants.m */,
+				221CFB2119D8A56B001FC261 /* Utility.h */,
+				221CFB2219D8A56B001FC261 /* Utility.m */,
 			);
 			path = tix4u;
 			sourceTree = "<group>";
@@ -142,6 +193,7 @@
 		22F05A8B19D89410005C0622 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22F05AA319D89D36005C0622 /* Social.framework */,
 				22F05A9E19D89A70005C0622 /* MobileCoreServices.framework */,
 				22F05A9C19D89A31005C0622 /* Bolts.framework */,
 				22F05A9019D89456005C0622 /* FacebookSDK.framework */,
@@ -268,9 +320,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				221CFB2A19D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m in Sources */,
+				221CFB2319D8A56B001FC261 /* Utility.m in Sources */,
+				221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */,
 				22F05A6E19D89352005C0622 /* ViewController.m in Sources */,
 				22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */,
+				221CFB2719D8A6CE001FC261 /* UIImage+ResizeAdditions.m in Sources */,
+				22F05AA219D89BD1005C0622 /* LoginVC.m in Sources */,
 				22F05A6819D89352005C0622 /* main.m in Sources */,
+				221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */,
+				22F05A9419D8954C005C0622 /* WelcomeVC.m in Sources */,
+				221CFB2019D89FDC001FC261 /* Constants.m in Sources */,
 				22F05A9B19D896FE005C0622 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +532,7 @@
 				22F05A8719D89352005C0622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		22F05A8819D89352005C0622 /* Build configuration list for PBXNativeTarget "tix4uTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +541,7 @@
 				22F05A8A19D89352005C0622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
