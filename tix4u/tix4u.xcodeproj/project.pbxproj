@@ -14,6 +14,9 @@
 		22F05A7319D89352005C0622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A7219D89352005C0622 /* Images.xcassets */; };
 		22F05A7619D89352005C0622 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A7419D89352005C0622 /* LaunchScreen.xib */; };
 		22F05A8219D89352005C0622 /* tix4uTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A8119D89352005C0622 /* tix4uTests.m */; };
+		22F05A8E19D89437005C0622 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A8C19D89437005C0622 /* Parse.framework */; };
+		22F05A8F19D89437005C0622 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */; };
+		22F05A9119D89456005C0622 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A9019D89456005C0622 /* FacebookSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		22F05A7B19D89352005C0622 /* tix4uTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tix4uTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F05A8019D89352005C0622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F05A8119D89352005C0622 /* tix4uTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tix4uTests.m; sourceTree = "<group>"; };
+		22F05A8C19D89437005C0622 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		22F05A9019D89456005C0622 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22F05A8F19D89437005C0622 /* ParseFacebookUtils.framework in Frameworks */,
+				22F05A8E19D89437005C0622 /* Parse.framework in Frameworks */,
+				22F05A9119D89456005C0622 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +75,7 @@
 				22F05A6419D89352005C0622 /* tix4u */,
 				22F05A7E19D89352005C0622 /* tix4uTests */,
 				22F05A6319D89352005C0622 /* Products */,
+				22F05A8B19D89410005C0622 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +127,16 @@
 				22F05A8019D89352005C0622 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22F05A8B19D89410005C0622 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22F05A9019D89456005C0622 /* FacebookSDK.framework */,
+				22F05A8C19D89437005C0622 /* Parse.framework */,
+				22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +365,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tix4u/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -355,6 +379,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = tix4u/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
