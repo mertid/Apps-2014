@@ -17,6 +17,9 @@
 		22F05A8E19D89437005C0622 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A8C19D89437005C0622 /* Parse.framework */; };
 		22F05A8F19D89437005C0622 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */; };
 		22F05A9119D89456005C0622 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A9019D89456005C0622 /* FacebookSDK.framework */; };
+		22F05A9B19D896FE005C0622 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A9A19D896FE005C0622 /* Reachability.m */; };
+		22F05A9D19D89A31005C0622 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A9C19D89A31005C0622 /* Bolts.framework */; };
+		22F05A9F19D89A70005C0622 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A9E19D89A70005C0622 /* MobileCoreServices.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,10 @@
 		22F05A8C19D89437005C0622 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		22F05A9019D89456005C0622 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		22F05A9919D896FE005C0622 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		22F05A9A19D896FE005C0622 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		22F05A9C19D89A31005C0622 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		22F05A9E19D89A70005C0622 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +60,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F05A8F19D89437005C0622 /* ParseFacebookUtils.framework in Frameworks */,
-				22F05A8E19D89437005C0622 /* Parse.framework in Frameworks */,
+				22F05A9F19D89A70005C0622 /* MobileCoreServices.framework in Frameworks */,
 				22F05A9119D89456005C0622 /* FacebookSDK.framework in Frameworks */,
+				22F05A9D19D89A31005C0622 /* Bolts.framework in Frameworks */,
+				22F05A8E19D89437005C0622 /* Parse.framework in Frameworks */,
+				22F05A8F19D89437005C0622 /* ParseFacebookUtils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +81,7 @@
 		22F05A5919D89352005C0622 = {
 			isa = PBXGroup;
 			children = (
+				22F05A9519D895FC005C0622 /* Vendor */,
 				22F05A6419D89352005C0622 /* tix4u */,
 				22F05A7E19D89352005C0622 /* tix4uTests */,
 				22F05A6319D89352005C0622 /* Products */,
@@ -132,11 +142,30 @@
 		22F05A8B19D89410005C0622 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22F05A9E19D89A70005C0622 /* MobileCoreServices.framework */,
+				22F05A9C19D89A31005C0622 /* Bolts.framework */,
 				22F05A9019D89456005C0622 /* FacebookSDK.framework */,
 				22F05A8C19D89437005C0622 /* Parse.framework */,
 				22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22F05A9519D895FC005C0622 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				22F05A9819D896E1005C0622 /* Reachability */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		22F05A9819D896E1005C0622 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				22F05A9919D896FE005C0622 /* Reachability.h */,
+				22F05A9A19D896FE005C0622 /* Reachability.m */,
+			);
+			name = Reachability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +271,7 @@
 				22F05A6E19D89352005C0622 /* ViewController.m in Sources */,
 				22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */,
 				22F05A6819D89352005C0622 /* main.m in Sources */,
+				22F05A9B19D896FE005C0622 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
