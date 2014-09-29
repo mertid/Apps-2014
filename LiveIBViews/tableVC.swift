@@ -34,9 +34,9 @@ class tableVC: UITableViewController {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as TableViewCell
 
-        // Configure the cell...
+        //Configure the cell...
 
-        cell.main //?.text = items[indexPath.row]
+        cell.mainLabel.text = items[indexPath.row]
         
         return cell
     }

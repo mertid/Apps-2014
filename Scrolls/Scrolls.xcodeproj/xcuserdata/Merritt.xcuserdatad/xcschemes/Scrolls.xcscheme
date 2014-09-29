@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22D01E4E19D5AEFF00D20E0E"
-               BuildableName = "LiveIBViews.app"
-               BlueprintName = "LiveIBViews"
-               ReferencedContainer = "container:LiveIBViews.xcodeproj">
+               BlueprintIdentifier = "221CFB3919D99237001FC261"
+               BuildableName = "Scrolls.app"
+               BlueprintName = "Scrolls"
+               ReferencedContainer = "container:Scrolls.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,24 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22D01E6319D5AEFF00D20E0E"
-               BuildableName = "LiveIBViewsTests.xctest"
-               BlueprintName = "LiveIBViewsTests"
-               ReferencedContainer = "container:LiveIBViews.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "221CFB6D19D99FA6001FC261"
-               BuildableName = "LiveIBViewsKitTests.xctest"
-               BlueprintName = "LiveIBViewsKitTests"
-               ReferencedContainer = "container:LiveIBViews.xcodeproj">
+               BlueprintIdentifier = "221CFB4E19D99237001FC261"
+               BuildableName = "ScrollsTests.xctest"
+               BlueprintName = "ScrollsTests"
+               ReferencedContainer = "container:Scrolls.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -60,30 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "22D01E6319D5AEFF00D20E0E"
-               BuildableName = "LiveIBViewsTests.xctest"
-               BlueprintName = "LiveIBViewsTests"
-               ReferencedContainer = "container:LiveIBViews.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "221CFB6D19D99FA6001FC261"
-               BuildableName = "LiveIBViewsKitTests.xctest"
-               BlueprintName = "LiveIBViewsKitTests"
-               ReferencedContainer = "container:LiveIBViews.xcodeproj">
+               BlueprintIdentifier = "221CFB4E19D99237001FC261"
+               BuildableName = "ScrollsTests.xctest"
+               BlueprintName = "ScrollsTests"
+               ReferencedContainer = "container:Scrolls.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22D01E4E19D5AEFF00D20E0E"
-            BuildableName = "LiveIBViews.app"
-            BlueprintName = "LiveIBViews"
-            ReferencedContainer = "container:LiveIBViews.xcodeproj">
+            BlueprintIdentifier = "221CFB3919D99237001FC261"
+            BuildableName = "Scrolls.app"
+            BlueprintName = "Scrolls"
+            ReferencedContainer = "container:Scrolls.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -99,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22D01E4E19D5AEFF00D20E0E"
-            BuildableName = "LiveIBViews.app"
-            BlueprintName = "LiveIBViews"
-            ReferencedContainer = "container:LiveIBViews.xcodeproj">
+            BlueprintIdentifier = "221CFB3919D99237001FC261"
+            BuildableName = "Scrolls.app"
+            BlueprintName = "Scrolls"
+            ReferencedContainer = "container:Scrolls.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -117,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "22D01E4E19D5AEFF00D20E0E"
-            BuildableName = "LiveIBViews.app"
-            BlueprintName = "LiveIBViews"
-            ReferencedContainer = "container:LiveIBViews.xcodeproj">
+            BlueprintIdentifier = "221CFB3919D99237001FC261"
+            BuildableName = "Scrolls.app"
+            BlueprintName = "Scrolls"
+            ReferencedContainer = "container:Scrolls.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

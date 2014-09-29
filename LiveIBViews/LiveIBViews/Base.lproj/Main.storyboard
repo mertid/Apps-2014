@@ -20,20 +20,20 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BWw-0n-s86" id="d9z-wV-RLu">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ts2-Ej-D2s">
-                                            <rect key="frame" x="440" y="43" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ts2-Ej-D2s" userLabel="mainLabel">
+                                            <rect key="frame" x="274" y="68" width="111" height="20.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOc-BX-Sdc">
-                                            <rect key="frame" x="440" y="109" width="42" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MOc-BX-Sdc" userLabel="subLabel">
+                                            <rect key="frame" x="279" y="116" width="106" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Hg-31f">
-                                            <rect key="frame" x="59" y="25" width="263" height="188.5"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Gm-Hg-31f" userLabel="donutView" customClass="RatingView" customModule="LiveIBViewsKit">
+                                            <rect key="frame" x="28" y="28" width="185.5" height="185.5"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="5Gm-Hg-31f" secondAttribute="height" multiplier="1:1" id="5TY-BL-23z"/>
@@ -41,8 +41,9 @@
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="5Gm-Hg-31f" firstAttribute="leading" secondItem="d9z-wV-RLu" secondAttribute="leadingMargin" constant="51" id="5eX-N1-S1R"/>
-                                        <constraint firstItem="5Gm-Hg-31f" firstAttribute="leading" secondItem="d9z-wV-RLu" secondAttribute="leadingMargin" constant="51" id="8ps-ZZ-6hz"/>
+                                        <constraint firstItem="5Gm-Hg-31f" firstAttribute="top" secondItem="d9z-wV-RLu" secondAttribute="topMargin" constant="20" id="ATO-Rb-HKd"/>
+                                        <constraint firstItem="5Gm-Hg-31f" firstAttribute="leading" secondItem="d9z-wV-RLu" secondAttribute="leadingMargin" constant="20" id="BDh-uR-Kvq"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="5Gm-Hg-31f" secondAttribute="bottom" constant="18" id="wLq-0u-Iau"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
