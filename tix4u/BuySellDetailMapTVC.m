@@ -21,6 +21,7 @@
     [super viewDidLoad];
     items = @[];
     self.view.backgroundColor = [UIColor colorWithRed:0.804f green:0.914f blue:0.918f alpha:1.0f];
+    self.navigationController.navigationBarHidden = true;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

@@ -10,9 +10,6 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "BuySellDetailMapTVC.h"
-#import "tabBar.h"
-
-
 
 @interface MapVC() <MKMapViewDelegate, CLLocationManagerDelegate>
 
@@ -23,16 +20,13 @@
     MKMapView * myMapView;
     BuySellDetailMapTVC * tableVC;
     CLLocationManager * locationManager;
-    tabBar * mytabBar;
-    
 }
 
 - (void)viewDidLoad {
  
-
     [super viewDidLoad];
+    self.navigationController.navigationBarHidden = true;
 
-    
     myMapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 280)];
     myMapView.delegate = self;
     [self.view addSubview:myMapView];
@@ -48,9 +42,6 @@
     [tableVC.tableView setSeparatorColor:[UIColor colorWithRed:0.000f green:0.651f blue:0.910f alpha:1.0f]];
     
     [self.view addSubview:tableVC.tableView];
-    
-    
-    
     
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;

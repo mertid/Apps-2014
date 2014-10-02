@@ -61,11 +61,11 @@
             </objects>
             <point key="canvasLocation" x="139" y="136"/>
         </scene>
-        <!--Item-->
+        <!--map-->
         <scene sceneID="E24-z9-oh4">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZRI-z3-Jzg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="MfN-rI-VSh"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZRI-z3-Jzg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="map" id="MfN-rI-VSh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="x4t-BG-kYc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -80,11 +80,11 @@
             </objects>
             <point key="canvasLocation" x="1763" y="136"/>
         </scene>
-        <!--Item-->
+        <!--Buy.Sell.-->
         <scene sceneID="7XB-us-c4T">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fMU-mc-0du" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="gam-ya-wRS"/>
+                    <tabBarItem key="tabBarItem" title="Buy.Sell." id="gam-ya-wRS"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="eH0-C0-F0X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

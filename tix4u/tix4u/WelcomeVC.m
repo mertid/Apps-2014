@@ -32,6 +32,7 @@
     // If not logged in, present login view controller
     if (![PFUser currentUser]) {
 
+        NSLog(@"Need user to log in");
         LoginVC *loginVC = [[LoginVC alloc] init];
         [loginVC setDelegate:self];
         loginVC.fields = PFLogInFieldsFacebook;
@@ -41,15 +42,14 @@
          
         return;
     }
-    // Present Anypic UI
     
     NSLog(@"Ok user is already logged in");
     // Refresh current user with server side data -- checks if user is still valid and so on
     [[PFUser currentUser] refreshInBackgroundWithTarget:self selector:@selector(refreshCurrentUserCallbackWithResult:error:)];
     
-    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"tabBarC" bundle:nil];
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"BuySell" bundle:nil];
     
-    UITabBarController* tbC = (UITabBarController*)[sb instantiateViewControllerWithIdentifier:@"tabBarC"];
+    UITabBarController* tbC = (UITabBarController*)[sb instantiateInitialViewController];
     [self presentViewController:tbC animated:true completion:nil];
 
     /*

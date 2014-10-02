@@ -27,6 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationController.navigationBarHidden = true;
     
     UIButton * sellButton = [[UIButton alloc]initWithFrame:(CGRectMake(20, 85, 130, 60))];
     sellButton.backgroundColor = [UIColor clearColor];

@@ -188,9 +188,9 @@
 		22F05A6419D89352005C0622 /* tix4u */ = {
 			isa = PBXGroup;
 			children = (
+				229FC04219DDE60F000A0C8C /* Controllers */,
 				229FC04919DDED52000A0C8C /* Utility */,
 				229FC04519DDEAEA000A0C8C /* Storyboards */,
-				229FC04219DDE60F000A0C8C /* Controllers */,
 				221CFB2419D8A6C1001FC261 /* categories */,
 				22F05A6919D89352005C0622 /* AppDelegate.h */,
 				22F05A6A19D89352005C0622 /* AppDelegate.m */,

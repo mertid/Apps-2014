@@ -7,6 +7,7 @@
 //
 
 #import "BuySellVC.h"
+#import <UIKit/UIKit.h>
 
 @interface BuySellVC : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
