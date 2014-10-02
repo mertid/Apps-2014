@@ -6,9 +6,9 @@
 //  Copyright (c) 2014 Merritt Tidwell. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BuySellVC.h"
 
-@interface BuySellVC : ViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface BuySellVC : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (strong, nonatomic) UIPickerView * ticketPicker;
 @property (strong, nonatomic) UIPickerView * ratePicker;

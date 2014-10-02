@@ -16,9 +16,7 @@
 		224481A619DC634700961FAC /* BuySellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224481A519DC634700961FAC /* BuySellVC.m */; };
 		224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2ED19DCA9D9001935E7 /* MapVC.m */; };
 		224FD2F119DCAF63001935E7 /* BuySellDetailMapTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2F019DCAF63001935E7 /* BuySellDetailMapTVC.m */; };
-		229FC04119DDA811000A0C8C /* tabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC04019DDA811000A0C8C /* tabBar.m */; };
 		229FC04419DDEAE5000A0C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FC04319DDEAE5000A0C8C /* Main.storyboard */; };
-		229FC04819DDEC91000A0C8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC04719DDEC91000A0C8C /* ViewController.m */; };
 		22F05A6819D89352005C0622 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6719D89352005C0622 /* main.m */; };
 		22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6A19D89352005C0622 /* AppDelegate.m */; };
 		22F05A7119D89352005C0622 /* BuySell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A6F19D89352005C0622 /* BuySell.storyboard */; };
@@ -65,11 +63,7 @@
 		224FD2ED19DCA9D9001935E7 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapVC.m; path = ../MapVC.m; sourceTree = "<group>"; };
 		224FD2EF19DCAF63001935E7 /* BuySellDetailMapTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuySellDetailMapTVC.h; path = ../BuySellDetailMapTVC.h; sourceTree = "<group>"; };
 		224FD2F019DCAF63001935E7 /* BuySellDetailMapTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuySellDetailMapTVC.m; path = ../BuySellDetailMapTVC.m; sourceTree = "<group>"; };
-		229FC03F19DDA811000A0C8C /* tabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tabBar.h; path = ../tabBar.h; sourceTree = "<group>"; };
-		229FC04019DDA811000A0C8C /* tabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = tabBar.m; path = ../tabBar.m; sourceTree = "<group>"; };
 		229FC04319DDEAE5000A0C8C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		229FC04619DDEC91000A0C8C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		229FC04719DDEC91000A0C8C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		22F05A6219D89352005C0622 /* tix4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tix4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F05A6619D89352005C0622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F05A6719D89352005C0622 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,8 +141,6 @@
 				224FD2ED19DCA9D9001935E7 /* MapVC.m */,
 				224481A419DC634700961FAC /* BuySellVC.h */,
 				224481A519DC634700961FAC /* BuySellVC.m */,
-				229FC04619DDEC91000A0C8C /* ViewController.h */,
-				229FC04719DDEC91000A0C8C /* ViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -160,6 +152,17 @@
 				22F05A6F19D89352005C0622 /* BuySell.storyboard */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		229FC04919DDED52000A0C8C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				221CFB2119D8A56B001FC261 /* Utility.h */,
+				221CFB2219D8A56B001FC261 /* Utility.m */,
+				2244816F19DB342100961FAC /* Constants.m */,
+				2244817019DB342100961FAC /* Constants.h */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		22F05A5919D89352005C0622 = {
@@ -185,14 +188,9 @@
 		22F05A6419D89352005C0622 /* tix4u */ = {
 			isa = PBXGroup;
 			children = (
+				229FC04919DDED52000A0C8C /* Utility */,
 				229FC04519DDEAEA000A0C8C /* Storyboards */,
 				229FC04219DDE60F000A0C8C /* Controllers */,
-				229FC03F19DDA811000A0C8C /* tabBar.h */,
-				229FC04019DDA811000A0C8C /* tabBar.m */,
-				221CFB2119D8A56B001FC261 /* Utility.h */,
-				221CFB2219D8A56B001FC261 /* Utility.m */,
-				2244816F19DB342100961FAC /* Constants.m */,
-				2244817019DB342100961FAC /* Constants.h */,
 				221CFB2419D8A6C1001FC261 /* categories */,
 				22F05A6919D89352005C0622 /* AppDelegate.h */,
 				22F05A6A19D89352005C0622 /* AppDelegate.m */,
@@ -370,12 +368,10 @@
 				22F05AA219D89BD1005C0622 /* LoginVC.m in Sources */,
 				22F05A6819D89352005C0622 /* main.m in Sources */,
 				221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */,
-				229FC04819DDEC91000A0C8C /* ViewController.m in Sources */,
 				22F05A9419D8954C005C0622 /* WelcomeVC.m in Sources */,
 				22F05A9B19D896FE005C0622 /* Reachability.m in Sources */,
 				2244817119DB342100961FAC /* Constants.m in Sources */,
 				224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */,
-				229FC04119DDA811000A0C8C /* tabBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
