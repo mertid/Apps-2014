@@ -15,6 +15,8 @@
 		2244818D19DC351500961FAC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2244818B19DC351500961FAC /* LaunchScreen.xib */; };
 		2244819919DC351500961FAC /* tokensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244819819DC351500961FAC /* tokensTests.swift */; };
 		224481A319DC36C700961FAC /* FSTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224481A219DC36C700961FAC /* FSTableViewController.swift */; };
+		224481A819DC777400961FAC /* IGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224481A719DC777400961FAC /* IGTableViewCell.swift */; };
+		224481AA19DC77A400961FAC /* IGTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224481A919DC77A400961FAC /* IGTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		2244819719DC351500961FAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2244819819DC351500961FAC /* tokensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tokensTests.swift; sourceTree = "<group>"; };
 		224481A219DC36C700961FAC /* FSTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FSTableViewController.swift; sourceTree = "<group>"; };
+		224481A719DC777400961FAC /* IGTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGTableViewCell.swift; sourceTree = "<group>"; };
+		224481A919DC77A400961FAC /* IGTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 		2244817219DC351500961FAC = {
 			isa = PBXGroup;
 			children = (
+				224481A919DC77A400961FAC /* IGTableViewController.swift */,
+				224481A719DC777400961FAC /* IGTableViewCell.swift */,
 				224481A219DC36C700961FAC /* FSTableViewController.swift */,
 				2244817D19DC351500961FAC /* tokens */,
 				2244819519DC351500961FAC /* tokensTests */,
@@ -221,6 +227,8 @@
 				2244818519DC351500961FAC /* SecondViewController.swift in Sources */,
 				2244818119DC351500961FAC /* AppDelegate.swift in Sources */,
 				224481A319DC36C700961FAC /* FSTableViewController.swift in Sources */,
+				224481AA19DC77A400961FAC /* IGTableViewController.swift in Sources */,
+				224481A819DC777400961FAC /* IGTableViewCell.swift in Sources */,
 				2244818319DC351500961FAC /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +423,7 @@
 				2244819E19DC351500961FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2244819F19DC351500961FAC /* Build configuration list for PBXNativeTarget "tokensTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +432,7 @@
 				224481A119DC351500961FAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

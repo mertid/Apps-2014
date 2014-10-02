@@ -12,8 +12,11 @@ let API_URL = "https://api.foursquare.com/v2/"
 
 let CLIENT_ID = "ALWCHUNQNTOEAPJ2S3D1SQA13XXHS3MKWZZ4ZUAXKMX15B2P"
 
+
 class FirstViewController: UIViewController {
 
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -29,9 +32,35 @@ class FirstViewController: UIViewController {
     }
  
     @IBAction func findLocations(sender: AnyObject) {
+  
+    
+        foursquareRequest("venues/search", parameter: "near=Buckhead,GA")
     }
 
     @IBAction func findWaldo(sender: AnyObject) {
+
+    
     }
+
+    func foursquareRequest(endpoint: String, parameter: String) {
+        
+        var request = NSURLRequest(URL: NSURL(string: API_URL + endpoint + "?oauth_token=" + FS_TOKEN + "&v=20141001" + parameter ))
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {(response, data, error) -> Void in
+        
+            var resultInfo = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.allZeros, error: nil) as [AnyObject]
+            
+            
+            var fsTVC = self.storyboard?.instantiateViewControllerWithIdentifier("foursquareTVC") as FSTableViewController
+            
+            fsTVC.items = resultInfo
+            
+            self.presentViewController(fsTVC, animated: true, completion: nil)
+    
+            
+        }
+            
+    }
+
 }
 
