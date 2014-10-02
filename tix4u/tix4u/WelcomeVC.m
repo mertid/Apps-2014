@@ -13,7 +13,7 @@
 #import "Constants.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import "Utility.h"
-
+#import "BuySellVC.h"
 @interface WelcomeVC () <PFLogInViewControllerDelegate>
 
 @end
@@ -44,13 +44,20 @@
     // Present Anypic UI
     
     NSLog(@"Ok user is already logged in");
-    UIViewController* test = [[UIViewController alloc] init];
-    test.view.backgroundColor = [UIColor greenColor];
-    [self presentViewController:test animated:YES completion:nil];
-    
     // Refresh current user with server side data -- checks if user is still valid and so on
     [[PFUser currentUser] refreshInBackgroundWithTarget:self selector:@selector(refreshCurrentUserCallbackWithResult:error:)];
     
+    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"tabBarC" bundle:nil];
+    
+    UITabBarController* tbC = (UITabBarController*)[sb instantiateViewControllerWithIdentifier:@"tabBarC"];
+    [self presentViewController:tbC animated:true completion:nil];
+
+    /*
+    BuySellViewController * BSVc = [[BuySellViewController alloc] init];
+    
+    [self presentViewController:BSVc animated:YES completion:nil];
+*/
+
 }
 
 - (void)refreshCurrentUserCallbackWithResult:(PFObject *)refreshedObject error:(NSError *)error {
