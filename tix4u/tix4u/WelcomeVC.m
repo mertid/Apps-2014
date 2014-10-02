@@ -14,11 +14,14 @@
 #import <FacebookSDK/FacebookSDK.h>
 #import "Utility.h"
 #import "BuySellVC.h"
-@interface WelcomeVC () <PFLogInViewControllerDelegate>
+@interface WelcomeVC () <PFLogInViewControllerDelegate, NSURLConnectionDataDelegate>
 
 @end
 
 @implementation WelcomeVC
+{
+    NSMutableData *_data;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -131,6 +134,11 @@
             }
             
             [user saveEventually];
+            
+            // Download user's profile picture
+            NSURL *profilePictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large", [[PFUser currentUser] objectForKey:kPAPUserFacebookIDKey]]];
+            NSURLRequest *profilePictureURLRequest = [NSURLRequest requestWithURL:profilePictureURL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f]; // Facebook profile picture cache policy: Expires in 2 weeks
+            [NSURLConnection connectionWithRequest:profilePictureURLRequest delegate:self];
         }
         
     }
@@ -147,5 +155,18 @@
     }
 }
 
+#pragma mark - NSURLConnectionDataDelegate
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    _data = [[NSMutableData alloc] init];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    [_data appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    [Utility processFacebookProfilePictureData:_data];
+}
 
 @end
