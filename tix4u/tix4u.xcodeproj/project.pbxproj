@@ -17,6 +17,7 @@
 		224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2ED19DCA9D9001935E7 /* MapVC.m */; };
 		224FD2F119DCAF63001935E7 /* BuySellDetailMapTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2F019DCAF63001935E7 /* BuySellDetailMapTVC.m */; };
 		229FC04419DDEAE5000A0C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FC04319DDEAE5000A0C8C /* Main.storyboard */; };
+		229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC04B19DDF1A3000A0C8C /* ProfileVC.m */; };
 		22F05A6819D89352005C0622 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6719D89352005C0622 /* main.m */; };
 		22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6A19D89352005C0622 /* AppDelegate.m */; };
 		22F05A7119D89352005C0622 /* BuySell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A6F19D89352005C0622 /* BuySell.storyboard */; };
@@ -64,6 +65,8 @@
 		224FD2EF19DCAF63001935E7 /* BuySellDetailMapTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuySellDetailMapTVC.h; path = ../BuySellDetailMapTVC.h; sourceTree = "<group>"; };
 		224FD2F019DCAF63001935E7 /* BuySellDetailMapTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuySellDetailMapTVC.m; path = ../BuySellDetailMapTVC.m; sourceTree = "<group>"; };
 		229FC04319DDEAE5000A0C8C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		229FC04A19DDF1A3000A0C8C /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
+		229FC04B19DDF1A3000A0C8C /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
 		22F05A6219D89352005C0622 /* tix4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tix4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F05A6619D89352005C0622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F05A6719D89352005C0622 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 		229FC04219DDE60F000A0C8C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				229FC04A19DDF1A3000A0C8C /* ProfileVC.h */,
+				229FC04B19DDF1A3000A0C8C /* ProfileVC.m */,
 				22F05AA119D89BD1005C0622 /* LoginVC.m */,
 				22F05AA019D89BD1005C0622 /* LoginVC.h */,
 				22F05A9219D8954C005C0622 /* WelcomeVC.h */,
@@ -359,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				224481A619DC634700961FAC /* BuySellVC.m in Sources */,
+				229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */,
 				221CFB2A19D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				221CFB2319D8A56B001FC261 /* Utility.m in Sources */,
 				221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */,
