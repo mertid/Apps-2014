@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		225C010C19E04B240020FCFA /* ButtonsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 225C010B19E04B240020FCFA /* ButtonsTVC.m */; };
+		225C010E19E0A1390020FCFA /* pebble.png in Resources */ = {isa = PBXBuildFile; fileRef = 225C010D19E0A1390020FCFA /* pebble.png */; };
+		229FC05C19DF6E8B000A0C8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC05B19DF6E8B000A0C8C /* main.m */; };
+		229FC05F19DF6E8B000A0C8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC05E19DF6E8B000A0C8C /* AppDelegate.m */; };
+		229FC06219DF6E8B000A0C8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC06119DF6E8B000A0C8C /* ViewController.m */; };
+		229FC06519DF6E8B000A0C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FC06319DF6E8B000A0C8C /* Main.storyboard */; };
+		229FC06719DF6E8B000A0C8C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229FC06619DF6E8B000A0C8C /* Images.xcassets */; };
+		229FC06A19DF6E8B000A0C8C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 229FC06819DF6E8B000A0C8C /* LaunchScreen.xib */; };
+		229FC07619DF6E8B000A0C8C /* Wilma_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC07519DF6E8B000A0C8C /* Wilma_Tests.m */; };
+		229FC08019DF6EE1000A0C8C /* Wilma_300.png in Resources */ = {isa = PBXBuildFile; fileRef = 229FC07F19DF6EE1000A0C8C /* Wilma_300.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		229FC07019DF6E8B000A0C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 229FC04E19DF6E8B000A0C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 229FC05519DF6E8B000A0C8C;
+			remoteInfo = "Wilma!";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		225C010A19E04B240020FCFA /* ButtonsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonsTVC.h; sourceTree = "<group>"; };
+		225C010B19E04B240020FCFA /* ButtonsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonsTVC.m; sourceTree = "<group>"; };
+		225C010D19E0A1390020FCFA /* pebble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pebble.png; sourceTree = "<group>"; };
+		229FC05619DF6E8B000A0C8C /* Wilma!.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wilma!.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229FC05A19DF6E8B000A0C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229FC05B19DF6E8B000A0C8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		229FC05D19DF6E8B000A0C8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		229FC05E19DF6E8B000A0C8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		229FC06019DF6E8B000A0C8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		229FC06119DF6E8B000A0C8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		229FC06419DF6E8B000A0C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		229FC06619DF6E8B000A0C8C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		229FC06919DF6E8B000A0C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		229FC06F19DF6E8B000A0C8C /* Wilma!Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wilma!Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		229FC07419DF6E8B000A0C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229FC07519DF6E8B000A0C8C /* Wilma_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Wilma_Tests.m; sourceTree = "<group>"; };
+		229FC07F19DF6EE1000A0C8C /* Wilma_300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Wilma_300.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		229FC05319DF6E8B000A0C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229FC06C19DF6E8B000A0C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		229FC04D19DF6E8B000A0C8C = {
+			isa = PBXGroup;
+			children = (
+				225C010A19E04B240020FCFA /* ButtonsTVC.h */,
+				225C010B19E04B240020FCFA /* ButtonsTVC.m */,
+				229FC05819DF6E8B000A0C8C /* Wilma! */,
+				229FC07219DF6E8B000A0C8C /* Wilma!Tests */,
+				229FC05719DF6E8B000A0C8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		229FC05719DF6E8B000A0C8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				229FC05619DF6E8B000A0C8C /* Wilma!.app */,
+				229FC06F19DF6E8B000A0C8C /* Wilma!Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		229FC05819DF6E8B000A0C8C /* Wilma! */ = {
+			isa = PBXGroup;
+			children = (
+				229FC05D19DF6E8B000A0C8C /* AppDelegate.h */,
+				229FC05E19DF6E8B000A0C8C /* AppDelegate.m */,
+				229FC06019DF6E8B000A0C8C /* ViewController.h */,
+				229FC06119DF6E8B000A0C8C /* ViewController.m */,
+				229FC06319DF6E8B000A0C8C /* Main.storyboard */,
+				225C010D19E0A1390020FCFA /* pebble.png */,
+				229FC06619DF6E8B000A0C8C /* Images.xcassets */,
+				229FC07F19DF6EE1000A0C8C /* Wilma_300.png */,
+				229FC06819DF6E8B000A0C8C /* LaunchScreen.xib */,
+				229FC05919DF6E8B000A0C8C /* Supporting Files */,
+			);
+			path = "Wilma!";
+			sourceTree = "<group>";
+		};
+		229FC05919DF6E8B000A0C8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				229FC05A19DF6E8B000A0C8C /* Info.plist */,
+				229FC05B19DF6E8B000A0C8C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		229FC07219DF6E8B000A0C8C /* Wilma!Tests */ = {
+			isa = PBXGroup;
+			children = (
+				229FC07519DF6E8B000A0C8C /* Wilma_Tests.m */,
+				229FC07319DF6E8B000A0C8C /* Supporting Files */,
+			);
+			path = "Wilma!Tests";
+			sourceTree = "<group>";
+		};
+		229FC07319DF6E8B000A0C8C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				229FC07419DF6E8B000A0C8C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		229FC05519DF6E8B000A0C8C /* Wilma! */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229FC07919DF6E8B000A0C8C /* Build configuration list for PBXNativeTarget "Wilma!" */;
+			buildPhases = (
+				229FC05219DF6E8B000A0C8C /* Sources */,
+				229FC05319DF6E8B000A0C8C /* Frameworks */,
+				229FC05419DF6E8B000A0C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wilma!";
+			productName = "Wilma!";
+			productReference = 229FC05619DF6E8B000A0C8C /* Wilma!.app */;
+			productType = "com.apple.product-type.application";
+		};
+		229FC06E19DF6E8B000A0C8C /* Wilma!Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 229FC07C19DF6E8B000A0C8C /* Build configuration list for PBXNativeTarget "Wilma!Tests" */;
+			buildPhases = (
+				229FC06B19DF6E8B000A0C8C /* Sources */,
+				229FC06C19DF6E8B000A0C8C /* Frameworks */,
+				229FC06D19DF6E8B000A0C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				229FC07119DF6E8B000A0C8C /* PBXTargetDependency */,
+			);
+			name = "Wilma!Tests";
+			productName = "Wilma!Tests";
+			productReference = 229FC06F19DF6E8B000A0C8C /* Wilma!Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		229FC04E19DF6E8B000A0C8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Merritt Tidwell";
+				TargetAttributes = {
+					229FC05519DF6E8B000A0C8C = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					229FC06E19DF6E8B000A0C8C = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 229FC05519DF6E8B000A0C8C;
+					};
+				};
+			};
+			buildConfigurationList = 229FC05119DF6E8B000A0C8C /* Build configuration list for PBXProject "Wilma!" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 229FC04D19DF6E8B000A0C8C;
+			productRefGroup = 229FC05719DF6E8B000A0C8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				229FC05519DF6E8B000A0C8C /* Wilma! */,
+				229FC06E19DF6E8B000A0C8C /* Wilma!Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		229FC05419DF6E8B000A0C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225C010E19E0A1390020FCFA /* pebble.png in Resources */,
+				229FC08019DF6EE1000A0C8C /* Wilma_300.png in Resources */,
+				229FC06519DF6E8B000A0C8C /* Main.storyboard in Resources */,
+				229FC06A19DF6E8B000A0C8C /* LaunchScreen.xib in Resources */,
+				229FC06719DF6E8B000A0C8C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229FC06D19DF6E8B000A0C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		229FC05219DF6E8B000A0C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229FC06219DF6E8B000A0C8C /* ViewController.m in Sources */,
+				229FC05F19DF6E8B000A0C8C /* AppDelegate.m in Sources */,
+				229FC05C19DF6E8B000A0C8C /* main.m in Sources */,
+				225C010C19E04B240020FCFA /* ButtonsTVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		229FC06B19DF6E8B000A0C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229FC07619DF6E8B000A0C8C /* Wilma_Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		229FC07119DF6E8B000A0C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 229FC05519DF6E8B000A0C8C /* Wilma! */;
+			targetProxy = 229FC07019DF6E8B000A0C8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		229FC06319DF6E8B000A0C8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				229FC06419DF6E8B000A0C8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		229FC06819DF6E8B000A0C8C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				229FC06919DF6E8B000A0C8C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		229FC07719DF6E8B000A0C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		229FC07819DF6E8B000A0C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		229FC07A19DF6E8B000A0C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wilma!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		229FC07B19DF6E8B000A0C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Wilma!/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		229FC07D19DF6E8B000A0C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wilma!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wilma!.app/Wilma!";
+			};
+			name = Debug;
+		};
+		229FC07E19DF6E8B000A0C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Wilma!Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wilma!.app/Wilma!";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		229FC05119DF6E8B000A0C8C /* Build configuration list for PBXProject "Wilma!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229FC07719DF6E8B000A0C8C /* Debug */,
+				229FC07819DF6E8B000A0C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229FC07919DF6E8B000A0C8C /* Build configuration list for PBXNativeTarget "Wilma!" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229FC07A19DF6E8B000A0C8C /* Debug */,
+				229FC07B19DF6E8B000A0C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		229FC07C19DF6E8B000A0C8C /* Build configuration list for PBXNativeTarget "Wilma!Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				229FC07D19DF6E8B000A0C8C /* Debug */,
+				229FC07E19DF6E8B000A0C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 229FC04E19DF6E8B000A0C8C /* Project object */;
+}
