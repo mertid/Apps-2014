@@ -40,6 +40,7 @@
     
     self.fields = PFLogInFieldsUsernameAndPassword;
     self.logInView.usernameField.placeholder = @"Enter your email";
+    NSLog(@"presented loginVC now .... ");
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {

@@ -8,16 +8,24 @@
 
 #import "BuySellVC.h"
 #import "MapVC.h"
-
-@interface BuySellVC()
+#import <Parse/Parse.h>
+@interface BuySellVC () <UITextFieldDelegate>
 {
 
-    NSArray * _ticketData;
+    NSArray * _numberOfTicket;
 
-    NSArray * _rateData;
+    NSArray * _row;
     
-    NSArray * _eventData;
+    NSArray * _section;
     
+    NSDate * _eventDate;
+    
+    NSArray * _eventName;
+    
+    
+    NSString * selectedTicket;
+    NSString * selectedRow;
+    NSString * selectedEvent;
     
 }
 @end
@@ -53,7 +61,7 @@
     self.ticketPicker = [[UIPickerView alloc]initWithFrame:(CGRectMake(55, 175, 50, 50))];
     self.ticketPicker.showsSelectionIndicator = YES;
 //    [self.view addSubview:self.ticketPicker];
-    _ticketData = @[@"Tickets",@"1", @"2", @"3", @"4", @"5", @"6", @"7" , @"8"];
+    _numberOfTicket = @[@"1",@"2"];
     self.ticketPicker.delegate = self;
     self.ticketPicker.dataSource = self;
     self.ticketPicker.tag = 0;
@@ -62,7 +70,7 @@
     self.ratePicker = [[UIPickerView alloc]initWithFrame:CGRectMake(215, 175, 50, 50)];
    self.ratePicker.showsSelectionIndicator = YES;
 //    [self.view addSubview:self.ratePicker];
-    _rateData = @[@"Rating",@"1", @"2", @"3", @"4", @"5"];
+    _section= @[@"1", @"3"];
     self.ratePicker.delegate = self;
     self.ratePicker.dataSource = self;
     self.ratePicker.tag = 1;
@@ -74,18 +82,7 @@
     self.eventPicker.dataSource = self;
     self.eventPicker.tag = 2;
     
-    _eventData = @[@"Places",@"your moms party", @"your dad's house"];
-    
-    
-                        
-   
-    
-    
-    
-    
-    // Do any additional setup after loading the view.
-
-
+    _eventName = @[@"other", @"another place", @"other", @"this one produce something"];
     
 
 }
@@ -120,17 +117,17 @@
     switch (pickerView.tag) {
         case 0:
             
-            return _ticketData.count;
+            return  _numberOfTicket.count;
             break;
             
         case 1:
             
-            return _rateData.count;
+            return   _section.count;
             break;
             
         case 2:
             
-            return _eventData.count;
+            return  _eventName.count;
             break;
             
         default:
@@ -147,17 +144,17 @@
     switch (pickerView.tag) {
         case 0:
             
-            return _ticketData[row];
+            return    @"num of tickets";//_ticketData[row];
             break;
             
         case 1:
             
-            return _rateData[row];
+            return @"GENeral ADMIN";//_rateData[row];
             break;
             
         case 2:
             
-            return _eventData[row];
+            return _eventName[row];
             break;
             
         default:
@@ -168,31 +165,105 @@
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-
-
-    //NSLog(@"buttons were selected");
     
-   // NSLog(@"%d",(int)[self.ticketPicker selectedRowInComponent:0]);
-  //  NSLog(@"%d",(int)[self.ratePicker selectedRowInComponent:0]);
-   // NSLog(@"%d",(int)[self.eventPicker selectedRowInComponent:0]);
-
-    if(([self.ticketPicker selectedRowInComponent:0] && [self.ratePicker selectedRowInComponent:0] && [self.eventPicker selectedRowInComponent:0]) > 0) {
-    
-        MapVC * mapVC = [[MapVC alloc]init];
-        mapVC.view.backgroundColor = [UIColor clearColor];
-        [self presentViewController: mapVC animated:YES completion:nil];
-
-        
-        
-        
+    NSLog(@"%d",pickerView.tag);
+    switch (pickerView.tag) {
+        case 0:
+            
+      selectedTicket =  _numberOfTicket[row];
+           break;
+            
+        case 1:
+            
+         selectedRow = _section[row];
+            break;
+            
+        case 2:
+            
+           selectedEvent = _eventName[row];
+            NSLog(@"%@", selectedEvent);
+            
+            break;
+            
+        default:
+            break;
     }
     
+    if ([self.eventPicker selectedRowInComponent:0] == 3)
+       {
+           [self showTextField];
+       }
+else if (([self.ticketPicker selectedRowInComponent:0] && [self.ratePicker selectedRowInComponent:0] && [self.eventPicker selectedRowInComponent:0]) > 0)
+    {
+        NSLog(@"self ticker running");
+        MapVC * mapVC = [[MapVC alloc]init];
+        mapVC.view.backgroundColor = [UIColor clearColor];
+        
+        [self presentViewController: mapVC animated:YES completion:nil];
+
+        [self saveToParseSell];
+       
+    }
+    
+
 }
 
 
 
+-(void)saveToParseSell
+{
+   
+    
+    PFObject * sellerInfo = [PFObject objectWithClassName:@"Selling"];
+    [sellerInfo setObject: selectedTicket forKey:@"NumberOfTicketsSelling"];
+    [sellerInfo setObject: selectedEvent forKey:@"Event"];
+    [sellerInfo setObject: selectedRow forKey:@"Row"];
+    
+    //   [sellerInfo setObject:_row forKey:@"Row"];
+    // [sellerInfo setObject:_eventDate forKey:@"Date"];
+    NSLog(@"save to parseseller");
+    
+    [sellerInfo setObject:[PFUser currentUser].objectId forKey:@"SellerID"];
+    
+    [sellerInfo saveInBackground];
+
+}
+
+-(void)saveToParseBuy{
+ 
+    PFObject * buyerInfo = [PFObject objectWithClassName:@"Buying"];
+    [buyerInfo setObject: selectedTicket forKey:@"NumberOfTicketsBuying"];
+    [buyerInfo setObject: selectedEvent forKey:@"Event"];
+    [buyerInfo setObject:[PFUser currentUser] forKey:@"BuyerID"];
+
+    [buyerInfo saveInBackground];
+    NSLog(@"Save to Parse Buyer");
+}
+
+-(void)showTextField
+{
+    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(10, 200, 300, 40)];
+    textField.borderStyle = UITextBorderStyleRoundedRect;
+    textField.font = [UIFont systemFontOfSize:15];
+    textField.placeholder = @"other Venue";
+    textField.autocorrectionType = UITextAutocorrectionTypeNo;
+    textField.keyboardType = UIKeyboardTypeDefault;
+    textField.returnKeyType = UIReturnKeyDone;
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+    textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+    textField.delegate = self;
+
+    [self.view addSubview:textField];
 
 
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    
+    return YES;
+}
 
 
 @end

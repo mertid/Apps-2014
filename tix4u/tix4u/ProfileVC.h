@@ -13,8 +13,4 @@
 @property(nonatomic, strong) UIImage * profileImage;
 
 
-
-// my userid: 465840063555653
-
-
 @end

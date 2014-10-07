@@ -9,8 +9,8 @@
 #import "MapVC.h"
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
-#import "BuySellDetailMapTVC.h"
-
+#import <Parse/Parse.h>
+#import "detailTVC.h"
 @interface MapVC() <MKMapViewDelegate, CLLocationManagerDelegate>
 
 @end
@@ -18,7 +18,7 @@
 @implementation MapVC
 {
     MKMapView * myMapView;
-    BuySellDetailMapTVC * tableVC;
+    detailTVC * tableVC;
     CLLocationManager * locationManager;
 }
 
@@ -27,13 +27,25 @@
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = true;
 
+
     myMapView = [[MKMapView alloc] initWithFrame:CGRectMake(0, 0, 320, 280)];
     myMapView.delegate = self;
     [self.view addSubview:myMapView];
     myMapView.showsUserLocation = YES;
     myMapView.delegate = self;
     
-    tableVC = [[BuySellDetailMapTVC alloc]init];
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    [locationManager startUpdatingLocation];
+    
+    
+    }
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    
+    tableVC = [[detailTVC alloc]init];
+
     
     tableVC.tableView.frame = CGRectMake(0, 260, 320, 300);
     
@@ -43,26 +55,16 @@
     
     [self.view addSubview:tableVC.tableView];
     
-    locationManager = [[CLLocationManager alloc] init];
-    locationManager.delegate = self;
-    [locationManager startUpdatingLocation];
     
-    // Do any additional setup after loading the view.
+    //ask heidi for help!
+    
+  //  PFQuery *query = [PFQuery queryWithClassName:@"Selling"];
+    
+    
+   
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

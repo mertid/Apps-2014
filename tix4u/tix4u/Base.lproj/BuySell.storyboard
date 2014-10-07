@@ -47,6 +47,7 @@
             <objects>
                 <tabBarController storyboardIdentifier="tabBarC" automaticallyAdjustsScrollViewInsets="NO" id="Wvo-sb-tM5" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <keyCommands/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="hby-pU-PY9">
                         <autoresizingMask key="autoresizingMask"/>

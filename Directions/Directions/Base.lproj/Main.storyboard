@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Directions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" placeholderIntrinsicWidth="563" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6qK-9r-23i">
+                                <rect key="frame" x="16" y="33" width="563" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qlx-RH-pRd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhT-r3-Ypg">
+                                <rect key="frame" x="488" y="42" width="81" height="32"/>
+                                <color key="backgroundColor" red="0.44313728810000003" green="0.89019614459999996" blue="0.59215688710000003" alpha="1" colorSpace="deviceRGB"/>
+                                <state key="normal" title="Route">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="route:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4uC-t9-xSf"/>
+                                </connections>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="W9e-YR-9gm">
+                                <rect key="frame" x="0.0" y="89" width="600" height="503"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-117" y="0.0" width="600" height="564"/>
+                                </variation>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="W9e-YR-9gm" secondAttribute="trailing" constant="-16" id="H3d-WO-pA5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="W9e-YR-9gm" secondAttribute="bottom" id="Hoq-ql-ozH"/>
+                            <constraint firstItem="uhT-r3-Ypg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="OtT-fp-FkD"/>
+                            <constraint firstItem="W9e-YR-9gm" firstAttribute="top" secondItem="6qK-9r-23i" secondAttribute="bottom" constant="5" id="PxG-Z6-Usa"/>
+                            <constraint firstItem="W9e-YR-9gm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="WkQ-fp-ve3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uhT-r3-Ypg" secondAttribute="trailing" constant="15" id="fWH-Vw-Q9Z"/>
+                            <constraint firstItem="6qK-9r-23i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ge7-fI-uxU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6qK-9r-23i" secondAttribute="trailing" constant="5" id="pEI-bI-4ww"/>
+                            <constraint firstItem="6qK-9r-23i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="14" id="xN4-8r-Wqs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="H3d-WO-pA5"/>
+                                <exclude reference="PxG-Z6-Usa"/>
+                                <exclude reference="WkQ-fp-ve3"/>
+                                <exclude reference="Hoq-ql-ozH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="H3d-WO-pA5"/>
+                                <include reference="PxG-Z6-Usa"/>
+                                <include reference="WkQ-fp-ve3"/>
+                                <include reference="Hoq-ql-ozH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="addressField" destination="6qK-9r-23i" id="v1e-8g-nP2"/>
+                        <outlet property="routingMap" destination="W9e-YR-9gm" id="6t6-eA-pJS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="451.5" y="105.75"/>
+        </scene>
+    </scenes>
+</document>

@@ -41,8 +41,9 @@
         loginVC.fields = PFLogInFieldsFacebook;
         loginVC.facebookPermissions = @[ @"user_about_me" ];
         
-        [self.navigationController presentViewController:loginVC animated:YES completion:nil];
-         
+        [self.navigationController presentViewController:loginVC animated: NO completion:nil];
+        
+        NSLog(@"done... wait for success/error");
         return;
     }
     
@@ -53,13 +54,15 @@
     UIStoryboard* sb = [UIStoryboard storyboardWithName:@"BuySell" bundle:nil];
     
     UITabBarController* tbC = (UITabBarController*)[sb instantiateInitialViewController];
-    [self presentViewController:tbC animated:true completion:nil];
+  
+//[self showViewController:tbC sender:self];
+  [self presentViewController:tbC animated:true completion:nil];
+//    self.navigationController.viewControllers =@[tbC];
 
-    /*
-    BuySellViewController * BSVc = [[BuySellViewController alloc] init];
+  
+    // BuySellViewController * BSVc = [[BuySellViewController alloc] init];
     
-    [self presentViewController:BSVc animated:YES completion:nil];
-*/
+    //[self presentViewController:BSVc animated:YES completion:nil];
 
 }
 
@@ -97,6 +100,7 @@
 
 -(void)logInViewController:(PFLogInViewController *)logInController didLogInUser:(PFUser *)user
 {
+    NSLog(@"am i here?");
     // user has logged in - we need to fetch all of their Facebook data before we let them in
     NSString *facebookId = [user objectForKey:kPAPUserFacebookIDKey];
     NSLog(@"Woohohooo logged in usr has facebook id %@", facebookId);
@@ -112,6 +116,9 @@
 
 - (void)facebookRequestDidLoad:(id)result {
     // This method is called twice - once for the user's /me profile, and a second time when obtaining their friends. We will try and handle both scenarios in a single method.
+    
+    
+    NSLog(@"am i here3?");
     PFUser *user = [PFUser currentUser];
     
     NSArray *data = [result objectForKey:@"data"];

@@ -15,9 +15,9 @@
 		2244817119DB342100961FAC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244816F19DB342100961FAC /* Constants.m */; };
 		224481A619DC634700961FAC /* BuySellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224481A519DC634700961FAC /* BuySellVC.m */; };
 		224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2ED19DCA9D9001935E7 /* MapVC.m */; };
-		224FD2F119DCAF63001935E7 /* BuySellDetailMapTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2F019DCAF63001935E7 /* BuySellDetailMapTVC.m */; };
 		229FC04419DDEAE5000A0C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FC04319DDEAE5000A0C8C /* Main.storyboard */; };
 		229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC04B19DDF1A3000A0C8C /* ProfileVC.m */; };
+		22C689CC19E320B900FF6A42 /* detailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C689CB19E320B900FF6A42 /* detailTVC.m */; };
 		22F05A6819D89352005C0622 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6719D89352005C0622 /* main.m */; };
 		22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6A19D89352005C0622 /* AppDelegate.m */; };
 		22F05A7119D89352005C0622 /* BuySell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A6F19D89352005C0622 /* BuySell.storyboard */; };
@@ -62,11 +62,11 @@
 		224481A519DC634700961FAC /* BuySellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuySellVC.m; path = ../BuySellVC.m; sourceTree = "<group>"; };
 		224FD2EC19DCA9D9001935E7 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapVC.h; path = ../MapVC.h; sourceTree = "<group>"; };
 		224FD2ED19DCA9D9001935E7 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapVC.m; path = ../MapVC.m; sourceTree = "<group>"; };
-		224FD2EF19DCAF63001935E7 /* BuySellDetailMapTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuySellDetailMapTVC.h; path = ../BuySellDetailMapTVC.h; sourceTree = "<group>"; };
-		224FD2F019DCAF63001935E7 /* BuySellDetailMapTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuySellDetailMapTVC.m; path = ../BuySellDetailMapTVC.m; sourceTree = "<group>"; };
 		229FC04319DDEAE5000A0C8C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		229FC04A19DDF1A3000A0C8C /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
 		229FC04B19DDF1A3000A0C8C /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
+		22C689CA19E320B900FF6A42 /* detailTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = detailTVC.h; sourceTree = "<group>"; };
+		22C689CB19E320B900FF6A42 /* detailTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = detailTVC.m; sourceTree = "<group>"; };
 		22F05A6219D89352005C0622 /* tix4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tix4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F05A6619D89352005C0622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F05A6719D89352005C0622 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -140,8 +140,6 @@
 				22F05AA019D89BD1005C0622 /* LoginVC.h */,
 				22F05A9219D8954C005C0622 /* WelcomeVC.h */,
 				22F05A9319D8954C005C0622 /* WelcomeVC.m */,
-				224FD2EF19DCAF63001935E7 /* BuySellDetailMapTVC.h */,
-				224FD2F019DCAF63001935E7 /* BuySellDetailMapTVC.m */,
 				224FD2EC19DCA9D9001935E7 /* MapVC.h */,
 				224FD2ED19DCA9D9001935E7 /* MapVC.m */,
 				224481A419DC634700961FAC /* BuySellVC.h */,
@@ -173,6 +171,8 @@
 		22F05A5919D89352005C0622 = {
 			isa = PBXGroup;
 			children = (
+				22C689CA19E320B900FF6A42 /* detailTVC.h */,
+				22C689CB19E320B900FF6A42 /* detailTVC.m */,
 				22F05A6419D89352005C0622 /* tix4u */,
 				22F05A7E19D89352005C0622 /* tix4uTests */,
 				22F05A6319D89352005C0622 /* Products */,
@@ -369,10 +369,10 @@
 				221CFB2319D8A56B001FC261 /* Utility.m in Sources */,
 				221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */,
 				22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */,
-				224FD2F119DCAF63001935E7 /* BuySellDetailMapTVC.m in Sources */,
 				221CFB2719D8A6CE001FC261 /* UIImage+ResizeAdditions.m in Sources */,
 				22F05AA219D89BD1005C0622 /* LoginVC.m in Sources */,
 				22F05A6819D89352005C0622 /* main.m in Sources */,
+				22C689CC19E320B900FF6A42 /* detailTVC.m in Sources */,
 				221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */,
 				22F05A9419D8954C005C0622 /* WelcomeVC.m in Sources */,
 				22F05A9B19D896FE005C0622 /* Reachability.m in Sources */,

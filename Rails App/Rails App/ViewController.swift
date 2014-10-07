@@ -95,8 +95,7 @@ class ViewController: UIViewController {
             let posts = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.AllowFragments, error: nil) as NSArray
             
             println(posts)
-            
-            
+        
             
         }
         
