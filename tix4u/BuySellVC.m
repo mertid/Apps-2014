@@ -144,12 +144,12 @@
     switch (pickerView.tag) {
         case 0:
             
-            return    @"num of tickets";//_ticketData[row];
+            return  _eventName[row];
             break;
             
         case 1:
             
-            return @"GENeral ADMIN";//_rateData[row];
+            return _section[row];
             break;
             
         case 2:
@@ -219,7 +219,7 @@ else if (([self.ticketPicker selectedRowInComponent:0] && [self.ratePicker selec
     [sellerInfo setObject: selectedEvent forKey:@"Event"];
     [sellerInfo setObject: selectedRow forKey:@"Row"];
     
-    //   [sellerInfo setObject:_row forKey:@"Row"];
+  //    [sellerInfo setObject:_row forKey:@"Row"];
     // [sellerInfo setObject:_eventDate forKey:@"Date"];
     NSLog(@"save to parseseller");
     

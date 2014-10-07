@@ -12,6 +12,7 @@
 		221CFB2A19D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2919D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m */; };
 		221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2C19D8A737001FC261 /* UIImage+AlphaAdditions.m */; };
 		221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2F19D8A746001FC261 /* UIImage+Alpha.m */; };
+		2220E9B619E4796F00226BC0 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2220E9B519E4796F00226BC0 /* Annotation.m */; };
 		2244817119DB342100961FAC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244816F19DB342100961FAC /* Constants.m */; };
 		224481A619DC634700961FAC /* BuySellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224481A519DC634700961FAC /* BuySellVC.m */; };
 		224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2ED19DCA9D9001935E7 /* MapVC.m */; };
@@ -56,6 +57,8 @@
 		221CFB2C19D8A737001FC261 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
 		221CFB2E19D8A746001FC261 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		221CFB2F19D8A746001FC261 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		2220E9B419E4796F00226BC0 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		2220E9B519E4796F00226BC0 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 		2244816F19DB342100961FAC /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../../../Constants.m; sourceTree = "<group>"; };
 		2244817019DB342100961FAC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../../../Constants.h; sourceTree = "<group>"; };
 		224481A419DC634700961FAC /* BuySellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuySellVC.h; path = ../BuySellVC.h; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 		22F05A5919D89352005C0622 = {
 			isa = PBXGroup;
 			children = (
+				2220E9B419E4796F00226BC0 /* Annotation.h */,
+				2220E9B519E4796F00226BC0 /* Annotation.m */,
 				22C689CA19E320B900FF6A42 /* detailTVC.h */,
 				22C689CB19E320B900FF6A42 /* detailTVC.m */,
 				22F05A6419D89352005C0622 /* tix4u */,
@@ -365,6 +370,7 @@
 			files = (
 				224481A619DC634700961FAC /* BuySellVC.m in Sources */,
 				229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */,
+				2220E9B619E4796F00226BC0 /* Annotation.m in Sources */,
 				221CFB2A19D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				221CFB2319D8A56B001FC261 /* Utility.m in Sources */,
 				221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */,
