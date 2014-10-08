@@ -7,6 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <Availability.h>
+
+#define NSLOG_DROPCHAFF//comment out to get usual date/time ,etc:2011-11-03 13:43:55.632 myApp[3739:207] Hello Word
+#ifdef NSLOG_DROPCHAFF
+#define NSLog(__FORMAT__, ...) NSLog((@"%s [Line %d] " __FORMAT__), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+#endif
 
 #pragma mark - PFObject User Class
 // Field keys
