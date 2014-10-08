@@ -35,6 +35,9 @@
 		22F05A9F19D89A70005C0622 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A9E19D89A70005C0622 /* MobileCoreServices.framework */; };
 		22F05AA219D89BD1005C0622 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05AA119D89BD1005C0622 /* LoginVC.m */; };
 		22F05AA419D89D36005C0622 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05AA319D89D36005C0622 /* Social.framework */; };
+		91C5932F19E5CDA600BA0B70 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932C19E5CDA600BA0B70 /* Event.swift */; };
+		91C5933019E5CDA600BA0B70 /* EventfulRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */; };
+		91C5933119E5CDA600BA0B70 /* EventfulTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932E19E5CDA600BA0B70 /* EventfulTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +59,8 @@
 		221F5B1119E5B12900F8989B /* BuyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuyVC.m; path = ../BuyVC.m; sourceTree = "<group>"; };
 		221F5B1319E5B13900F8989B /* SellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SellVC.h; path = ../SellVC.h; sourceTree = "<group>"; };
 		221F5B1419E5B13900F8989B /* SellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SellVC.m; path = ../SellVC.m; sourceTree = "<group>"; };
-		2220E9B419E4796F00226BC0 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
-		2220E9B519E4796F00226BC0 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		2220E9B419E4796F00226BC0 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Annotation.h; path = ../Annotation.h; sourceTree = "<group>"; };
+		2220E9B519E4796F00226BC0 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = ../Annotation.m; sourceTree = "<group>"; };
 		224FD2EC19DCA9D9001935E7 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapVC.h; path = ../MapVC.h; sourceTree = "<group>"; };
 		224FD2ED19DCA9D9001935E7 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapVC.m; path = ../MapVC.m; sourceTree = "<group>"; };
 		229FC04319DDEAE5000A0C8C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +88,10 @@
 		22F05AA019D89BD1005C0622 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		22F05AA119D89BD1005C0622 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		22F05AA319D89D36005C0622 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		91C5932B19E5CDA500BA0B70 /* tix4u-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tix4u-Bridging-Header.h"; sourceTree = "<group>"; };
+		91C5932C19E5CDA600BA0B70 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventfulRequest.swift; sourceTree = "<group>"; };
+		91C5932E19E5CDA600BA0B70 /* EventfulTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventfulTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,8 +136,6 @@
 		229FC04219DDE60F000A0C8C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				22C689CA19E320B900FF6A42 /* detailTVC.h */,
-				22C689CB19E320B900FF6A42 /* detailTVC.m */,
 				221F5B0D19E5B11700F8989B /* BuyVsSellVC.h */,
 				221F5B0E19E5B11700F8989B /* BuyVsSellVC.m */,
 				221F5B1019E5B12900F8989B /* BuyVC.h */,
@@ -142,8 +147,6 @@
 				22F05AA119D89BD1005C0622 /* LoginVC.m */,
 				22F05AA019D89BD1005C0622 /* LoginVC.h */,
 				22F05A9219D8954C005C0622 /* WelcomeVC.h */,
-				224FD2EC19DCA9D9001935E7 /* MapVC.h */,
-				224FD2ED19DCA9D9001935E7 /* MapVC.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -171,8 +174,6 @@
 		22F05A5919D89352005C0622 = {
 			isa = PBXGroup;
 			children = (
-				2220E9B419E4796F00226BC0 /* Annotation.h */,
-				2220E9B519E4796F00226BC0 /* Annotation.m */,
 				22F05A6419D89352005C0622 /* tix4u */,
 				22F05A6319D89352005C0622 /* Products */,
 				2220E9B719E4891600226BC0 /* Images */,
@@ -192,6 +193,8 @@
 		22F05A6419D89352005C0622 /* tix4u */ = {
 			isa = PBXGroup;
 			children = (
+				91C5932B19E5CDA500BA0B70 /* tix4u-Bridging-Header.h */,
+				91C5932A19E5CD7B00BA0B70 /* Maps */,
 				229FC04219DDE60F000A0C8C /* Controllers */,
 				229FC04919DDED52000A0C8C /* Utility */,
 				229FC04519DDEAEA000A0C8C /* Storyboards */,
@@ -243,6 +246,22 @@
 				22F05A9A19D896FE005C0622 /* Reachability.m */,
 			);
 			name = Reachability;
+			sourceTree = "<group>";
+		};
+		91C5932A19E5CD7B00BA0B70 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				2220E9B419E4796F00226BC0 /* Annotation.h */,
+				2220E9B519E4796F00226BC0 /* Annotation.m */,
+				22C689CA19E320B900FF6A42 /* detailTVC.h */,
+				22C689CB19E320B900FF6A42 /* detailTVC.m */,
+				224FD2EC19DCA9D9001935E7 /* MapVC.h */,
+				224FD2ED19DCA9D9001935E7 /* MapVC.m */,
+				91C5932C19E5CDA600BA0B70 /* Event.swift */,
+				91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */,
+				91C5932E19E5CDA600BA0B70 /* EventfulTVC.swift */,
+			);
+			name = Maps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,11 +336,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				221F5B1519E5B13900F8989B /* SellVC.m in Sources */,
+				91C5933119E5CDA600BA0B70 /* EventfulTVC.swift in Sources */,
 				229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */,
+				91C5933019E5CDA600BA0B70 /* EventfulRequest.swift in Sources */,
 				2220E9B619E4796F00226BC0 /* Annotation.m in Sources */,
 				221F5B0919E5AF4300F8989B /* Constants.m in Sources */,
 				221CFB2A19D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				221CFB2319D8A56B001FC261 /* Utility.m in Sources */,
+				91C5932F19E5CDA600BA0B70 /* Event.swift in Sources */,
 				221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */,
 				22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */,
 				221CFB2719D8A6CE001FC261 /* UIImage+ResizeAdditions.m in Sources */,
@@ -441,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -448,6 +471,8 @@
 				INFOPLIST_FILE = tix4u/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tix4u/tix4u-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -455,6 +480,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -462,6 +488,7 @@
 				INFOPLIST_FILE = tix4u/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "tix4u/tix4u-Bridging-Header.h";
 			};
 			name = Release;
 		};
