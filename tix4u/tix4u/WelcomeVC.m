@@ -13,7 +13,6 @@
 #import "Constants.h"
 #import <FacebookSDK/FacebookSDK.h>
 #import "Utility.h"
-#import "BuySellVC.h"
 @interface WelcomeVC () <PFLogInViewControllerDelegate, NSURLConnectionDataDelegate>
 
 @end

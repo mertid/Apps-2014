@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="2575" y="136"/>
         </scene>
-        <!--Buy SellVC-->
+        <!--Buy Vs SellVC-->
         <scene sceneID="c1M-vQ-YA7">
             <objects>
-                <viewController id="Nct-bq-5Vt" customClass="BuySellVC" sceneMemberID="viewController">
+                <viewController id="Nct-bq-5Vt" customClass="BuyVsSellVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2eg-nZ-kAh"/>
                         <viewControllerLayoutGuide type="bottom" id="C9y-DY-SUi"/>

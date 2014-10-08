@@ -17,7 +17,7 @@
 
 @implementation ProfileVC
 {
-    PFImageView* profileImgView;
+    PFImageView * profileImgView;
     UILabel * ticketsSold;
     UILabel * ticketLabel;
     UILabel * ticketbought;
