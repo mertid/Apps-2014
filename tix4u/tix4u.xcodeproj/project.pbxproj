@@ -38,6 +38,7 @@
 		91C5932F19E5CDA600BA0B70 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932C19E5CDA600BA0B70 /* Event.swift */; };
 		91C5933019E5CDA600BA0B70 /* EventfulRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */; };
 		91C5933119E5CDA600BA0B70 /* EventfulTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932E19E5CDA600BA0B70 /* EventfulTVC.swift */; };
+		91C5933319E5E12B00BA0B70 /* SaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5933219E5E12B00BA0B70 /* SaleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		91C5932C19E5CDA600BA0B70 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventfulRequest.swift; sourceTree = "<group>"; };
 		91C5932E19E5CDA600BA0B70 /* EventfulTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventfulTVC.swift; sourceTree = "<group>"; };
+		91C5933219E5E12B00BA0B70 /* SaleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 				91C5932C19E5CDA600BA0B70 /* Event.swift */,
 				91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */,
 				91C5932E19E5CDA600BA0B70 /* EventfulTVC.swift */,
+				91C5933219E5E12B00BA0B70 /* SaleCell.swift */,
 			);
 			name = Maps;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				22F05A9419D8954C005C0622 /* WelcomeVC.m in Sources */,
 				221F5B0F19E5B11700F8989B /* BuyVsSellVC.m in Sources */,
 				22F05A9B19D896FE005C0622 /* Reachability.m in Sources */,
+				91C5933319E5E12B00BA0B70 /* SaleCell.swift in Sources */,
 				224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

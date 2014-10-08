@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 class Event: NSObject {
    
@@ -14,8 +16,21 @@ class Event: NSObject {
     var startTime: NSDate? //"start_time" = "2014-10-02 20:00:00";
     var venueName: String? //"venue_name" = "Smith's Olde Bar";
     
-    var latitude: String? //latitude = "33.7975402";
-    var longitude: String? //longitude = "-84.3686369";
+    var latitude: NSString? //latitude = "33.7975402";
+    var longitude: NSString? //longitude = "-84.3686369";
     
-    //CLLocation(latitude: 37.7853889, longitude: -122.4056973)
+    func getCoordinate() -> CLLocationCoordinate2D {
+        if let lat = latitude {
+            if let lon = longitude {
+                return CLLocationCoordinate2DMake(lat.doubleValue, lon.doubleValue)
+            }
+        }
+        return CLLocationCoordinate2DMake(0,0)
+    }
+    
+    
+    func getLocation() -> CLLocation {
+        let coord = getCoordinate()
+        return CLLocation(latitude: coord.latitude, longitude: coord.longitude)
+    }
 }

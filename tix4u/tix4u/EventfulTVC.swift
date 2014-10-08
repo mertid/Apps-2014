@@ -15,6 +15,7 @@ class EventfulTVC: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = false
+        tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "eventCell")
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,7 +28,8 @@ class EventfulTVC: UITableViewController {
         let eventInfo = events[indexPath.row]
         println("eventInfo \(eventInfo)")
         
-        cell.textLabel?.text = eventInfo.title
+        let mainText = eventInfo.title //"\(eventInfo.latitude), \(eventInfo.longitude)"
+        cell.textLabel?.text = mainText
         cell.detailTextLabel?.text = eventInfo.venueName
         
         return cell

@@ -30,34 +30,14 @@ class EventfulRequest: NSObject {
         
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) { (response, data, error) -> Void in
             
-            if error != nil {
-                println(error.userInfo)
-                
-                //TODO Cater for this error you saw when you had bad wifi connection!
-                /*
-                
-                Optional([NSLocalizedDescription: The Internet connection appears to be offline.,
-                NSErrorFailingURLStringKey: http://api.eventful.com/json/events/search?app_key=Pdv5pkc3G4tF3TCB&category=music&location=Atlanta&date=Today,
-                NSErrorFailingURLKey: http://api.eventful.com/json/events/search?app_key=Pdv5pkc3G4tF3TCB&category=music&location=Atlanta&date=Today,
-                _kCFStreamErrorDomainKey: 12,
-                _kCFStreamErrorCodeKey: 8,
-                NSUnderlyingError: Error Domain=kCFErrorDomainCFNetwork Code=-1009 "The Internet connection appears to be offline." UserInfo=0x7f99f48424e0 {NSErrorFailingURLStringKey=http://api.eventful.com/json/events/search?app_key=Pdv5pkc3G4tF3TCB&category=music&location=Atlanta&date=Today,
-                NSErrorFailingURLKey=http://api.eventful.com/json/events/search?app_key=Pdv5pkc3G4tF3TCB&category=music&location=Atlanta&date=Today,
-                _kCFStreamErrorCodeKey=8,
-                _kCFStreamErrorDomainKey=12,
-                NSLocalizedDescription=The Internet connection appears to be offline.}])
-                fatal error: unexpectedly found nil while unwrapping an Optional value
-                */
-            }
-            
-            if data == nil {
-                println("We have no data... see error above!")
+            if data == nil && error != nil {
+                println("We have no data... error \(error.userInfo)")
                 return;
             }
             
             var jsonError: NSError?
             var json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.allZeros, error: nil) as [String:AnyObject]
-            println(json)
+            //println(json)
             
             if let errorInfo = jsonError {
                 println(errorInfo.userInfo)
@@ -68,8 +48,7 @@ class EventfulRequest: NSObject {
             
             let jsonEventsArray = json["events"]!["event"]! as [[String:AnyObject]]
             for currentEventDict in jsonEventsArray {
-                //let currentEventDict = event
-                println(currentEventDict)
+                //println(currentEventDict)
                 var nextEvent = Event()
                 if let venueName = currentEventDict["venue_name"]! as? String {
                     nextEvent.venueName = venueName
@@ -77,6 +56,7 @@ class EventfulRequest: NSObject {
                 
                 nextEvent.title = currentEventDict["title"]! as? String
                 nextEvent.latitude = currentEventDict["calendar_count"]! as? String //TODO put back latitude
+                nextEvent.latitude = currentEventDict["latitude"]! as? String
                 nextEvent.longitude = currentEventDict["longitude"]! as? String
                 nextEvent.startTime = eventStartTimeDateFormatter.dateFromString(currentEventDict["start_time"]! as String)
                 
