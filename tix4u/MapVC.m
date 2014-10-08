@@ -10,7 +10,6 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import <Parse/Parse.h>
-#import "detailTVC.h"
 #import "Annotation.h"
 #import "tix4u-swift.h"
 
@@ -21,7 +20,7 @@
 @implementation MapVC
 {
     MKMapView * myMapView;
-    EventfulTVC * tableVC;
+    SalesTVC * tableVC;
     CLLocationManager * locationManager;
 }
 
@@ -45,7 +44,7 @@
     
     [locationManager startUpdatingLocation];
     
-    tableVC = [[EventfulTVC alloc]init];
+    tableVC = [[SalesTVC alloc]init];
     tableVC.tableView.frame = CGRectMake(0, h/2, w, h/2);
     tableVC.tableView.backgroundColor = [UIColor whiteColor];
     [tableVC.tableView setSeparatorColor:[UIColor colorWithRed:0.000f green:0.651f blue:0.910f alpha:1.0f]];

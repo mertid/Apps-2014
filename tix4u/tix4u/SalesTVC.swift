@@ -8,14 +8,14 @@
 
 import UIKit
 
-class EventfulTVC: UITableViewController {
+class SalesTVC: UITableViewController {
     
     var events: [Event] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = false
-        tableView.registerClass(UITableViewCell.classForCoder(), forCellReuseIdentifier: "eventCell")
+        tableView.registerClass(SaleCell.classForCoder(), forCellReuseIdentifier: "saleCell")
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -23,7 +23,7 @@ class EventfulTVC: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("eventCell", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("saleCell", forIndexPath: indexPath) as SaleCell
         
         let eventInfo = events[indexPath.row]
         println("eventInfo \(eventInfo)")

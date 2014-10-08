@@ -20,7 +20,6 @@
 		224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2ED19DCA9D9001935E7 /* MapVC.m */; };
 		229FC04419DDEAE5000A0C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FC04319DDEAE5000A0C8C /* Main.storyboard */; };
 		229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC04B19DDF1A3000A0C8C /* ProfileVC.m */; };
-		22C689CC19E320B900FF6A42 /* detailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22C689CB19E320B900FF6A42 /* detailTVC.m */; };
 		22F05A6819D89352005C0622 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6719D89352005C0622 /* main.m */; };
 		22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6A19D89352005C0622 /* AppDelegate.m */; };
 		22F05A7119D89352005C0622 /* BuySell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A6F19D89352005C0622 /* BuySell.storyboard */; };
@@ -37,7 +36,7 @@
 		22F05AA419D89D36005C0622 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05AA319D89D36005C0622 /* Social.framework */; };
 		91C5932F19E5CDA600BA0B70 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932C19E5CDA600BA0B70 /* Event.swift */; };
 		91C5933019E5CDA600BA0B70 /* EventfulRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */; };
-		91C5933119E5CDA600BA0B70 /* EventfulTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932E19E5CDA600BA0B70 /* EventfulTVC.swift */; };
+		91C5933119E5CDA600BA0B70 /* SalesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932E19E5CDA600BA0B70 /* SalesTVC.swift */; };
 		91C5933319E5E12B00BA0B70 /* SaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5933219E5E12B00BA0B70 /* SaleCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,8 +66,6 @@
 		229FC04319DDEAE5000A0C8C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		229FC04A19DDF1A3000A0C8C /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
 		229FC04B19DDF1A3000A0C8C /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
-		22C689CA19E320B900FF6A42 /* detailTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = detailTVC.h; path = ../detailTVC.h; sourceTree = "<group>"; };
-		22C689CB19E320B900FF6A42 /* detailTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = detailTVC.m; path = ../detailTVC.m; sourceTree = "<group>"; };
 		22F05A6219D89352005C0622 /* tix4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tix4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F05A6619D89352005C0622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F05A6719D89352005C0622 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,7 +89,7 @@
 		91C5932B19E5CDA500BA0B70 /* tix4u-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tix4u-Bridging-Header.h"; sourceTree = "<group>"; };
 		91C5932C19E5CDA600BA0B70 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventfulRequest.swift; sourceTree = "<group>"; };
-		91C5932E19E5CDA600BA0B70 /* EventfulTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventfulTVC.swift; sourceTree = "<group>"; };
+		91C5932E19E5CDA600BA0B70 /* SalesTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesTVC.swift; sourceTree = "<group>"; };
 		91C5933219E5E12B00BA0B70 /* SaleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -255,13 +252,11 @@
 			children = (
 				2220E9B419E4796F00226BC0 /* Annotation.h */,
 				2220E9B519E4796F00226BC0 /* Annotation.m */,
-				22C689CA19E320B900FF6A42 /* detailTVC.h */,
-				22C689CB19E320B900FF6A42 /* detailTVC.m */,
 				224FD2EC19DCA9D9001935E7 /* MapVC.h */,
 				224FD2ED19DCA9D9001935E7 /* MapVC.m */,
 				91C5932C19E5CDA600BA0B70 /* Event.swift */,
 				91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */,
-				91C5932E19E5CDA600BA0B70 /* EventfulTVC.swift */,
+				91C5932E19E5CDA600BA0B70 /* SalesTVC.swift */,
 				91C5933219E5E12B00BA0B70 /* SaleCell.swift */,
 			);
 			name = Maps;
@@ -339,7 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				221F5B1519E5B13900F8989B /* SellVC.m in Sources */,
-				91C5933119E5CDA600BA0B70 /* EventfulTVC.swift in Sources */,
+				91C5933119E5CDA600BA0B70 /* SalesTVC.swift in Sources */,
 				229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */,
 				91C5933019E5CDA600BA0B70 /* EventfulRequest.swift in Sources */,
 				2220E9B619E4796F00226BC0 /* Annotation.m in Sources */,
@@ -353,7 +348,6 @@
 				221F5B1219E5B12900F8989B /* BuyVC.m in Sources */,
 				22F05AA219D89BD1005C0622 /* LoginVC.m in Sources */,
 				22F05A6819D89352005C0622 /* main.m in Sources */,
-				22C689CC19E320B900FF6A42 /* detailTVC.m in Sources */,
 				221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */,
 				22F05A9419D8954C005C0622 /* WelcomeVC.m in Sources */,
 				221F5B0F19E5B11700F8989B /* BuyVsSellVC.m in Sources */,
