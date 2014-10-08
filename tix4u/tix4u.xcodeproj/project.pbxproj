@@ -134,6 +134,13 @@
 			name = categories;
 			sourceTree = "<group>";
 		};
+		2220E9B719E4891600226BC0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		229FC04219DDE60F000A0C8C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +188,7 @@
 				22F05A6419D89352005C0622 /* tix4u */,
 				22F05A7E19D89352005C0622 /* tix4uTests */,
 				22F05A6319D89352005C0622 /* Products */,
+				2220E9B719E4891600226BC0 /* Images */,
 				22F05A9519D895FC005C0622 /* Vendor */,
 				22F05A8B19D89410005C0622 /* Frameworks */,
 			);

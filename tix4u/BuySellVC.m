@@ -19,10 +19,7 @@
     NSArray * _section;
     
     NSDate * _eventDate;
-    
     NSArray * _eventName;
-    
-    
     NSString * selectedTicket;
     NSString * selectedRow;
     NSString * selectedEvent;
@@ -85,6 +82,7 @@
     _eventName = @[@"other", @"another place", @"other", @"this one produce something"];
     
 
+    
 }
 
 -(void)sellButtonWasPressed{
@@ -97,9 +95,9 @@
 
 -(void)buyButtonWasPressed {
 
-    [self.view addSubview:self.ticketPicker];
-    [self.view addSubview:self.ratePicker];
-    [self.view addSubview:self.eventPicker];
+//    [self.view addSubview:self.ticketPicker];
+//    [self.view addSubview:self.ratePicker];
+//    [self.view addSubview:self.eventPicker];
 
     
     NSLog(@"buy button was pressed");

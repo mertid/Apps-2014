@@ -40,7 +40,9 @@
    [locationManager requestWhenInUseAuthorization];
     
     myMapView.showsUserLocation = YES;
-    myMapView.userTrackingMode = MKUserTrackingModeFollow;
+//    myMapView.userTrackingMode = MKUserTrackingModeFollow;
+   
+    [locationManager startUpdatingLocation];
     
     }
 
@@ -51,9 +53,6 @@
     {
         NSLog(@"%f, %f", location.coordinate.latitude, location.coordinate.longitude);
         
-        //call ForSquareRequest and create annotations foe each venue
-        
-        //
         
         MKCoordinateRegion region = MKCoordinateRegionMake(location.coordinate, MKCoordinateSpanMake(1.0, 1.0));
         [myMapView setRegion:region animated:YES];
@@ -76,7 +75,7 @@
            
             
             [annotation setCoordinate:randomCoordinate];
-            
+        
             
             [geoCoder reverseGeocodeLocation:randomLocation completionHandler:^(NSArray *placemarks, NSError *error) {
                 
@@ -127,18 +126,11 @@
         annotationView.draggable = YES;
         
         
-        NSArray * markers = @[
-                              
-                              [UIImage imageNamed:@"pink"],
-                              [UIImage imageNamed:@"blue"],
-                              [UIImage imageNamed:@"green"]
-                              ];
-        
-        
+        NSArray * markers = @[@(MKPinAnnotationColorRed),@(MKPinAnnotationColorPurple),@(MKPinAnnotationColorGreen)];
         
         int randomMarker = arc4random_uniform((int)markers.count);
         
-        annotationView.image = markers[randomMarker];
+        annotationView.pinColor = (MKPinAnnotationColor)[markers[randomMarker] intValue];
         
         annotationView.canShowCallout = YES;
     
