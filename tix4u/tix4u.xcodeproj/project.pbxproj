@@ -12,8 +12,8 @@
 		221CFB2A19D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2919D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m */; };
 		221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2C19D8A737001FC261 /* UIImage+AlphaAdditions.m */; };
 		221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2F19D8A746001FC261 /* UIImage+Alpha.m */; };
+		221F5B0919E5AF4300F8989B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F5B0819E5AF4300F8989B /* Constants.m */; };
 		2220E9B619E4796F00226BC0 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2220E9B519E4796F00226BC0 /* Annotation.m */; };
-		2244817119DB342100961FAC /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2244816F19DB342100961FAC /* Constants.m */; };
 		224481A619DC634700961FAC /* BuySellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224481A519DC634700961FAC /* BuySellVC.m */; };
 		224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2ED19DCA9D9001935E7 /* MapVC.m */; };
 		229FC04419DDEAE5000A0C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FC04319DDEAE5000A0C8C /* Main.storyboard */; };
@@ -24,7 +24,6 @@
 		22F05A7119D89352005C0622 /* BuySell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A6F19D89352005C0622 /* BuySell.storyboard */; };
 		22F05A7319D89352005C0622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A7219D89352005C0622 /* Images.xcassets */; };
 		22F05A7619D89352005C0622 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A7419D89352005C0622 /* LaunchScreen.xib */; };
-		22F05A8219D89352005C0622 /* tix4uTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A8119D89352005C0622 /* tix4uTests.m */; };
 		22F05A8E19D89437005C0622 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A8C19D89437005C0622 /* Parse.framework */; };
 		22F05A8F19D89437005C0622 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */; };
 		22F05A9119D89456005C0622 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05A9019D89456005C0622 /* FacebookSDK.framework */; };
@@ -35,16 +34,6 @@
 		22F05AA219D89BD1005C0622 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05AA119D89BD1005C0622 /* LoginVC.m */; };
 		22F05AA419D89D36005C0622 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F05AA319D89D36005C0622 /* Social.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		22F05A7C19D89352005C0622 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22F05A5A19D89352005C0622 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22F05A6119D89352005C0622;
-			remoteInfo = tix4u;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		221CFB2119D8A56B001FC261 /* Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
@@ -57,10 +46,10 @@
 		221CFB2C19D8A737001FC261 /* UIImage+AlphaAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AlphaAdditions.m"; sourceTree = "<group>"; };
 		221CFB2E19D8A746001FC261 /* UIImage+Alpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Alpha.h"; sourceTree = "<group>"; };
 		221CFB2F19D8A746001FC261 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
+		221F5B0719E5AF4300F8989B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = SOURCE_ROOT; };
+		221F5B0819E5AF4300F8989B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = SOURCE_ROOT; };
 		2220E9B419E4796F00226BC0 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		2220E9B519E4796F00226BC0 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
-		2244816F19DB342100961FAC /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Constants.m; path = ../../../Constants.m; sourceTree = "<group>"; };
-		2244817019DB342100961FAC /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../../../Constants.h; sourceTree = "<group>"; };
 		224481A419DC634700961FAC /* BuySellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuySellVC.h; path = ../BuySellVC.h; sourceTree = "<group>"; };
 		224481A519DC634700961FAC /* BuySellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuySellVC.m; path = ../BuySellVC.m; sourceTree = "<group>"; };
 		224FD2EC19DCA9D9001935E7 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapVC.h; path = ../MapVC.h; sourceTree = "<group>"; };
@@ -78,9 +67,6 @@
 		22F05A7019D89352005C0622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BuySell.storyboard; sourceTree = "<group>"; };
 		22F05A7219D89352005C0622 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22F05A7519D89352005C0622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		22F05A7B19D89352005C0622 /* tix4uTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tix4uTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		22F05A8019D89352005C0622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22F05A8119D89352005C0622 /* tix4uTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tix4uTests.m; sourceTree = "<group>"; };
 		22F05A8C19D89437005C0622 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		22F05A8D19D89437005C0622 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		22F05A9019D89456005C0622 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
@@ -106,13 +92,6 @@
 				22F05A9D19D89A31005C0622 /* Bolts.framework in Frameworks */,
 				22F05A8E19D89437005C0622 /* Parse.framework in Frameworks */,
 				22F05A8F19D89437005C0622 /* ParseFacebookUtils.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		22F05A7819D89352005C0622 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,9 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				221CFB2119D8A56B001FC261 /* Utility.h */,
+				221F5B0719E5AF4300F8989B /* Constants.h */,
+				221F5B0819E5AF4300F8989B /* Constants.m */,
 				221CFB2219D8A56B001FC261 /* Utility.m */,
-				2244816F19DB342100961FAC /* Constants.m */,
-				2244817019DB342100961FAC /* Constants.h */,
 			);
 			name = Utility;
 			sourceTree = "<group>";
@@ -186,7 +165,6 @@
 				22C689CA19E320B900FF6A42 /* detailTVC.h */,
 				22C689CB19E320B900FF6A42 /* detailTVC.m */,
 				22F05A6419D89352005C0622 /* tix4u */,
-				22F05A7E19D89352005C0622 /* tix4uTests */,
 				22F05A6319D89352005C0622 /* Products */,
 				2220E9B719E4891600226BC0 /* Images */,
 				22F05A9519D895FC005C0622 /* Vendor */,
@@ -198,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				22F05A6219D89352005C0622 /* tix4u.app */,
-				22F05A7B19D89352005C0622 /* tix4uTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,23 +201,6 @@
 			children = (
 				22F05A6619D89352005C0622 /* Info.plist */,
 				22F05A6719D89352005C0622 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		22F05A7E19D89352005C0622 /* tix4uTests */ = {
-			isa = PBXGroup;
-			children = (
-				22F05A8119D89352005C0622 /* tix4uTests.m */,
-				22F05A7F19D89352005C0622 /* Supporting Files */,
-			);
-			path = tix4uTests;
-			sourceTree = "<group>";
-		};
-		22F05A7F19D89352005C0622 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				22F05A8019D89352005C0622 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -295,24 +255,6 @@
 			productReference = 22F05A6219D89352005C0622 /* tix4u.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22F05A7A19D89352005C0622 /* tix4uTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22F05A8819D89352005C0622 /* Build configuration list for PBXNativeTarget "tix4uTests" */;
-			buildPhases = (
-				22F05A7719D89352005C0622 /* Sources */,
-				22F05A7819D89352005C0622 /* Frameworks */,
-				22F05A7919D89352005C0622 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22F05A7D19D89352005C0622 /* PBXTargetDependency */,
-			);
-			name = tix4uTests;
-			productName = tix4uTests;
-			productReference = 22F05A7B19D89352005C0622 /* tix4uTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -324,10 +266,6 @@
 				TargetAttributes = {
 					22F05A6119D89352005C0622 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					22F05A7A19D89352005C0622 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 22F05A6119D89352005C0622;
 					};
 				};
 			};
@@ -345,7 +283,6 @@
 			projectRoot = "";
 			targets = (
 				22F05A6119D89352005C0622 /* tix4u */,
-				22F05A7A19D89352005C0622 /* tix4uTests */,
 			);
 		};
 /* End PBXProject section */
@@ -362,13 +299,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22F05A7919D89352005C0622 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -379,6 +309,7 @@
 				224481A619DC634700961FAC /* BuySellVC.m in Sources */,
 				229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */,
 				2220E9B619E4796F00226BC0 /* Annotation.m in Sources */,
+				221F5B0919E5AF4300F8989B /* Constants.m in Sources */,
 				221CFB2A19D8A72E001FC261 /* UIImage+RoundedCornerAdditions.m in Sources */,
 				221CFB2319D8A56B001FC261 /* Utility.m in Sources */,
 				221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */,
@@ -390,28 +321,11 @@
 				221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */,
 				22F05A9419D8954C005C0622 /* WelcomeVC.m in Sources */,
 				22F05A9B19D896FE005C0622 /* Reachability.m in Sources */,
-				2244817119DB342100961FAC /* Constants.m in Sources */,
 				224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22F05A7719D89352005C0622 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22F05A8219D89352005C0622 /* tix4uTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		22F05A7D19D89352005C0622 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22F05A6119D89352005C0622 /* tix4u */;
-			targetProxy = 22F05A7C19D89352005C0622 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22F05A6F19D89352005C0622 /* BuySell.storyboard */ = {
@@ -539,40 +453,6 @@
 			};
 			name = Release;
 		};
-		22F05A8919D89352005C0622 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = tix4uTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tix4u.app/tix4u";
-			};
-			name = Debug;
-		};
-		22F05A8A19D89352005C0622 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = tix4uTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tix4u.app/tix4u";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,15 +470,6 @@
 			buildConfigurations = (
 				22F05A8619D89352005C0622 /* Debug */,
 				22F05A8719D89352005C0622 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22F05A8819D89352005C0622 /* Build configuration list for PBXNativeTarget "tix4uTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22F05A8919D89352005C0622 /* Debug */,
-				22F05A8A19D89352005C0622 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
