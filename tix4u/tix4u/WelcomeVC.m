@@ -40,7 +40,7 @@
         loginVC.fields = PFLogInFieldsFacebook;
         loginVC.facebookPermissions = @[ @"user_about_me" ];
         
-        [self.navigationController presentViewController:loginVC animated: NO completion:nil];
+        [self.navigationController presentViewController:loginVC animated: YES completion:nil];
         
         NSLog(@"done... wait for success/error");
         return;

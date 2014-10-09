@@ -145,7 +145,10 @@
 				229FC04B19DDF1A3000A0C8C /* ProfileVC.m */,
 				22F05AA119D89BD1005C0622 /* LoginVC.m */,
 				22F05AA019D89BD1005C0622 /* LoginVC.h */,
+				22F05A9319D8954C005C0622 /* WelcomeVC.m */,
 				22F05A9219D8954C005C0622 /* WelcomeVC.h */,
+				22F05A6919D89352005C0622 /* AppDelegate.h */,
+				22F05A6A19D89352005C0622 /* AppDelegate.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -208,9 +211,6 @@
 		22F05A6519D89352005C0622 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				22F05A9319D8954C005C0622 /* WelcomeVC.m */,
-				22F05A6919D89352005C0622 /* AppDelegate.h */,
-				22F05A6A19D89352005C0622 /* AppDelegate.m */,
 				22F05A6619D89352005C0622 /* Info.plist */,
 				22F05A6719D89352005C0622 /* main.m */,
 			);

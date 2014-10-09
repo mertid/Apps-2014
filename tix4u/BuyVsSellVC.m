@@ -61,7 +61,6 @@
     BuyVC * buyVC = [[BuyVC alloc]init];
     [self.navigationController presentViewController:buyVC animated:NO completion:nil];
     
-    
 
 }
 

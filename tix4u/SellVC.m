@@ -33,6 +33,14 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
   
+    //cancel Button
+    
+    UIButton * cancelButton = [[UIButton alloc]initWithFrame:(CGRectMake(35, 40, 30, 30))];
+    cancelButton.backgroundColor = [UIColor redColor];
+    [cancelButton addTarget:self action:@selector(cancelButtonWasPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:cancelButton];
+    
 //Ticket Picker
     self.ticketPicker = [[UIPickerView alloc]initWithFrame:(CGRectMake(120, 55, 50, 50))];
     self.ticketPicker.showsSelectionIndicator = YES;
@@ -106,10 +114,8 @@
     
     }
 
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
-    return 1;
-}
+
+
 
 
 -(void)showTextField
@@ -140,6 +146,11 @@
 }
 
 #pragma mark - UIPickerView Delegate
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
@@ -263,6 +274,10 @@
     
 }
 
+-(void)cancelButtonWasPressed{
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 

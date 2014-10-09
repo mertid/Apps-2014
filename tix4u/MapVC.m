@@ -28,8 +28,10 @@
     
     [super viewDidLoad];
     
-    //self.navigationController.navigationBarHidden = true;
+    self.navigationController.navigationBarHidden = true;
     
+    
+        
     float w = self.view.bounds.size.width;
     float h = self.view.bounds.size.height;
     
@@ -56,13 +58,22 @@
     [EventfulRequest eventfulRequest:@"events/search" parameters:@"category=music&location=Atlanta&date=Today" completion:^(NSArray * events) {
         
         if (events.count > 0) {
-            tableVC.events = events;
+            tableVC.sellersInfo = events;
             [tableVC.tableView reloadData];
             [self populatePinsOnMapForEvents];
         } else {
             NSLog(@"No events were found");
         }
     }];
+    
+    UIButton * cancelButton = [[UIButton alloc]initWithFrame:(CGRectMake(35, 40, 30, 30))];
+    cancelButton.backgroundColor = [UIColor redColor];
+    [cancelButton addTarget:self action:@selector(cancelButtonWasPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:cancelButton];
+    
+
+    
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -90,7 +101,7 @@
 {
     [myMapView removeAnnotations:myMapView.annotations];
     
-    for (Event* event in tableVC.events) {
+    for (Event* event in tableVC.sellersInfo) {
         
         Annotation * annotation = [[Annotation alloc] init];
         CLLocationCoordinate2D eventCoord = [event getCoordinate];
@@ -132,6 +143,12 @@
         return annotationView;
     }
     return nil;
+}
+
+-(void)cancelButtonWasPressed
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+
 }
 
 

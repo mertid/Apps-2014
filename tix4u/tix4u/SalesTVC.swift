@@ -10,27 +10,42 @@ import UIKit
 
 class SalesTVC: UITableViewController {
     
-    var events: [Event] = []
+    var sellersInfo: [AnyObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBarHidden = false
         tableView.registerClass(SaleCell.classForCoder(), forCellReuseIdentifier: "saleCell")
+        self.tableView.rowHeight = 55
+    
+
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return events.count
+        return 10
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("saleCell", forIndexPath: indexPath) as SaleCell
         
-        let eventInfo = events[indexPath.row]
-        println("eventInfo \(eventInfo)")
+        cell.ticketLabel?.text = "Tickets"
+        cell.ratingLabel?.text = "My seller is aweseome"
+        cell.sectionLable?.text = "Section 200"
+        cell.sellerNameLabel?.text = "Merritt Tidwell"
+    
         
-        let mainText = eventInfo.title //"\(eventInfo.latitude), \(eventInfo.longitude)"
-        cell.textLabel?.text = mainText
-        cell.detailTextLabel?.text = eventInfo.venueName
+    //   cell.profileImage.image =
+        
+        
+//        let seller = sellersInfo[indexPath.row]
+       
+        //println("eventInfo \(eventInfo)")
+        
+       // let mainText = sellerInfo.title //"\(eventInfo.latitude), \(eventInfo.longitude)"
+       // cell.textLabel?.text = mainText
+       // cell.detailTextLabel?.text = eventInfo.venueName
+        
+        
         
         return cell
     }

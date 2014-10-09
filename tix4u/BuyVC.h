@@ -12,11 +12,7 @@
 
 
 @property (strong, nonatomic) UIPickerView * ticketPicker;
-@property (strong, nonatomic) UIPickerView * ratePicker;
 @property (strong, nonatomic) UIPickerView * eventPicker;
-
-
-
 
 
 @end
