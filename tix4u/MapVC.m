@@ -13,22 +13,28 @@
 #import "Annotation.h"
 #import "tix4u-swift.h"
 
-@interface MapVC() <MKMapViewDelegate, CLLocationManagerDelegate>
+@interface MapVC() <MKMapViewDelegate, CLLocationManagerDelegate, UITableViewDelegate, UITableViewDataSource>
 
 @end
 
 @implementation MapVC
 {
+    __weak IBOutlet UITableView *salesTableView;
     MKMapView * myMapView;
-    SalesTVC * tableVC;
     CLLocationManager * locationManager;
+    NSArray* sellersInfo;
 }
 
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     
-    self.navigationController.navigationBarHidden = true;
+    self.navigationController.navigationBarHidden = false;
+    
+    salesTableView.delegate = self;
+    salesTableView.dataSource = self;
+    //[salesTableView registerClass:[SaleCell class] forCellReuseIdentifier:@"saleCell"];
+    salesTableView.rowHeight = 55;
     
     float w = self.view.bounds.size.width;
     float h = self.view.bounds.size.height;
@@ -44,19 +50,13 @@
     
     [locationManager startUpdatingLocation];
     
-    tableVC = [[SalesTVC alloc]init];
-    tableVC.tableView.frame = CGRectMake(0, h/2, w, h/2);
-    tableVC.tableView.backgroundColor = [UIColor whiteColor];
-    [tableVC.tableView setSeparatorColor:[UIColor colorWithRed:0.000f green:0.651f blue:0.910f alpha:1.0f]];
-    [self.view addSubview:tableVC.tableView];
-    
     //ask heidi for help!
     //PFQuery *query = [PFQuery queryWithClassName:@"Selling"];
     
     [EventfulRequest eventfulRequest:@"events/search" parameters:@"category=music&location=Atlanta&date=Today" completion:^(NSArray * events) {
         if (events.count > 0) {
-            tableVC.sellersInfo = events;
-            [tableVC.tableView reloadData];
+            sellersInfo = events;
+            [salesTableView reloadData];
             [self populatePinsOnMapForEvents];
         } else {
             NSLog(@"No events were found");
@@ -95,7 +95,7 @@
 {
     [myMapView removeAnnotations:myMapView.annotations];
     
-    for (Event* event in tableVC.sellersInfo) {
+    for (Event* event in sellersInfo) {
         
         Annotation * annotation = [[Annotation alloc] init];
         CLLocationCoordinate2D eventCoord = [event getCoordinate];
@@ -145,5 +145,27 @@
 
 }
 
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SaleCell* cell = [salesTableView dequeueReusableCellWithIdentifier:@"saleCell" forIndexPath: indexPath];
+    
+    cell.ticketLabel.text = @"Tickets";
+    cell.ratingLabel.text = @"My seller is aweseome";
+    cell.sectionLable.text = @"Section 200";
+    cell.sellerNameLabel.text = @"Merritt Tidwell";
+    
+    //   cell.profileImage.image =
+    //        let seller = sellersInfo[indexPath.row]
+    //println("eventInfo \(eventInfo)")
+    // let mainText = sellerInfo.title //"\(eventInfo.latitude), \(eventInfo.longitude)"
+    // cell.textLabel?.text = mainText
+    // cell.detailTextLabel?.text = eventInfo.venueName
+    
+    return cell;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 10;
+}
 
 @end

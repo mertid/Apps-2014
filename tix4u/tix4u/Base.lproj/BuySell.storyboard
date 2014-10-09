@@ -97,6 +97,9 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="QXU-oQ-WhU"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="salesTableView" destination="ezz-2T-D40" id="WwV-GF-LU2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
