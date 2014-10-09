@@ -50,9 +50,18 @@
     
     [locationManager startUpdatingLocation];
     
-    //ask heidi for help!
-    //PFQuery *query = [PFQuery queryWithClassName:@"Selling"];
+    [self getAllSellingTickets];
     
+    UIButton * cancelButton = [[UIButton alloc]initWithFrame:(CGRectMake(35, 40, 30, 30))];
+    cancelButton.backgroundColor = [UIColor redColor];
+    [cancelButton addTarget:self action:@selector(cancelButtonWasPressed) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:cancelButton];
+}
+
+-(void)getAllSellingTickets
+{
+    /*
     [EventfulRequest eventfulRequest:@"events/search" parameters:@"category=music&location=Atlanta&date=Today" completion:^(NSArray * events) {
         if (events.count > 0) {
             sellersInfo = events;
@@ -62,12 +71,17 @@
             NSLog(@"No events were found");
         }
     }];
+    */
     
-    UIButton * cancelButton = [[UIButton alloc]initWithFrame:(CGRectMake(35, 40, 30, 30))];
-    cancelButton.backgroundColor = [UIColor redColor];
-    [cancelButton addTarget:self action:@selector(cancelButtonWasPressed) forControlEvents:UIControlEventTouchUpInside];
-    
-    [self.view addSubview:cancelButton];
+    PFQuery *query = [PFQuery queryWithClassName:@"Selling"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        sellersInfo = objects;
+        for (int i=0; i<objects.count; i++) {
+            PFObject* saleOption = objects[i];
+            NSLog(@"%@", saleOption);
+        }
+        [salesTableView reloadData];
+    }];
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
@@ -149,10 +163,12 @@
 {
     SaleCell* cell = [salesTableView dequeueReusableCellWithIdentifier:@"saleCell" forIndexPath: indexPath];
     
+    PFObject* sellingOption = sellersInfo[indexPath.row];
+    
     cell.ticketLabel.text = @"Tickets";
     cell.ratingLabel.text = @"My seller is aweseome";
-    cell.sectionLable.text = @"Section 200";
-    cell.sellerNameLabel.text = @"Merritt Tidwell";
+    cell.sectionLable.text = sellingOption[@"Section"];
+    cell.sellerNameLabel.text = sellingOption[@"SellerID"];
     
     //   cell.profileImage.image =
     //        let seller = sellersInfo[indexPath.row]
@@ -165,7 +181,7 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 10;
+    return sellersInfo.count;
 }
 
 @end
