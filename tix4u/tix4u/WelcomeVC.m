@@ -38,7 +38,6 @@
         [loginVC setDelegate:self];
         loginVC.fields = PFLogInFieldsFacebook;
         loginVC.facebookPermissions = @[ @"user_about_me" ];
-        
         [self.navigationController presentViewController:loginVC animated: YES completion:nil];
         
         NSLog(@"done... wait for success/error");
@@ -48,20 +47,7 @@
     NSLog(@"Ok user is already logged in");
     // Refresh current user with server side data -- checks if user is still valid and so on
     [[PFUser currentUser] refreshInBackgroundWithTarget:self selector:@selector(refreshCurrentUserCallbackWithResult:error:)];
-    
-    UIStoryboard* sb = [UIStoryboard storyboardWithName:@"BuySell" bundle:nil];
-    
-    UITabBarController* tbC = (UITabBarController*)[sb instantiateInitialViewController];
-  
-//[self showViewController:tbC sender:self];
-  [self presentViewController:tbC animated:true completion:nil];
-//    self.navigationController.viewControllers =@[tbC];
-
-  
-    // BuySellViewController * BSVc = [[BuySellViewController alloc] init];
-    
-    //[self presentViewController:BSVc animated:YES completion:nil];
-
+    [self performSegueWithIdentifier:@"eventsTabController" sender:self];
 }
 
 - (void)refreshCurrentUserCallbackWithResult:(PFObject *)refreshedObject error:(NSError *)error {

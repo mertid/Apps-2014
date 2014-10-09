@@ -17,7 +17,6 @@
 		221F5B1519E5B13900F8989B /* SellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F5B1419E5B13900F8989B /* SellVC.m */; };
 		2220E9B619E4796F00226BC0 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2220E9B519E4796F00226BC0 /* Annotation.m */; };
 		224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2ED19DCA9D9001935E7 /* MapVC.m */; };
-		229FC04419DDEAE5000A0C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FC04319DDEAE5000A0C8C /* Main.storyboard */; };
 		229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC04B19DDF1A3000A0C8C /* ProfileVC.m */; };
 		22F05A7119D89352005C0622 /* BuySell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A6F19D89352005C0622 /* BuySell.storyboard */; };
 		22F05A7319D89352005C0622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A7219D89352005C0622 /* Images.xcassets */; };
@@ -59,7 +58,6 @@
 		2220E9B519E4796F00226BC0 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Annotation.m; path = ../Annotation.m; sourceTree = "<group>"; };
 		224FD2EC19DCA9D9001935E7 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapVC.h; path = ../MapVC.h; sourceTree = "<group>"; };
 		224FD2ED19DCA9D9001935E7 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapVC.m; path = ../MapVC.m; sourceTree = "<group>"; };
-		229FC04319DDEAE5000A0C8C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		229FC04A19DDF1A3000A0C8C /* ProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileVC.h; sourceTree = "<group>"; };
 		229FC04B19DDF1A3000A0C8C /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
 		22F05A6219D89352005C0622 /* tix4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tix4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +144,6 @@
 		229FC04519DDEAEA000A0C8C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				229FC04319DDEAE5000A0C8C /* Main.storyboard */,
 				22F05A6F19D89352005C0622 /* BuySell.storyboard */,
 			);
 			name = Storyboards;
@@ -310,7 +307,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F05A7119D89352005C0622 /* BuySell.storyboard in Resources */,
-				229FC04419DDEAE5000A0C8C /* Main.storyboard in Resources */,
 				22F05A7619D89352005C0622 /* LaunchScreen.xib in Resources */,
 				22F05A7319D89352005C0622 /* Images.xcassets in Resources */,
 			);
