@@ -90,8 +90,7 @@
     return transparentBorderImage;
 }
 
-#pragma mark -
-#pragma mark Private helper methods
+#pragma mark - Private helper methods
 
 // Creates a mask that makes the outer edges transparent and everything else opaque
 // The size must include the entire mask (opaque part + transparent border)

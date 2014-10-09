@@ -30,8 +30,6 @@
     
     self.navigationController.navigationBarHidden = true;
     
-    
-        
     float w = self.view.bounds.size.width;
     float h = self.view.bounds.size.height;
     
@@ -56,7 +54,6 @@
     //PFQuery *query = [PFQuery queryWithClassName:@"Selling"];
     
     [EventfulRequest eventfulRequest:@"events/search" parameters:@"category=music&location=Atlanta&date=Today" completion:^(NSArray * events) {
-        
         if (events.count > 0) {
             tableVC.sellersInfo = events;
             [tableVC.tableView reloadData];
@@ -71,9 +68,6 @@
     [cancelButton addTarget:self action:@selector(cancelButtonWasPressed) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:cancelButton];
-    
-
-    
 }
 
 -(void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations

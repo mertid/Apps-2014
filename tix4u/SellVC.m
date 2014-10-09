@@ -25,7 +25,6 @@
     NSString * selectedRow;
     NSString * selectedEvent;
     NSString * selectedSection;
-  
 }
 
 - (void)viewDidLoad {
@@ -52,10 +51,9 @@
     cancelButton.backgroundColor = [UIColor redColor];
     [cancelButton setTitle:@"X" forState:UIControlStateNormal];
     [cancelButton addTarget:self action:@selector(cancelButtonWasPressed) forControlEvents:UIControlEventTouchUpInside];
-    
     [self.view addSubview:cancelButton];
     
-//Ticket Picker
+    //Ticket Picker
     self.ticketPicker = [[UIPickerView alloc]initWithFrame:(CGRectMake(120, 55, 50, 50))];
     self.ticketPicker.showsSelectionIndicator = YES;
     _numberOfTicket = @[@"1",@"2",@"3",@"4"];
@@ -64,16 +62,14 @@
     self.ticketPicker.tag = 0;
     [self.view addSubview:self.ticketPicker];
     
-//Ticket Label
-   
+    //Ticket Label
     UILabel * ticketLabel = [[UILabel alloc]initWithFrame:CGRectMake(110, 55, 100, 60)];
     ticketLabel.text = @"Tickets";
     ticketLabel.textColor = [UIColor redColor];
     ticketLabel.font = [UIFont fontWithName:@"Helvetica" size:28];
     [self.view addSubview:ticketLabel];
     
-  
-// Section Picker
+    // Section Picker
     self.sectionPicker = [[UIPickerView alloc]initWithFrame:CGRectMake(215, 175, 50, 50)];
     self.sectionPicker.showsSelectionIndicator = YES;
     _section= @[@"500", @"700"];
@@ -82,18 +78,13 @@
     self.sectionPicker.tag = 1;
     [self.view addSubview:self.sectionPicker];
     
-// Section Label
-    
+    // Section Label
     UILabel * sectionLabel = [[UILabel alloc]initWithFrame:CGRectMake(200, 185, 80, 50)];
     sectionLabel.text = @"Section";
     sectionLabel.textColor = [UIColor redColor];
     [self.view addSubview:sectionLabel];
     
- 
- 
-// Row Picker
-    
-    
+    // Row Picker
     self.rowPicker = [[UIPickerView alloc]initWithFrame:CGRectMake(45, 175, 50, 50)];
     self.rowPicker.showsSelectionIndicator = YES;
     _row= @[@"1", @"3"];
@@ -102,35 +93,28 @@
     self.rowPicker.tag = 2;
     [self.view addSubview:self.rowPicker];
     
-//Row Label
-    
+    //Row Label
     UILabel * rowLabel = [[UILabel alloc]initWithFrame:CGRectMake(35, 185, 50, 50)];
     rowLabel.text = @"Row";
     rowLabel.textColor = [UIColor redColor];
     [self.view addSubview:rowLabel];
     
-//Event Picker
+    //Event Picker
     
+    _eventName = @[@"other", @"another place", @"other", @"this one produce something"];
     self.eventPicker = [[UIPickerView alloc]initWithFrame:CGRectMake(60, 350, 200, 50)];
     self.eventPicker.showsSelectionIndicator = YES;
-    _eventName = @[@"other", @"another place", @"other", @"this one produce something"];
-
     self.eventPicker.delegate = self;
     self.eventPicker.dataSource = self;
     self.eventPicker.tag = 3;
     [self.view addSubview:self.eventPicker];
     
-//Event Label
-    UILabel * eventLabel = [[UILabel alloc]initWithFrame:CGRectMake(70, 370, 200, 50)];
+    //Event Label
+    UILabel * eventLabel = [[UILabel alloc]initWithFrame:CGRectMake(70, 310, 200, 50)];
     eventLabel.text = @"Choose Your Event";
     eventLabel.textColor = [UIColor redColor];
-   [self.view addSubview:eventLabel];
-    
-    }
-
-
-
-
+    [self.view addSubview:eventLabel];
+}
 
 -(void)showTextField
 {
@@ -146,8 +130,6 @@
     textField.delegate = self;
     
     [self.view addSubview:textField];
-    
-    
 }
 
 #pragma mark - TextField Delegate
@@ -182,7 +164,7 @@
         case 2:
             return   _row.count;
             break;
-       
+            
         case 3:
             
             return  _eventName.count;
@@ -210,11 +192,11 @@
             
             return _section[row];
             break;
-       
+            
         case 2:
             return _row[row];
             break;
-        
+            
         case 3:
             
             return _eventName[row];
@@ -244,7 +226,7 @@
         case 2:
             selectedRow = _row[row];
             break;
-      
+            
         case 3:
             
             selectedEvent = _eventName[row];
@@ -264,10 +246,8 @@
     {
         NSLog(@"self ticker running");
         [self saveToParseSell];
-       
     }
-    
-    }
+}
 
 -(void)saveToParseSell
 {
@@ -282,11 +262,9 @@
     [sellerInfo setObject:[PFUser currentUser].objectId forKey:@"SellerID"];
     
     [sellerInfo saveInBackground];
-    
 }
 
 -(void)cancelButtonWasPressed{
-    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
