@@ -222,21 +222,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHE-za-0Fx">
-                                <rect key="frame" x="277" y="550" width="30" height="30"/>
-                                <state key="normal" title="&gt;">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njL-jx-Si6" userLabel="HiddenShowMapsBtnForSegue">
+                                <rect key="frame" x="277" y="-30" width="77" height="30"/>
+                                <state key="normal" title="ShowMaps">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="tuE-db-pDq"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="showSalesMap" id="OHh-N3-xBQ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="nextButton" destination="tHE-za-0Fx" id="Jbe-6x-DuI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CHg-IJ-JQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

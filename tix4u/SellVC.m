@@ -32,11 +32,25 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-  
-    //cancel Button
     
-    UIButton * cancelButton = [[UIButton alloc]initWithFrame:(CGRectMake(35, 40, 30, 30))];
+    float w = self.view.bounds.size.width;
+    float h = self.view.bounds.size.height;
+    
+    float btnSize = 40;
+    float padding = 10;
+    float statusBarHeight = 20;
+    
+    //next Button
+    UIButton *nextButton = [[UIButton alloc] initWithFrame:CGRectMake((w-btnSize)/2.0, h-btnSize-padding, btnSize, btnSize)];
+    [nextButton setTitle:@">" forState:UIControlStateNormal];
+    nextButton.backgroundColor = [UIColor redColor];
+    [nextButton addTarget:self action:@selector(showNextPage) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:nextButton];
+    
+    //cancel Button
+    UIButton * cancelButton = [[UIButton alloc]initWithFrame:(CGRectMake(padding, statusBarHeight + padding, btnSize, btnSize))];
     cancelButton.backgroundColor = [UIColor redColor];
+    [cancelButton setTitle:@"X" forState:UIControlStateNormal];
     [cancelButton addTarget:self action:@selector(cancelButtonWasPressed) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:cancelButton];
@@ -249,9 +263,6 @@
     else if (([self.ticketPicker selectedRowInComponent:0] && [self.rowPicker selectedRowInComponent:0] && [self.eventPicker selectedRowInComponent:0]) > 0)
     {
         NSLog(@"self ticker running");
-        MapVC * mapVC = [[MapVC alloc]init];
-        mapVC.view.backgroundColor = [UIColor clearColor];
-        [self presentViewController: mapVC animated:YES completion:nil];
         [self saveToParseSell];
        
     }
@@ -279,6 +290,8 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-
+-(void)showNextPage {
+    [self performSegueWithIdentifier:@"showSalesMap" sender:self];
+}
 
 @end
