@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wvo-sb-tM5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Wvo-sb-tM5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--MapVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MapVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sellingScreen" id="BYZ-38-t0r" customClass="MapVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,7 +21,7 @@
                                 <rect key="frame" x="-7" y="200" width="600" height="357"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="139" id="Sxq-gu-be4" customClass="SaleCell" customModule="tix4u" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="saleCell" rowHeight="139" id="Sxq-gu-be4" customClass="SaleCell" customModule="tix4u" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Sxq-gu-be4" id="z2B-G2-I8R">
@@ -99,12 +100,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2797" y="248"/>
+            <point key="canvasLocation" x="2220" y="2426"/>
         </scene>
-        <!--Buy Vs SellVC-->
+        <!--Buy SellVC-->
         <scene sceneID="c1M-vQ-YA7">
             <objects>
-                <viewController id="Nct-bq-5Vt" customClass="BuyVsSellVC" sceneMemberID="viewController">
+                <viewController id="Nct-bq-5Vt" customClass="BuySellVC" customModule="tix4u" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2eg-nZ-kAh"/>
                         <viewControllerLayoutGuide type="bottom" id="C9y-DY-SUi"/>
@@ -112,13 +113,134 @@
                     <view key="view" contentMode="scaleToFill" id="VeV-tP-YSt">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xu1-eW-h2r" userLabel="SellBtn">
+                                <rect key="frame" x="250" y="179" width="100" height="71"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="19j-CH-6Q3"/>
+                                    <constraint firstAttribute="width" secondItem="Xu1-eW-h2r" secondAttribute="height" multiplier="7:5" id="9Kt-uS-nIW"/>
+                                </constraints>
+                                <state key="normal" title="Sell">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="4oh-H5-2Kq" kind="presentation" id="8nh-XQ-Ydg"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hqr-0g-pSU" userLabel="topView">
+                                <rect key="frame" x="0.0" y="64" width="600" height="115"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vu7-1f-k2S" userLabel="middleView">
+                                <rect key="frame" x="0.0" y="250" width="600" height="115"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8y5-vk-05f" userLabel="bottomView">
+                                <rect key="frame" x="0.0" y="436" width="600" height="115"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRO-d2-ANC" userLabel="BuyBtn">
+                                <rect key="frame" x="250" y="365" width="100" height="71"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Buy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="40k-Xi-n2E" kind="presentation" id="iaF-ko-Yzg"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hqr-0g-pSU" firstAttribute="top" secondItem="2eg-nZ-kAh" secondAttribute="bottom" id="0Hl-tr-R1n"/>
+                            <constraint firstItem="8y5-vk-05f" firstAttribute="top" secondItem="cRO-d2-ANC" secondAttribute="bottom" id="5ap-PD-gZG"/>
+                            <constraint firstItem="cRO-d2-ANC" firstAttribute="top" secondItem="vu7-1f-k2S" secondAttribute="bottom" id="6dd-wY-sIZ"/>
+                            <constraint firstItem="Xu1-eW-h2r" firstAttribute="width" secondItem="cRO-d2-ANC" secondAttribute="width" id="9PN-47-36M"/>
+                            <constraint firstAttribute="trailing" secondItem="hqr-0g-pSU" secondAttribute="trailing" id="DZT-Gp-T1h"/>
+                            <constraint firstItem="Xu1-eW-h2r" firstAttribute="height" secondItem="cRO-d2-ANC" secondAttribute="height" id="FXG-39-P6w"/>
+                            <constraint firstItem="vu7-1f-k2S" firstAttribute="width" secondItem="8y5-vk-05f" secondAttribute="width" id="HqC-iY-fDl"/>
+                            <constraint firstItem="vu7-1f-k2S" firstAttribute="top" secondItem="Xu1-eW-h2r" secondAttribute="bottom" id="IzZ-xc-suA"/>
+                            <constraint firstItem="Xu1-eW-h2r" firstAttribute="width" secondItem="cRO-d2-ANC" secondAttribute="width" id="NOw-CW-1rw"/>
+                            <constraint firstAttribute="centerX" secondItem="Xu1-eW-h2r" secondAttribute="centerX" id="NXo-gP-J84"/>
+                            <constraint firstItem="C9y-DY-SUi" firstAttribute="top" secondItem="8y5-vk-05f" secondAttribute="bottom" id="PtU-aA-eXI"/>
+                            <constraint firstItem="vu7-1f-k2S" firstAttribute="leading" secondItem="8y5-vk-05f" secondAttribute="leading" id="RUa-YV-0Dn"/>
+                            <constraint firstItem="hqr-0g-pSU" firstAttribute="leading" secondItem="VeV-tP-YSt" secondAttribute="leading" id="XMM-U4-LCL"/>
+                            <constraint firstItem="vu7-1f-k2S" firstAttribute="width" secondItem="hqr-0g-pSU" secondAttribute="width" id="a1D-uL-Yqz"/>
+                            <constraint firstItem="vu7-1f-k2S" firstAttribute="height" secondItem="8y5-vk-05f" secondAttribute="height" id="eRw-hY-3tA"/>
+                            <constraint firstItem="vu7-1f-k2S" firstAttribute="height" secondItem="hqr-0g-pSU" secondAttribute="height" id="i5e-ux-pMX"/>
+                            <constraint firstItem="vu7-1f-k2S" firstAttribute="leading" secondItem="hqr-0g-pSU" secondAttribute="leading" id="tR6-ZD-tuI"/>
+                            <constraint firstItem="Xu1-eW-h2r" firstAttribute="top" secondItem="hqr-0g-pSU" secondAttribute="bottom" id="tSf-nd-eP7"/>
+                            <constraint firstItem="Xu1-eW-h2r" firstAttribute="centerX" secondItem="cRO-d2-ANC" secondAttribute="centerX" id="xsg-Mz-ceO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ne1-ms-noz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyH-lK-yrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763" y="867"/>
+            <point key="canvasLocation" x="1173" y="1751"/>
+        </scene>
+        <!--BuyVC-->
+        <scene sceneID="jRe-XM-Axx">
+            <objects>
+                <viewController id="40k-Xi-n2E" customClass="BuyVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wCx-oL-XcV"/>
+                        <viewControllerLayoutGuide type="bottom" id="cRi-w5-mJN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a4h-yO-cdy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LV2-C7-6Fr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="891" y="2426"/>
+        </scene>
+        <!--SellVC-->
+        <scene sceneID="Pdr-k0-HgF">
+            <objects>
+                <viewController id="4oh-H5-2Kq" customClass="SellVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FYy-Eq-5Y0"/>
+                        <viewControllerLayoutGuide type="bottom" id="BXI-XP-Quk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qCz-YT-6C6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHE-za-0Fx">
+                                <rect key="frame" x="277" y="550" width="30" height="30"/>
+                                <state key="normal" title="&gt;">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="tuE-db-pDq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="tHE-za-0Fx" id="Jbe-6x-DuI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CHg-IJ-JQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1563" y="2426"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ojI-Z9-6zd">
@@ -132,7 +254,6 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="ZRI-z3-Jzg" kind="relationship" relationship="viewControllers" id="ECU-bb-3AR"/>
                         <segue destination="fMU-mc-0du" kind="relationship" relationship="viewControllers" id="3jB-AE-u6j"/>
                         <segue destination="qVi-9Z-BYV" kind="relationship" relationship="viewControllers" id="m12-j3-PPU"/>
                     </connections>
@@ -140,25 +261,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qfo-ch-kz1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="971" y="136"/>
-        </scene>
-        <!--map-->
-        <scene sceneID="E24-z9-oh4">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZRI-z3-Jzg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="map" id="MfN-rI-VSh"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x4t-BG-kYc">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zm7-Ub-bKz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1ej-HY-H5Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1763" y="136"/>
         </scene>
         <!--Buy.Sell.-->
         <scene sceneID="7XB-us-c4T">
@@ -177,7 +279,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SFf-KM-FYO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="867"/>
+            <point key="canvasLocation" x="971" y="905"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="wsc-hg-LFq">
@@ -196,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e1m-pZ-nCX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763" y="1582"/>
+            <point key="canvasLocation" x="499" y="1652"/>
         </scene>
         <!--Profile-->
         <scene sceneID="1E9-Ef-mkw">
@@ -215,7 +317,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tqQ-j9-4t4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="1582"/>
+            <point key="canvasLocation" x="335" y="898"/>
         </scene>
     </scenes>
 </document>

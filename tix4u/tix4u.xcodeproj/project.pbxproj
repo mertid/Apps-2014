@@ -13,15 +13,12 @@
 		221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2C19D8A737001FC261 /* UIImage+AlphaAdditions.m */; };
 		221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 221CFB2F19D8A746001FC261 /* UIImage+Alpha.m */; };
 		221F5B0919E5AF4300F8989B /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F5B0819E5AF4300F8989B /* Constants.m */; };
-		221F5B0F19E5B11700F8989B /* BuyVsSellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F5B0E19E5B11700F8989B /* BuyVsSellVC.m */; };
 		221F5B1219E5B12900F8989B /* BuyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F5B1119E5B12900F8989B /* BuyVC.m */; };
 		221F5B1519E5B13900F8989B /* SellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 221F5B1419E5B13900F8989B /* SellVC.m */; };
 		2220E9B619E4796F00226BC0 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2220E9B519E4796F00226BC0 /* Annotation.m */; };
 		224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 224FD2ED19DCA9D9001935E7 /* MapVC.m */; };
 		229FC04419DDEAE5000A0C8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229FC04319DDEAE5000A0C8C /* Main.storyboard */; };
 		229FC04C19DDF1A3000A0C8C /* ProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 229FC04B19DDF1A3000A0C8C /* ProfileVC.m */; };
-		22F05A6819D89352005C0622 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6719D89352005C0622 /* main.m */; };
-		22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22F05A6A19D89352005C0622 /* AppDelegate.m */; };
 		22F05A7119D89352005C0622 /* BuySell.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A6F19D89352005C0622 /* BuySell.storyboard */; };
 		22F05A7319D89352005C0622 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A7219D89352005C0622 /* Images.xcassets */; };
 		22F05A7619D89352005C0622 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F05A7419D89352005C0622 /* LaunchScreen.xib */; };
@@ -38,6 +35,7 @@
 		91C5933019E5CDA600BA0B70 /* EventfulRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */; };
 		91C5933119E5CDA600BA0B70 /* SalesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5932E19E5CDA600BA0B70 /* SalesTVC.swift */; };
 		91C5933319E5E12B00BA0B70 /* SaleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C5933219E5E12B00BA0B70 /* SaleCell.swift */; };
+		91EE8C2F19E70BA400E8B741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EE8C2E19E70BA400E8B741 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +51,6 @@
 		221CFB2F19D8A746001FC261 /* UIImage+Alpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Alpha.m"; sourceTree = "<group>"; };
 		221F5B0719E5AF4300F8989B /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = SOURCE_ROOT; };
 		221F5B0819E5AF4300F8989B /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = SOURCE_ROOT; };
-		221F5B0D19E5B11700F8989B /* BuyVsSellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuyVsSellVC.h; path = ../BuyVsSellVC.h; sourceTree = "<group>"; };
-		221F5B0E19E5B11700F8989B /* BuyVsSellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuyVsSellVC.m; path = ../BuyVsSellVC.m; sourceTree = "<group>"; };
 		221F5B1019E5B12900F8989B /* BuyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BuyVC.h; path = ../BuyVC.h; sourceTree = "<group>"; };
 		221F5B1119E5B12900F8989B /* BuyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BuyVC.m; path = ../BuyVC.m; sourceTree = "<group>"; };
 		221F5B1319E5B13900F8989B /* SellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SellVC.h; path = ../SellVC.h; sourceTree = "<group>"; };
@@ -68,9 +64,6 @@
 		229FC04B19DDF1A3000A0C8C /* ProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileVC.m; sourceTree = "<group>"; };
 		22F05A6219D89352005C0622 /* tix4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tix4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F05A6619D89352005C0622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22F05A6719D89352005C0622 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		22F05A6919D89352005C0622 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		22F05A6A19D89352005C0622 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		22F05A7019D89352005C0622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/BuySell.storyboard; sourceTree = "<group>"; };
 		22F05A7219D89352005C0622 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22F05A7519D89352005C0622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -91,6 +84,7 @@
 		91C5932D19E5CDA600BA0B70 /* EventfulRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventfulRequest.swift; sourceTree = "<group>"; };
 		91C5932E19E5CDA600BA0B70 /* SalesTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalesTVC.swift; sourceTree = "<group>"; };
 		91C5933219E5E12B00BA0B70 /* SaleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaleCell.swift; sourceTree = "<group>"; };
+		91EE8C2E19E70BA400E8B741 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +129,6 @@
 		229FC04219DDE60F000A0C8C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				221F5B0D19E5B11700F8989B /* BuyVsSellVC.h */,
-				221F5B0E19E5B11700F8989B /* BuyVsSellVC.m */,
 				221F5B1019E5B12900F8989B /* BuyVC.h */,
 				221F5B1119E5B12900F8989B /* BuyVC.m */,
 				221F5B1319E5B13900F8989B /* SellVC.h */,
@@ -147,8 +139,6 @@
 				22F05AA019D89BD1005C0622 /* LoginVC.h */,
 				22F05A9319D8954C005C0622 /* WelcomeVC.m */,
 				22F05A9219D8954C005C0622 /* WelcomeVC.h */,
-				22F05A6919D89352005C0622 /* AppDelegate.h */,
-				22F05A6A19D89352005C0622 /* AppDelegate.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -195,6 +185,7 @@
 		22F05A6419D89352005C0622 /* tix4u */ = {
 			isa = PBXGroup;
 			children = (
+				91EE8C2E19E70BA400E8B741 /* AppDelegate.swift */,
 				91C5932B19E5CDA500BA0B70 /* tix4u-Bridging-Header.h */,
 				91C5932A19E5CD7B00BA0B70 /* Maps */,
 				229FC04219DDE60F000A0C8C /* Controllers */,
@@ -212,7 +203,6 @@
 			isa = PBXGroup;
 			children = (
 				22F05A6619D89352005C0622 /* Info.plist */,
-				22F05A6719D89352005C0622 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -343,15 +333,13 @@
 				221CFB2319D8A56B001FC261 /* Utility.m in Sources */,
 				91C5932F19E5CDA600BA0B70 /* Event.swift in Sources */,
 				221CFB2D19D8A737001FC261 /* UIImage+AlphaAdditions.m in Sources */,
-				22F05A6B19D89352005C0622 /* AppDelegate.m in Sources */,
 				221CFB2719D8A6CE001FC261 /* UIImage+ResizeAdditions.m in Sources */,
 				221F5B1219E5B12900F8989B /* BuyVC.m in Sources */,
 				22F05AA219D89BD1005C0622 /* LoginVC.m in Sources */,
-				22F05A6819D89352005C0622 /* main.m in Sources */,
 				221CFB3019D8A747001FC261 /* UIImage+Alpha.m in Sources */,
 				22F05A9419D8954C005C0622 /* WelcomeVC.m in Sources */,
-				221F5B0F19E5B11700F8989B /* BuyVsSellVC.m in Sources */,
 				22F05A9B19D896FE005C0622 /* Reachability.m in Sources */,
+				91EE8C2F19E70BA400E8B741 /* AppDelegate.swift in Sources */,
 				91C5933319E5E12B00BA0B70 /* SaleCell.swift in Sources */,
 				224FD2EE19DCA9D9001935E7 /* MapVC.m in Sources */,
 			);

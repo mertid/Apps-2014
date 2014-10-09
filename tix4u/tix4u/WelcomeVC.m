@@ -8,7 +8,6 @@
 
 #import "WelcomeVC.h"
 #import <Parse/Parse.h>
-#import "AppDelegate.h"
 #import "LoginVC.h"
 #import "Constants.h"
 #import <FacebookSDK/FacebookSDK.h>
