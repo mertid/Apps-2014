@@ -154,11 +154,12 @@
     
     PFObject* sellingOption = sellersInfo[indexPath.row];
     
-    cell.ticketLabel.text = @"Tickets";
     cell.ratingLabel.text = @"My seller is aweseome";
+    cell.ticketLabel.text = sellingOption[@"NumberOfTicketsSelling"];
     cell.sectionLable.text = sellingOption[@"Section"];
     PFObject* seller = sellingOption[@"SellerID"];
     cell.sellerNameLabel.text = seller[@"displayName"];
+    cell.rowLabel.text = sellingOption[@"Row"];
     
     //   cell.profileImage.image =
     //        let seller = sellersInfo[indexPath.row]

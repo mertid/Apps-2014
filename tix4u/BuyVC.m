@@ -28,6 +28,21 @@
   
     self.view.backgroundColor = [UIColor whiteColor];
  
+    float w = self.view.bounds.size.width;
+    float h = self.view.bounds.size.height;
+    
+    float btnSize = 40;
+    float padding = 10;
+
+    
+    
+    //next Button
+    UIButton *nextButton = [[UIButton alloc] initWithFrame:CGRectMake((w-btnSize)/2.0, h-btnSize-padding, btnSize, btnSize)];
+    [nextButton setTitle:@">" forState:UIControlStateNormal];
+    nextButton.backgroundColor = [UIColor redColor];
+    [nextButton addTarget:self action:@selector(showNextPage) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:nextButton];
+
     //cancel Button
     
     UIButton * cancelButton = [[UIButton alloc]initWithFrame:(CGRectMake(35, 40, 30, 30))];
@@ -152,9 +167,6 @@
         else if (([self.ticketPicker selectedRowInComponent:0] && [self.eventPicker selectedRowInComponent:0] && [self.eventPicker selectedRowInComponent:0]) > 0)
         {
             NSLog(@"self ticker running");
-            MapVC * mapVC = [[MapVC alloc]init];
-            mapVC.view.backgroundColor = [UIColor clearColor];
-            [self presentViewController: mapVC animated:YES completion:nil];
             [self saveToParseBuy];
             
         }
@@ -188,8 +200,6 @@
     return YES;
 }
 
-
-
 -(void)saveToParseBuy{
     
     PFObject * buyerInfo = [PFObject objectWithClassName:@"Buying"];
@@ -204,5 +214,11 @@
 -(void)cancelButtonWasPressed{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+-(void)showNextPage {
+    [self performSegueWithIdentifier:@"sellersID" sender:self];
+}
+
+
 
 @end
