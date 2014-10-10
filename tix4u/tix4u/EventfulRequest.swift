@@ -16,12 +16,12 @@ class EventfulRequest: NSObject {
     
     override init() {
         eventStartTimeDateFormatter.locale = NSLocale.currentLocale()
-        eventStartTimeDateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        eventStartTimeDateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss" ////"2014-10-18 11:15:00",
     }
-    /*
+/*
     func findEventsWithLocation(location: CLLocation, completion: ((venues: NSArray) -> void)
     +(NSArray *)getVenuesAroundLatitude:(float)latitude AndLongitude:(float)longitude ForRadius:(int)radius;
-    */
+*/
     class func eventfulRequest(endpoint: String, parameters: String, completion: ((events: [Event]) -> Void)?) {
         
         let urlString = EV_API_URL + endpoint + "?app_key=" + EV_APP_KEY + "&" + parameters
@@ -47,6 +47,7 @@ class EventfulRequest: NSObject {
             var events: [Event] = []
             
             let jsonEventsArray = json["events"]!["event"]! as [[String:AnyObject]]
+            
             for currentEventDict in jsonEventsArray {
                 //println(currentEventDict)
                 var nextEvent = Event()
@@ -55,11 +56,16 @@ class EventfulRequest: NSObject {
                 }
                 
                 nextEvent.title = currentEventDict["title"]! as? String
-                nextEvent.latitude = currentEventDict["calendar_count"]! as? String //TODO put back latitude
                 nextEvent.latitude = currentEventDict["latitude"]! as? String
                 nextEvent.longitude = currentEventDict["longitude"]! as? String
                 nextEvent.startTime = eventStartTimeDateFormatter.dateFromString(currentEventDict["start_time"]! as String)
-                
+                /*
+                println(nextEvent.title)
+                println(nextEvent.venueName)
+                println(nextEvent.latitude)
+                println(nextEvent.longitude)
+                println(nextEvent.startTime)
+                */
                 events.append(nextEvent)
             }
             
