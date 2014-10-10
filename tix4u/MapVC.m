@@ -62,6 +62,7 @@
 -(void)getAllSellingTickets
 {
     PFQuery *query = [PFQuery queryWithClassName:@"Ticket"];
+    [query includeKey:@"SellerID"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         sellersInfo = objects;
         for (int i=0; i<objects.count; i++) {
@@ -156,7 +157,8 @@
     cell.ticketLabel.text = @"Tickets";
     cell.ratingLabel.text = @"My seller is aweseome";
     cell.sectionLable.text = sellingOption[@"Section"];
-    cell.sellerNameLabel.text = sellingOption[@"SellerID"];
+    PFObject* seller = sellingOption[@"SellerID"];
+    cell.sellerNameLabel.text = seller[@"displayName"];
     
     //   cell.profileImage.image =
     //        let seller = sellersInfo[indexPath.row]
