@@ -61,18 +61,6 @@
 
 -(void)getAllSellingTickets
 {
-    /*
-    [EventfulRequest eventfulRequest:@"events/search" parameters:@"category=music&location=Atlanta&date=Today" completion:^(NSArray * events) {
-        if (events.count > 0) {
-            sellersInfo = events;
-            [salesTableView reloadData];
-            [self populatePinsOnMapForEvents];
-        } else {
-            NSLog(@"No events were found");
-        }
-    }];
-    */
-    
     PFQuery *query = [PFQuery queryWithClassName:@"Ticket"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         sellersInfo = objects;

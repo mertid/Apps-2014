@@ -9,6 +9,9 @@
 #import "SellVC.h"
 #import "MapVC.h"
 #import <Parse/Parse.h>
+#import "tix4u-swift.h"
+#import <CoreLocation/CoreLocation.h>
+#import "Constants.h"
 
 @interface SellVC ()<UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
 
@@ -20,15 +23,49 @@
     NSArray * _row;
     NSArray * _section;
     NSDate *  _eventDate;
-    NSArray * _eventName;
+    NSMutableArray * _eventNames;
     NSString * selectedTicket;
     NSString * selectedRow;
     NSString * selectedEvent;
     NSString * selectedSection;
 }
 
+-(void)downloadNearbyEvents {
+    
+//http://api.eventful.com/json/events/search?app_key=Pdv5pkc3G4tF3TCB&where=32.746682,-117.162741&within=25
+    
+    //TODO merritt, get sellers real location...
+    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(32.746682, -117.162741);
+    
+    int withinRadius = 50;
+    NSString* eventSearchParams = [NSString stringWithFormat:@"category=music&within=%d&where=%f,%f", withinRadius, coord.latitude, coord.longitude];
+    
+    [EventfulRequest eventfulRequest:@"events/search" parameters:eventSearchParams completion:^(NSArray * events) {
+        if (events.count > 0) {
+            
+            for (int i=0; i<events.count; i++) {
+                Event* currentEventInfo = events[i];
+                [_eventNames addObject:currentEventInfo.title];
+                [self.eventPicker reloadAllComponents];
+            }
+            
+            /*
+            sellersInfo = events;
+            [salesTableView reloadData];
+            [self populatePinsOnMapForEvents];
+            */
+        } else {
+            NSLog(@"No events were found");
+        }
+    }];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self downloadNearbyEvents];
+    
+    _eventNames = [@[] mutableCopy];
     
     self.view.backgroundColor = [UIColor whiteColor];
     
@@ -101,7 +138,6 @@
     
     //Event Picker
     
-    _eventName = @[@"other", @"another place", @"other", @"this one produce something"];
     self.eventPicker = [[UIPickerView alloc]initWithFrame:CGRectMake(60, 350, 200, 50)];
     self.eventPicker.showsSelectionIndicator = YES;
     self.eventPicker.delegate = self;
@@ -150,37 +186,10 @@
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
 {
-    switch (pickerView.tag) {
-        case 0:
-            
-            return   _numberOfTicket.count;
-            break;
-            
-        case 1:
-            
-            return   _section.count;
-            break;
-            
-        case 2:
-            return   _row.count;
-            break;
-            
-        case 3:
-            
-            return  _eventName.count;
-            break;
-            
-            
-        default:
-            break;
-    }
-    
-    return 0;
-    
+    return _eventNames.count;
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-
 {
     switch (pickerView.tag) {
         case 0:
@@ -199,7 +208,7 @@
             
         case 3:
             
-            return _eventName[row];
+            return _eventNames[row];
             break;
             
         default:
@@ -229,7 +238,7 @@
             
         case 3:
             
-            selectedEvent = _eventName[row];
+            selectedEvent = _eventNames[row];
             NSLog(@"%@", selectedEvent);
             
             break;
