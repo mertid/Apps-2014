@@ -21,10 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
         Parse.setApplicationId(PARSE_APP_ID, clientKey:PARSE_CLIENT_ID)
         PFUser.enableAutomaticUser() // TODO temp take this out ... we just want to create temp login while FB bug is happening
-        /*
 
         return true
     }

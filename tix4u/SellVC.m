@@ -242,16 +242,11 @@
     {
         [self showTextField];
     }
-    else if (([self.ticketPicker selectedRowInComponent:0] && [self.rowPicker selectedRowInComponent:0] && [self.eventPicker selectedRowInComponent:0]) > 0)
-    {
-        NSLog(@"self ticker running");
-        [self saveToParseSell];
-    }
 }
 
 -(void)saveToParseSell
 {
-    PFObject * sellerInfo = [PFObject objectWithClassName:@"Selling"];
+    PFObject * sellerInfo = [PFObject objectWithClassName:@"Ticket"];
     [sellerInfo setObject: selectedTicket forKey:@"NumberOfTicketsSelling"];
     [sellerInfo setObject: selectedEvent forKey:@"Event"];
     [sellerInfo setObject: selectedRow forKey:@"Row"];
@@ -259,9 +254,19 @@
     // [sellerInfo setObject:_eventDate forKey:@"Date"];
     NSLog(@"save to parseseller");
     
-    [sellerInfo setObject:[PFUser currentUser].objectId forKey:@"SellerID"];
+    [sellerInfo setObject:[PFUser currentUser] forKey:@"SellerID"];
     
-    [sellerInfo saveInBackground];
+    [sellerInfo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (succeeded) {
+            NSLog(@"Successfully saved tickets!");
+        } else {
+            NSLog(@"Couldn't save sellers tickets!");
+        }
+        
+        if (error != nil) {
+            NSLog(@"An error occurred %@", error.userInfo);
+        }
+    }];
 }
 
 -(void)cancelButtonWasPressed{
@@ -269,7 +274,9 @@
 }
 
 -(void)showNextPage {
-    [self performSegueWithIdentifier:@"showSalesMap" sender:self];
+    NSLog(@"self ticker running");
+    [self saveToParseSell];
+    [self performSegueWithIdentifier:@"listedID" sender:self];
 }
 
 @end

@@ -73,7 +73,7 @@
     }];
     */
     
-    PFQuery *query = [PFQuery queryWithClassName:@"Selling"];
+    PFQuery *query = [PFQuery queryWithClassName:@"Ticket"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         sellersInfo = objects;
         for (int i=0; i<objects.count; i++) {
