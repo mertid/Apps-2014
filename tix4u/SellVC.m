@@ -13,7 +13,14 @@
 #import <CoreLocation/CoreLocation.h>
 #import "Constants.h"
 
-@interface SellVC ()<UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate>
+@interface SellVC ()<UITextFieldDelegate, UIPickerViewDataSource, UIPickerViewDelegate, CLLocationManagerDelegate>
+
+
+@property (strong,nonatomic) NSString * selectedTicket;
+@property (strong,nonatomic) NSString * selectedRow;
+@property(strong,nonatomic) NSString * selectedEvent;
+@property(strong,nonatomic) NSString * selectedSection;
+
 
 @end
 
@@ -24,21 +31,43 @@
     NSArray * _section;
     NSDate *  _eventDate;
     NSMutableArray * _eventNames;
-    NSString * selectedTicket;
-    NSString * selectedRow;
-    NSString * selectedEvent;
-    NSString * selectedSection;
+    CLLocationManager * locationManager;
+    PFGeoPoint * sellerLocation;
+    
+    
 }
+
+
+
+
+
 
 -(void)downloadNearbyEvents {
     
 //http://api.eventful.com/json/events/search?app_key=Pdv5pkc3G4tF3TCB&where=32.746682,-117.162741&within=25
     
     //TODO merritt, get sellers real location...
-    CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(32.746682, -117.162741);
+    
+    
+//     sellerLocation= [PFGeoPoint geoPointWithLatitude:40.0 longitude:-30.0];
+   
+    [PFGeoPoint geoPointForCurrentLocationInBackground:^(PFGeoPoint *sellerLocation2, NSError *error) {
+        if (!error) {
+            NSLog(@"%@",sellerLocation2);
+            
+        
+        }
+    
+        
+    }];
+    
+    
+
+    
+  //  CLLocationCoordinate2D coord = CLLocationCoordinate2DMake(32.746682, -117.162741);
     
     int withinRadius = 50;
-    NSString* eventSearchParams = [NSString stringWithFormat:@"category=music&within=%d&where=%f,%f", withinRadius, coord.latitude, coord.longitude];
+    NSString* eventSearchParams = [NSString stringWithFormat:@"category=music&within=%d&where=%f,%f", withinRadius, sellerLocation.latitude, sellerLocation.longitude];
     
     [EventfulRequest eventfulRequest:@"events/search" parameters:eventSearchParams completion:^(NSArray * events) {
         if (events.count > 0) {
@@ -62,8 +91,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     
     [self downloadNearbyEvents];
+    
+    locationManager = [[CLLocationManager alloc]init];
+    locationManager.delegate = self;
+    
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest; // setting the accuracy
+    
+    [locationManager startUpdatingLocation];  //requesting location updates
+
     
     _eventNames = [@[] mutableCopy];
     
@@ -224,22 +262,22 @@
     switch (pickerView.tag) {
         case 0:
             
-            selectedTicket =  _numberOfTicket[row];
+            self.selectedTicket =  _numberOfTicket[row];
             break;
             
         case 1:
             
-            selectedSection = _section[row];
+            self.selectedSection = _section[row];
             break;
             
         case 2:
-            selectedRow = _row[row];
+            self.selectedRow = _row[row];
             break;
             
         case 3:
             
-            selectedEvent = _eventNames[row];
-            NSLog(@"%@", selectedEvent);
+            self.selectedEvent = _eventNames[row];
+            NSLog(@"%@", self.selectedEvent);
             
             break;
             
@@ -253,30 +291,31 @@
     }
 }
 
--(void)saveToParseSell
-{
-    PFObject * sellerInfo = [PFObject objectWithClassName:@"Ticket"];
-    [sellerInfo setObject: selectedTicket forKey:@"NumberOfTicketsSelling"];
-    [sellerInfo setObject: selectedEvent forKey:@"Event"];
-    [sellerInfo setObject: selectedRow forKey:@"Row"];
-    [sellerInfo setObject: selectedSection forKey:@"Section"];
-    // [sellerInfo setObject:_eventDate forKey:@"Date"];
-    NSLog(@"save to parseseller");
-    
-    [sellerInfo setObject:[PFUser currentUser] forKey:@"SellerID"];
-    
-    [sellerInfo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (succeeded) {
-            NSLog(@"Successfully saved tickets!");
-        } else {
-            NSLog(@"Couldn't save sellers tickets!");
-        }
-        
-        if (error != nil) {
-            NSLog(@"An error occurred %@", error.userInfo);
-        }
-    }];
-}
+//-(void)saveToParseSell
+//{
+//    
+//    PFObject * sellerInfo = [PFObject objectWithClassName:@"Ticket"];
+//    [sellerInfo setObject: self.selectedTicket forKey:@"NumberOfTicketsSelling"];
+//    [sellerInfo setObject: self.selectedEvent forKey:@"Event"];
+//    [sellerInfo setObject: self.selectedRow forKey:@"Row"];
+//    [sellerInfo setObject: self.selectedSection forKey:@"Section"];
+//    // [sellerInfo setObject:_eventDate forKey:@"Date"];
+//    NSLog(@"save to parseseller");
+//    [sellerInfo setObject: sellerLocation forKey:@"sellerLocation"];
+//    [sellerInfo setObject:[PFUser currentUser] forKey:@"SellerID"];
+//    
+//    [sellerInfo saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//        if (succeeded) {
+//            NSLog(@"Successfully saved tickets!");
+//        } else {
+//            NSLog(@"Couldn't save sellers tickets!");
+//        }
+//        
+//        if (error != nil) {
+//            NSLog(@"An error occurred %@", error.userInfo);
+//        }
+//    }];
+//}
 
 -(void)cancelButtonWasPressed{
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -284,7 +323,7 @@
 
 -(void)showNextPage {
     NSLog(@"self ticker running");
-    [self saveToParseSell];
+  //  [self saveToParseSell];
     [self performSegueWithIdentifier:@"listedID" sender:self];
 }
 

@@ -34,7 +34,7 @@
     salesTableView.delegate = self;
     salesTableView.dataSource = self;
     //[salesTableView registerClass:[SaleCell class] forCellReuseIdentifier:@"saleCell"];
-    salesTableView.rowHeight = 55;
+    //salesTableView.rowHeight = 55;
     
     float w = self.view.bounds.size.width;
     float h = self.view.bounds.size.height;
@@ -154,8 +154,8 @@
     
     PFObject* sellingOption = sellersInfo[indexPath.row];
     
-    cell.ratingLabel.text = @"My seller is aweseome";
     cell.ticketLabel.text = sellingOption[@"NumberOfTicketsSelling"];
+   // cell.ratingLabel.text = sellingOption[@];
     cell.sectionLable.text = sellingOption[@"Section"];
     PFObject* seller = sellingOption[@"SellerID"];
     cell.sellerNameLabel.text = seller[@"displayName"];
