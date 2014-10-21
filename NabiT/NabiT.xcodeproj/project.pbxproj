@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22684EB919ECAF1E00542572 /* mapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EB819ECAF1E00542572 /* mapVC.m */; };
+		22684EBC19ED5E6400542572 /* SaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EBB19ED5E6400542572 /* SaleCell.m */; };
+		22684EBF19ED7D2300542572 /* FinalSell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EBE19ED7D2300542572 /* FinalSell.m */; };
+		22684EC419EDC71800542572 /* SMSSeller.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EC319EDC71800542572 /* SMSSeller.m */; };
+		22684EC719EDD32600542572 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EC619EDD32600542572 /* Annotation.m */; };
+		229332BB19F052E6003F680E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 229332BA19F052E6003F680E /* back.png */; };
+		22D05C3D19EC916900EC6F39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D05C3C19EC916900EC6F39 /* main.m */; };
+		22D05C4019EC916900EC6F39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D05C3F19EC916900EC6F39 /* AppDelegate.m */; };
+		22D05C4619EC916900EC6F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D05C4419EC916900EC6F39 /* Main.storyboard */; };
+		22D05C4B19EC916900EC6F39 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D05C4919EC916900EC6F39 /* LaunchScreen.xib */; };
+		22D05C5719EC916A00EC6F39 /* NabiTTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D05C5619EC916A00EC6F39 /* NabiTTests.m */; };
+		22D05C6119EC918700EC6F39 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D05C6019EC918700EC6F39 /* MobileCoreServices.framework */; };
+		22D05C6319EC919F00EC6F39 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D05C6219EC919F00EC6F39 /* SystemConfiguration.framework */; };
+		22D05C6719EC920300EC6F39 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D05C6519EC920200EC6F39 /* Bolts.framework */; };
+		22D05C6B19EC92B400EC6F39 /* LogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D05C6A19EC92B400EC6F39 /* LogIn.m */; };
+		22D05C6D19EC97B600EC6F39 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22D05C6C19EC97B600EC6F39 /* Parse.framework */; };
+		22D05C7019EC9E8A00EC6F39 /* BuyvsSell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D05C6F19EC9E8A00EC6F39 /* BuyvsSell.m */; };
+		22D05C7319ECA2FB00EC6F39 /* Sell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D05C7219ECA2FB00EC6F39 /* Sell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22D05C5119EC916A00EC6F39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22D05C2F19EC916900EC6F39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22D05C3619EC916900EC6F39;
+			remoteInfo = NabiT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22684EB719ECAF1E00542572 /* mapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapVC.h; sourceTree = "<group>"; };
+		22684EB819ECAF1E00542572 /* mapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapVC.m; sourceTree = "<group>"; };
+		22684EBA19ED5E6400542572 /* SaleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleCell.h; sourceTree = "<group>"; };
+		22684EBB19ED5E6400542572 /* SaleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaleCell.m; sourceTree = "<group>"; };
+		22684EBD19ED7D2300542572 /* FinalSell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalSell.h; sourceTree = "<group>"; };
+		22684EBE19ED7D2300542572 /* FinalSell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalSell.m; sourceTree = "<group>"; };
+		22684EC019ED86CD00542572 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		22684EC219EDC71800542572 /* SMSSeller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSSeller.h; sourceTree = "<group>"; };
+		22684EC319EDC71800542572 /* SMSSeller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSSeller.m; sourceTree = "<group>"; };
+		22684EC519EDD32600542572 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		22684EC619EDD32600542572 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		229332BA19F052E6003F680E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = ../../../../back.png; sourceTree = "<group>"; };
+		22D05C3719EC916900EC6F39 /* NabiT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NabiT.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D05C3B19EC916900EC6F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D05C3C19EC916900EC6F39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22D05C3E19EC916900EC6F39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22D05C3F19EC916900EC6F39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22D05C4519EC916900EC6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22D05C4A19EC916900EC6F39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		22D05C5019EC916A00EC6F39 /* NabiTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NabiTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22D05C5519EC916A00EC6F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22D05C5619EC916A00EC6F39 /* NabiTTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NabiTTests.m; sourceTree = "<group>"; };
+		22D05C6019EC918700EC6F39 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		22D05C6219EC919F00EC6F39 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		22D05C6519EC920200EC6F39 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../../Documents/IOS Library/Bolts.framework"; sourceTree = "<group>"; };
+		22D05C6919EC92B400EC6F39 /* LogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogIn.h; sourceTree = "<group>"; };
+		22D05C6A19EC92B400EC6F39 /* LogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogIn.m; sourceTree = "<group>"; };
+		22D05C6C19EC97B600EC6F39 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../../Downloads/parse-library-1.4.1 (1)/Parse.framework"; sourceTree = "<group>"; };
+		22D05C6E19EC9E8A00EC6F39 /* BuyvsSell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyvsSell.h; sourceTree = "<group>"; };
+		22D05C6F19EC9E8A00EC6F39 /* BuyvsSell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyvsSell.m; sourceTree = "<group>"; };
+		22D05C7119ECA2FB00EC6F39 /* Sell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sell.h; sourceTree = "<group>"; };
+		22D05C7219ECA2FB00EC6F39 /* Sell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22D05C3419EC916900EC6F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D05C6719EC920300EC6F39 /* Bolts.framework in Frameworks */,
+				22D05C6319EC919F00EC6F39 /* SystemConfiguration.framework in Frameworks */,
+				22D05C6D19EC97B600EC6F39 /* Parse.framework in Frameworks */,
+				22D05C6119EC918700EC6F39 /* MobileCoreServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D05C4D19EC916A00EC6F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22D05C2E19EC916900EC6F39 = {
+			isa = PBXGroup;
+			children = (
+				22684EC519EDD32600542572 /* Annotation.h */,
+				22684EC619EDD32600542572 /* Annotation.m */,
+				22684EC219EDC71800542572 /* SMSSeller.h */,
+				22684EC319EDC71800542572 /* SMSSeller.m */,
+				22684EBD19ED7D2300542572 /* FinalSell.h */,
+				22684EBE19ED7D2300542572 /* FinalSell.m */,
+				22684EBA19ED5E6400542572 /* SaleCell.h */,
+				22684EBB19ED5E6400542572 /* SaleCell.m */,
+				22684EB719ECAF1E00542572 /* mapVC.h */,
+				22684EB819ECAF1E00542572 /* mapVC.m */,
+				22D05C7119ECA2FB00EC6F39 /* Sell.h */,
+				22D05C7219ECA2FB00EC6F39 /* Sell.m */,
+				22D05C6E19EC9E8A00EC6F39 /* BuyvsSell.h */,
+				22D05C6F19EC9E8A00EC6F39 /* BuyvsSell.m */,
+				22D05C6919EC92B400EC6F39 /* LogIn.h */,
+				22D05C6A19EC92B400EC6F39 /* LogIn.m */,
+				22D05C3919EC916900EC6F39 /* NabiT */,
+				22D05C5319EC916A00EC6F39 /* NabiTTests */,
+				22D05C3819EC916900EC6F39 /* Products */,
+				22D05C6419EC91BD00EC6F39 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22D05C3819EC916900EC6F39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22D05C3719EC916900EC6F39 /* NabiT.app */,
+				22D05C5019EC916A00EC6F39 /* NabiTTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22D05C3919EC916900EC6F39 /* NabiT */ = {
+			isa = PBXGroup;
+			children = (
+				22D05C3E19EC916900EC6F39 /* AppDelegate.h */,
+				22D05C3F19EC916900EC6F39 /* AppDelegate.m */,
+				22D05C4419EC916900EC6F39 /* Main.storyboard */,
+				22D05C4919EC916900EC6F39 /* LaunchScreen.xib */,
+				22D05C3A19EC916900EC6F39 /* Supporting Files */,
+			);
+			path = NabiT;
+			sourceTree = "<group>";
+		};
+		22D05C3A19EC916900EC6F39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				229332BA19F052E6003F680E /* back.png */,
+				22D05C3B19EC916900EC6F39 /* Info.plist */,
+				22D05C3C19EC916900EC6F39 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22D05C5319EC916A00EC6F39 /* NabiTTests */ = {
+			isa = PBXGroup;
+			children = (
+				22D05C5619EC916A00EC6F39 /* NabiTTests.m */,
+				22D05C5419EC916A00EC6F39 /* Supporting Files */,
+			);
+			path = NabiTTests;
+			sourceTree = "<group>";
+		};
+		22D05C5419EC916A00EC6F39 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22D05C5519EC916A00EC6F39 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22D05C6419EC91BD00EC6F39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22684EC019ED86CD00542572 /* libz.dylib */,
+				22D05C6C19EC97B600EC6F39 /* Parse.framework */,
+				22D05C6519EC920200EC6F39 /* Bolts.framework */,
+				22D05C6019EC918700EC6F39 /* MobileCoreServices.framework */,
+				22D05C6219EC919F00EC6F39 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22D05C3619EC916900EC6F39 /* NabiT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D05C5A19EC916A00EC6F39 /* Build configuration list for PBXNativeTarget "NabiT" */;
+			buildPhases = (
+				22D05C3319EC916900EC6F39 /* Sources */,
+				22D05C3419EC916900EC6F39 /* Frameworks */,
+				22D05C3519EC916900EC6F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NabiT;
+			productName = NabiT;
+			productReference = 22D05C3719EC916900EC6F39 /* NabiT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22D05C4F19EC916A00EC6F39 /* NabiTTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22D05C5D19EC916A00EC6F39 /* Build configuration list for PBXNativeTarget "NabiTTests" */;
+			buildPhases = (
+				22D05C4C19EC916A00EC6F39 /* Sources */,
+				22D05C4D19EC916A00EC6F39 /* Frameworks */,
+				22D05C4E19EC916A00EC6F39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22D05C5219EC916A00EC6F39 /* PBXTargetDependency */,
+			);
+			name = NabiTTests;
+			productName = NabiTTests;
+			productReference = 22D05C5019EC916A00EC6F39 /* NabiTTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22D05C2F19EC916900EC6F39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Merritt Tidwell";
+				TargetAttributes = {
+					22D05C3619EC916900EC6F39 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					22D05C4F19EC916A00EC6F39 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 22D05C3619EC916900EC6F39;
+					};
+				};
+			};
+			buildConfigurationList = 22D05C3219EC916900EC6F39 /* Build configuration list for PBXProject "NabiT" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22D05C2E19EC916900EC6F39;
+			productRefGroup = 22D05C3819EC916900EC6F39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22D05C3619EC916900EC6F39 /* NabiT */,
+				22D05C4F19EC916A00EC6F39 /* NabiTTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22D05C3519EC916900EC6F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				229332BB19F052E6003F680E /* back.png in Resources */,
+				22D05C4619EC916900EC6F39 /* Main.storyboard in Resources */,
+				22D05C4B19EC916900EC6F39 /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D05C4E19EC916A00EC6F39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22D05C3319EC916900EC6F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22684EC419EDC71800542572 /* SMSSeller.m in Sources */,
+				22684EBF19ED7D2300542572 /* FinalSell.m in Sources */,
+				22684EBC19ED5E6400542572 /* SaleCell.m in Sources */,
+				22684EB919ECAF1E00542572 /* mapVC.m in Sources */,
+				22D05C4019EC916900EC6F39 /* AppDelegate.m in Sources */,
+				22D05C7019EC9E8A00EC6F39 /* BuyvsSell.m in Sources */,
+				22D05C7319ECA2FB00EC6F39 /* Sell.m in Sources */,
+				22684EC719EDD32600542572 /* Annotation.m in Sources */,
+				22D05C3D19EC916900EC6F39 /* main.m in Sources */,
+				22D05C6B19EC92B400EC6F39 /* LogIn.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22D05C4C19EC916A00EC6F39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D05C5719EC916A00EC6F39 /* NabiTTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22D05C5219EC916A00EC6F39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22D05C3619EC916900EC6F39 /* NabiT */;
+			targetProxy = 22D05C5119EC916A00EC6F39 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22D05C4419EC916900EC6F39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D05C4519EC916900EC6F39 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22D05C4919EC916900EC6F39 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22D05C4A19EC916900EC6F39 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22D05C5819EC916A00EC6F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22D05C5919EC916A00EC6F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22D05C5B19EC916A00EC6F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Merritt/Documents/IOS,
+					Library,
+					"/Users/Merritt/Downloads/parse-library-1.4.1",
+					"(1)",
+				);
+				INFOPLIST_FILE = NabiT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22D05C5C19EC916A00EC6F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/Merritt/Documents/IOS,
+					Library,
+					"/Users/Merritt/Downloads/parse-library-1.4.1",
+					"(1)",
+				);
+				INFOPLIST_FILE = NabiT/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22D05C5E19EC916A00EC6F39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NabiTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NabiT.app/NabiT";
+			};
+			name = Debug;
+		};
+		22D05C5F19EC916A00EC6F39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = NabiTTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NabiT.app/NabiT";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22D05C3219EC916900EC6F39 /* Build configuration list for PBXProject "NabiT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D05C5819EC916A00EC6F39 /* Debug */,
+				22D05C5919EC916A00EC6F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D05C5A19EC916A00EC6F39 /* Build configuration list for PBXNativeTarget "NabiT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D05C5B19EC916A00EC6F39 /* Debug */,
+				22D05C5C19EC916A00EC6F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22D05C5D19EC916A00EC6F39 /* Build configuration list for PBXNativeTarget "NabiTTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D05C5E19EC916A00EC6F39 /* Debug */,
+				22D05C5F19EC916A00EC6F39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22D05C2F19EC916900EC6F39 /* Project object */;
+}

@@ -171,6 +171,9 @@
     return cell;
 }
 
+
+
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return sellersInfo.count;
 }

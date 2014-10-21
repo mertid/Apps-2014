@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T09-N7-LEA">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Nabit-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LogIn" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.16078431904315948" green="0.83921575546264648" blue="0.4745098352432251" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nabit" id="HSy-Bw-aeo"/>
+                    <connections>
+                        <segue destination="DbU-kk-A0t" kind="show" identifier="Login" id="MLS-b8-ktI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298" y="136"/>
+        </scene>
+        <!--Nabit-->
+        <scene sceneID="W3o-j5-b1k">
+            <objects>
+                <viewController storyboardIdentifier="BuyvsSell" id="lRt-mk-XSB" customClass="BuyvsSell" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8oG-P8-n35"/>
+                        <viewControllerLayoutGuide type="bottom" id="fg6-59-7Yj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RmT-ui-xB4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nabit" id="9UG-1F-6F6"/>
+                    <connections>
+                        <segue destination="ccN-fM-aaw" kind="presentation" identifier="buy" id="z0u-SM-30p"/>
+                        <segue destination="ghn-Sz-evG" kind="presentation" identifier="sell" id="cIv-Gc-0xM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVG-p6-L8A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4782" y="105"/>
+        </scene>
+        <!--Sellers in Your Area-->
+        <scene sceneID="rsF-YY-E1T">
+            <objects>
+                <viewController id="NXc-Gr-OOC" customClass="mapVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1uo-SO-IXO"/>
+                        <viewControllerLayoutGuide type="bottom" id="LKB-3w-Ll3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6wA-Mr-26u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rhd-HO-MFc">
+                                <rect key="frame" x="0.0" y="142" width="600" height="445"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="saleCell" rowHeight="110" id="2Db-Vu-OJo" customClass="SaleCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Db-Vu-OJo" id="U4a-M1-dTJ">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="event name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N83-Te-4wb">
+                                                    <rect key="frame" x="33" y="16" width="187" height="31"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="21"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="number of tickets" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfp-zC-PZs">
+                                                    <rect key="frame" x="57" y="55" width="48" height="40"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="27"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="snP-ko-NPk">
+                                                    <rect key="frame" x="255" y="34" width="91" height="39.5"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tickets" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UAj-mh-QfJ">
+                                                    <rect key="frame" x="88" y="59" width="121" height="32"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.11764706671237946" green="0.7137255072593689" blue="0.87843143939971924" alpha="1" colorSpace="deviceRGB"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="eventsLabel" destination="N83-Te-4wb" id="QWf-tu-E2n"/>
+                                            <outlet property="numberOfTicketsLabel" destination="Vfp-zC-PZs" id="azU-qh-rjY"/>
+                                            <segue destination="34A-Il-vUs" kind="presentation" identifier="ticketDetail" id="b1B-0l-I2z"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="288" width="400" height="298"/>
+                                </variation>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="LKB-3w-Ll3" firstAttribute="top" secondItem="rhd-HO-MFc" secondAttribute="bottom" id="FUg-Zk-Rzu"/>
+                            <constraint firstItem="rhd-HO-MFc" firstAttribute="top" secondItem="1uo-SO-IXO" secondAttribute="bottom" constant="365" id="fpF-Ei-yS7">
+                                <variation key="widthClass=compact" constant="270"/>
+                            </constraint>
+                            <constraint firstAttribute="trailing" secondItem="rhd-HO-MFc" secondAttribute="trailing" id="vl3-yQ-Yie"/>
+                            <constraint firstItem="rhd-HO-MFc" firstAttribute="leading" secondItem="6wA-Mr-26u" secondAttribute="leading" id="yUf-dq-80g"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fpF-Ei-yS7"/>
+                                <exclude reference="vl3-yQ-Yie"/>
+                                <exclude reference="yUf-dq-80g"/>
+                                <exclude reference="FUg-Zk-Rzu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="fpF-Ei-yS7"/>
+                                <include reference="vl3-yQ-Yie"/>
+                                <include reference="yUf-dq-80g"/>
+                                <include reference="FUg-Zk-Rzu"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sellers in Your Area" id="LPd-za-IJW">
+                        <barButtonItem key="backBarButtonItem" title="back" id="Eea-f5-m6Y"/>
+                        <barButtonItem key="leftBarButtonItem" title="back" id="Clb-0L-y9E">
+                            <connections>
+                                <action selector="backButtonPressed:" destination="NXc-Gr-OOC" id="qIr-N3-XAH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="salesTableView" destination="rhd-HO-MFc" id="q49-xN-WtG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uMg-tW-FRK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7086" y="-490"/>
+        </scene>
+        <!--Sell-->
+        <scene sceneID="JrI-Fp-mPv">
+            <objects>
+                <viewController id="Bv7-U1-rTI" customClass="Sell" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7lW-pQ-x20"/>
+                        <viewControllerLayoutGuide type="bottom" id="bp1-3t-fih"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jiw-Fh-Scv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Cno-x3-oBD"/>
+                    <connections>
+                        <segue destination="R8H-bX-fcG" kind="show" id="NG1-Ru-E8W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOZ-Xh-UPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7154" y="227"/>
+        </scene>
+        <!--Seller-->
+        <scene sceneID="Hiw-qX-U3S">
+            <objects>
+                <viewController id="34A-Il-vUs" customClass="SMSSeller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1rz-2W-KBM"/>
+                        <viewControllerLayoutGuide type="bottom" id="y0T-lu-FEz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jda-WK-mgS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kpe-S0-wG4">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="return">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="23" y="20" width="46" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="returnButton:" destination="34A-Il-vUs" eventType="touchUpInside" id="Tgy-GP-49o"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail about the Seller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBV-Ib-6mj">
+                                <rect key="frame" x="37" y="52" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="50" width="239" height="44"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BT2-BD-J8e">
+                                <rect key="frame" x="16" y="283" width="280" height="116"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="38"/>
+                                <color key="tintColor" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Text the Seller">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="16" y="495" width="296" height="58"/>
+                                </variation>
+                                <connections>
+                                    <action selector="smsSellerButton:" destination="34A-Il-vUs" eventType="touchUpInside" id="fQu-UZ-0e4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tickets For Sale" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLS-Fx-ed2">
+                                <rect key="frame" x="37" y="52" width="176" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-12" y="156" width="176" height="62"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKx-8p-0Qg">
+                                <rect key="frame" x="37" y="52" width="176" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="67" y="278" width="176" height="44"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seller Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPc-dO-7WS">
+                                <rect key="frame" x="37" y="52" width="176" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="47" y="86" width="176" height="44"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8C-2S-tVW">
+                                <rect key="frame" x="37" y="52" width="176" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="56" y="199" width="199" height="89"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWR-nx-CWR">
+                                <rect key="frame" x="37" y="52" width="176" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-12" y="367" width="176" height="44"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="connect Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rta-3d-KLQ">
+                                <rect key="frame" x="37" y="52" width="176" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="187" y="353" width="176" height="72"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2fM-Yq-ytq">
+                                <rect key="frame" x="37" y="52" width="176" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="180" y="156" width="91" height="79"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254902422428131" green="0.65882354974746704" blue="0.83921575546264648" alpha="1" colorSpace="deviceRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="Kpe-S0-wG4"/>
+                                <exclude reference="HLS-Fx-ed2"/>
+                                <exclude reference="UKx-8p-0Qg"/>
+                                <exclude reference="wPc-dO-7WS"/>
+                                <exclude reference="k8C-2S-tVW"/>
+                                <exclude reference="aWR-nx-CWR"/>
+                                <exclude reference="Rta-3d-KLQ"/>
+                                <exclude reference="2fM-Yq-ytq"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Kpe-S0-wG4"/>
+                                <include reference="HLS-Fx-ed2"/>
+                                <include reference="UKx-8p-0Qg"/>
+                                <include reference="wPc-dO-7WS"/>
+                                <include reference="k8C-2S-tVW"/>
+                                <include reference="aWR-nx-CWR"/>
+                                <include reference="Rta-3d-KLQ"/>
+                                <include reference="2fM-Yq-ytq"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="z4F-xT-2oJ"/>
+                    <connections>
+                        <outlet property="eventDetail" destination="k8C-2S-tVW" id="YnJ-W0-tli"/>
+                        <outlet property="numberOfTicketsDetail" destination="2fM-Yq-ytq" id="EIC-cb-zIm"/>
+                        <outlet property="priceLabel" destination="Rta-3d-KLQ" id="xzy-W8-7x3"/>
+                        <outlet property="sectionDetail" destination="UKx-8p-0Qg" id="wKf-DZ-3l1"/>
+                        <outlet property="sellerNameDetailLabel" destination="wPc-dO-7WS" id="5jA-d7-ooZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g0t-ZV-MIP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8268" y="-478"/>
+        </scene>
+        <!--Nabit-->
+        <scene sceneID="VgI-G3-hgr">
+            <objects>
+                <viewController storyboardIdentifier="FinalSell" id="stO-P6-j4h" customClass="FinalSell" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5nT-2a-5ny"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lml-pq-3uf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="c1b-QF-dHy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Tickets Are Waiting to be Nabbed!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLk-Lo-rH6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="112" y="136" width="176" height="139"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cL-lH-i0C">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.39319707469999998" green="0.62854713470000001" blue="0.97870266439999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="You Sold Your Tickets">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="417" width="192" height="69"/>
+                                </variation>
+                                <connections>
+                                    <action selector="ticketsSold:" destination="stO-P6-j4h" eventType="touchUpInside" id="bMN-e1-5MO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0E-Dq-CAe">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Remove Tickets from Map">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="104" y="322" width="192" height="69"/>
+                                </variation>
+                                <connections>
+                                    <action selector="removeFromMap:" destination="stO-P6-j4h" eventType="touchUpInside" id="IDS-gs-Ofn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="VLk-Lo-rH6"/>
+                                <exclude reference="2cL-lH-i0C"/>
+                                <exclude reference="E0E-Dq-CAe"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="VLk-Lo-rH6"/>
+                                <include reference="2cL-lH-i0C"/>
+                                <include reference="E0E-Dq-CAe"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem id="JoB-O0-BdU"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Nabit" id="2ZP-c0-oFM"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEb-1q-Zr7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9004.5" y="230"/>
+        </scene>
+        <!--Nabit-->
+        <scene sceneID="osc-Kk-cYg">
+            <objects>
+                <navigationController title="Nabit" automaticallyAdjustsScrollViewInsets="NO" id="T09-N7-LEA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DOX-Xg-I8V">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eAm-Af-9dB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pI0-7b-ekT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1380" y="96"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ygZ-8H-VgK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DbU-kk-A0t" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DQv-dg-Irw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lRt-mk-XSB" kind="relationship" relationship="rootViewController" id="uoV-YG-ljB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXx-hf-Sdg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3864" y="105"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="S2C-EY-lxy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ccN-fM-aaw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yg1-G6-4fW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NXc-Gr-OOC" kind="relationship" relationship="rootViewController" id="Abp-A4-cKy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gP2-p1-8Ld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6168" y="-490"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pov-9J-8H6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ghn-Sz-evG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9KB-Of-CIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bv7-U1-rTI" kind="relationship" relationship="rootViewController" id="HFv-l8-CLd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKi-AO-pqc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6304.5" y="230"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nyI-D3-SMB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="R8H-bX-fcG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2iq-yb-ihU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="stO-P6-j4h" kind="relationship" relationship="rootViewController" id="cTj-Sg-IJM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wq6-Cp-2lq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8086.5" y="230"/>
+        </scene>
+    </scenes>
+</document>

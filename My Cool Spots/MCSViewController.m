@@ -147,7 +147,7 @@
         
         
         NSArray * markers = @[
-                              r
+                              
                               [UIImage imageNamed:@"pink"],
                               [UIImage imageNamed:@"blue"],
                               [UIImage imageNamed:@"green"]
