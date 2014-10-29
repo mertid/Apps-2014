@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		22348A2219F71554004B43DA /* back-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 22348A2119F71554004B43DA /* back-25.png */; };
+		22348A2419F7177C004B43DA /* back-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 22348A2319F7177C004B43DA /* back-32.png */; };
 		22684EB919ECAF1E00542572 /* mapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EB819ECAF1E00542572 /* mapVC.m */; };
 		22684EBC19ED5E6400542572 /* SaleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EBB19ED5E6400542572 /* SaleCell.m */; };
 		22684EBF19ED7D2300542572 /* FinalSell.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EBE19ED7D2300542572 /* FinalSell.m */; };
 		22684EC419EDC71800542572 /* SMSSeller.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EC319EDC71800542572 /* SMSSeller.m */; };
 		22684EC719EDD32600542572 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 22684EC619EDD32600542572 /* Annotation.m */; };
-		229332BB19F052E6003F680E /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 229332BA19F052E6003F680E /* back.png */; };
 		22D05C3D19EC916900EC6F39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D05C3C19EC916900EC6F39 /* main.m */; };
 		22D05C4019EC916900EC6F39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D05C3F19EC916900EC6F39 /* AppDelegate.m */; };
 		22D05C4619EC916900EC6F39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22D05C4419EC916900EC6F39 /* Main.storyboard */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22348A2119F71554004B43DA /* back-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-25.png"; path = "../../../../../Downloads/icons8_lightbox/25/back-25.png"; sourceTree = "<group>"; };
+		22348A2319F7177C004B43DA /* back-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "back-32.png"; path = "../../../../../Downloads/icons8_lightbox/back-32.png"; sourceTree = "<group>"; };
 		22684EB719ECAF1E00542572 /* mapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapVC.h; sourceTree = "<group>"; };
 		22684EB819ECAF1E00542572 /* mapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapVC.m; sourceTree = "<group>"; };
 		22684EBA19ED5E6400542572 /* SaleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SaleCell.h; sourceTree = "<group>"; };
@@ -49,7 +52,6 @@
 		22684EC319EDC71800542572 /* SMSSeller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSSeller.m; sourceTree = "<group>"; };
 		22684EC519EDD32600542572 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
 		22684EC619EDD32600542572 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
-		229332BA19F052E6003F680E /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = back.png; path = ../../../../back.png; sourceTree = "<group>"; };
 		22D05C3719EC916900EC6F39 /* NabiT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NabiT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22D05C3B19EC916900EC6F39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22D05C3C19EC916900EC6F39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -144,7 +146,8 @@
 		22D05C3A19EC916900EC6F39 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				229332BA19F052E6003F680E /* back.png */,
+				22348A2319F7177C004B43DA /* back-32.png */,
+				22348A2119F71554004B43DA /* back-25.png */,
 				22D05C3B19EC916900EC6F39 /* Info.plist */,
 				22D05C3C19EC916900EC6F39 /* main.m */,
 			);
@@ -260,7 +263,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229332BB19F052E6003F680E /* back.png in Resources */,
+				22348A2219F71554004B43DA /* back-25.png in Resources */,
+				22348A2419F7177C004B43DA /* back-32.png in Resources */,
 				22D05C4619EC916900EC6F39 /* Main.storyboard in Resources */,
 				22D05C4B19EC916900EC6F39 /* LaunchScreen.xib in Resources */,
 			);

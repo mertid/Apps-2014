@@ -35,7 +35,7 @@
     buyButton.layer.cornerRadius = 250/2;
     buyButton.backgroundColor = [UIColor colorWithRed:0.122f green:0.710f blue:0.871f alpha:1.0f];
     [buyButton setTitle:@"buy" forState:UIControlStateNormal];
-    buyButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:55];
+    buyButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:55];
     
 
     
@@ -48,7 +48,7 @@
     [sellButton setTitle:@"sell" forState:UIControlStateNormal];
      sellButton.backgroundColor = [UIColor colorWithRed:0.161f green:0.839f blue:0.475f alpha:1.0f];
     [self.view addSubview:sellButton];
-    sellButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:55];
+    sellButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:55];
     
     
     [sellButton addTarget:self action:@selector(sellButtonWasPressed) forControlEvents:UIControlEventTouchUpInside];

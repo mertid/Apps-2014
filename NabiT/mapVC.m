@@ -31,7 +31,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
    
-    self.navigationController.navigationBarHidden = true;
+    [self.navigationController.navigationBar setTranslucent:YES];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
     
     // Do any additional setup after loading the view.
     self.salesTableView.delegate = self;
@@ -99,17 +104,7 @@
         
         
         [annotation setCoordinate:eventCoord];
-        
-//        [geoCoder reverseGeocodeLocation:eventLoc completionHandler:^(NSArray *placemarks, NSError *error) {
-//            
-//            for (CLPlacemark * placemark in placemarks)
-//            {
-//                //  NSLog(@"%@", placemark.addressDictionary);
-//                [annotation setTitle:placemark.addressDictionary[@"Event"]];
-//            }
-//        }];
-        
-  //      [annotation setTitle:event.title];
+
         [myMapView addAnnotation: annotation];
     }
 }
@@ -212,12 +207,12 @@
     sellerVC.sellerInfo = sellingOption;
 }
 
-- (IBAction)backButtonPressed:(id)sender {
-
+- (IBAction)backButton:(id)sender {
 
     [self dismissViewControllerAnimated:YES completion:nil];
 
 }
+
 
 
 @end

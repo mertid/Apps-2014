@@ -1,15 +1,14 @@
 //
 //  AppDelegate.m
-//  NabiT
+//  spot1
 //
-//  Created by Merritt Tidwell on 10/13/14.
+//  Created by Merritt Tidwell on 10/27/14.
 //  Copyright (c) 2014 Merritt Tidwell. All rights reserved.
 //
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
-#import "LogIn.h"
-
+#import "ViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -19,26 +18,22 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-  
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    // Override point for customization after application launch.
-//    self.window.backgroundColor = [UIColor colorWithRed:0.835f green:0.820f blue:0.667f alpha:1.0f];
-//    
-//    self.window.rootViewController= [[LogIn alloc]init];
-//    
-//    [self.window makeKeyAndVisible];
+    
+    [Parse setApplicationId:@"g41gYScwH5smZVqbwCJb9vfFT8L5nAtZvJtQgFxU"
+                  clientKey:@"TkBtFZoIiSmeTrLI1FsyrVOq9obHCeJXh0dBB4Bq"];
 
     
     
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
     
-    [Parse setApplicationId:@"wXmPKRmC2hnRFvQ6Zqldo6ssLWXSG3ZIzE18vtHp"
-                  clientKey:@"OAwOoiZSmx24h6FC3GakIulSWjm3E7BsLqRNX218"];
-
-   
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     
-    [[UINavigationBar appearance] setBarTintColor:[UIColor clearColor]];
-
-
+    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"map"];
+    
+    
+    self.window.rootViewController = viewController;
+    
+    [self.window makeKeyAndVisible];
     
     
     

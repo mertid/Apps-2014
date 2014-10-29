@@ -32,14 +32,14 @@
     
     self.view.backgroundColor = [UIColor colorWithRed:0.992f green:0.557f blue:0.341f alpha:1.0f];
     
-    userNameField = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/5, SCREEN_WIDTH - 30 , 40)];
+    userNameField = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/12, SCREEN_WIDTH - 30 , 50)];
     userNameField.layer.cornerRadius = 5;
     userNameField.backgroundColor = [UIColor whiteColor];
     UIColor *color = [UIColor colorWithRed:0.992f green:0.557f blue:0.341f alpha:1.0f];
 
-    userNameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"username" attributes:@{NSForegroundColorAttributeName: color}];
+    userNameField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"  username" attributes:@{NSForegroundColorAttributeName: color}];
 
-    userNameField.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16];
+    userNameField.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:22];
 
     userNameField.delegate = self;
     
@@ -52,39 +52,40 @@
     
     
     
-    passwordField = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/4, SCREEN_WIDTH - 30 , 40)];
+    passwordField = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/5.2, SCREEN_WIDTH - 30 , 50)];
 
 
     passwordField.backgroundColor = [UIColor whiteColor];
     passwordField.layer.cornerRadius = 5;
     passwordField.delegate= self;
-    passwordField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"password" attributes:@{NSForegroundColorAttributeName: color}];
+    passwordField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"  password" attributes:@{NSForegroundColorAttributeName: color}];
 
-    passwordField.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16];
+    passwordField.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:22];
 
     
 
     [self.view addSubview:passwordField];
     
     
-    reEnterPasswordField = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/2.8, SCREEN_WIDTH - 30 , 40)];
+    reEnterPasswordField = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/3.3, SCREEN_WIDTH - 30 , 50)];
 
-    reEnterPasswordField.font = [UIFont fontWithName:@"HelveticaNeue-Light" size:16];
+    reEnterPasswordField.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:22];
 
     reEnterPasswordField.layer.cornerRadius = 5;
     reEnterPasswordField.backgroundColor =[UIColor whiteColor];
-    reEnterPasswordField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"confirm password" attributes:@{NSForegroundColorAttributeName: color}];
+    reEnterPasswordField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"  confirm password" attributes:@{NSForegroundColorAttributeName: color}];
     
     [self.view addSubview:reEnterPasswordField];
 
     reEnterPasswordField.delegate= self;
     
-    phoneNumberField = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/2.1, SCREEN_WIDTH - 30 , 40)];
+    phoneNumberField = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/2.5, SCREEN_WIDTH - 30 , 50)];
 
     phoneNumberField.layer.cornerRadius = 5;
     phoneNumberField.backgroundColor =[UIColor whiteColor];
-    
-    phoneNumberField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"phone number" attributes:@{NSForegroundColorAttributeName: color}];
+    phoneNumberField.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:22];
+
+    phoneNumberField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"  phone number" attributes:@{NSForegroundColorAttributeName: color}];
 
     
     [self.view addSubview:phoneNumberField];
@@ -93,14 +94,14 @@
     phoneNumberField.delegate = self;
     
     
-    registerButton = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/1.5, SCREEN_WIDTH - 30 , 80)];
+    registerButton = [[UIButton alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/22, SCREEN_HEIGHT/2, SCREEN_WIDTH - 30 , 50)];
 
     registerButton.backgroundColor =[UIColor clearColor];
     registerButton.layer.borderWidth = 1;
     registerButton.layer.borderColor = [UIColor whiteColor].CGColor;
-    registerButton.layer.cornerRadius = 10;
+    registerButton.layer.cornerRadius = 5;
     [registerButton setTitle:@"register" forState:UIControlStateNormal];
-    
+    registerButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:22];
     [registerButton addTarget:self action:@selector(registerButtonWasPressed) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:registerButton];
     

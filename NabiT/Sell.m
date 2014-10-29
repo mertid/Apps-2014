@@ -27,6 +27,7 @@
 
 @implementation Sell
 
+
 {
 
     NSArray * _numberOfTicket;
@@ -47,42 +48,72 @@
     
     UILabel * ticketCountLabel;
     UILabel * priceRangeLabel;
+  
+    
+    UIView * whiteView;
 }
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.navigationController.navigationBarHidden = true;
+    
+    [self.navigationController.navigationBar setTranslucent:YES];
+    self.navigationController.navigationBar.shadowImage = [UIImage new];
+    self.navigationController.view.backgroundColor = [UIColor clearColor];
+    [self.navigationController.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
+    self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
+    
+    UIColor *color = [UIColor colorWithRed:0.153f green:0.812f blue:0.459f alpha:1.0f];
+
     
     self.view.backgroundColor = [UIColor colorWithRed:0.153f green:0.812f blue:0.459f alpha:1.0f];
-   
+ 
+    
+    float w = self.view.bounds.size.width;
+    float h = self.view.bounds.size.height;
+    
+    whiteView = [[UIView alloc]initWithFrame:CGRectMake(0, (h/2), w, (h/2))];
+    whiteView.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:whiteView];
     
     sellLabel = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/2.7, SCREEN_HEIGHT/8,100, 60)];
     sellLabel.text = @"sell";
-    sellLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:75];
+    sellLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:65];
     sellLabel.textColor = [UIColor whiteColor];
     [self.view addSubview:sellLabel];
    
-    listTicketsButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/4) , SCREEN_HEIGHT-60, (SCREEN_WIDTH)/2, 50)];
+    listTicketsButton = [[UIButton alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/20) , SCREEN_HEIGHT-60, (SCREEN_WIDTH)-35, 50)];
     listTicketsButton.backgroundColor = [UIColor colorWithRed:0.153f green:0.812f blue:0.459f alpha:1.0f];
+    listTicketsButton.layer.cornerRadius = 8;
     [self.view addSubview:listTicketsButton];
     [listTicketsButton setTitle:@"list tickets" forState:UIControlStateNormal];
     
     [listTicketsButton addTarget:self action:@selector(listTicketButtonWasPressed)
                 forControlEvents:UIControlEventTouchUpInside];
-    listTicketsButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:35];
+    listTicketsButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:30];
 
-    eventTextLabel = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/14, SCREEN_HEIGHT/3.2, 280, 40)];
+    eventTextLabel = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/14, SCREEN_HEIGHT/3.2, SCREEN_WIDTH - 40, 40)];
     eventTextLabel.backgroundColor = [UIColor whiteColor];
     eventTextLabel.layer.cornerRadius = 8;
+    eventTextLabel.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"  event" attributes:@{NSForegroundColorAttributeName: color}];
+
     eventTextLabel.placeholder = @"  event";
+    eventTextLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:22];
+
+    
+    
+    
     [self.view addSubview:eventTextLabel];
     
-    sectionDetailText = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/14, SCREEN_HEIGHT/2.5, 280, 40)];
+    sectionDetailText = [[UITextField alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/14, SCREEN_HEIGHT/2.5, SCREEN_WIDTH-40, 40)];
     sectionDetailText.backgroundColor = [UIColor whiteColor];
     sectionDetailText.layer.cornerRadius = 8;
-    sectionDetailText.placeholder = @"  section";
+    sectionDetailText.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"  section" attributes:@{NSForegroundColorAttributeName: color}];
+    sectionDetailText.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:22];
+
+    
     [self.view addSubview:sectionDetailText];
     
     
@@ -134,15 +165,15 @@
     eventTextLabel.delegate = self;
  
     
-    priceRangeLabel = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/1.8, SCREEN_HEIGHT/2.5, 200, 200)];
-    priceRangeLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:30];
+    priceRangeLabel = [[UILabel alloc]initWithFrame:CGRectMake(SCREEN_WIDTH/1.8, SCREEN_HEIGHT/2.2, 200, 200)];
+    priceRangeLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:30];
     priceRangeLabel.text = @"price range";
     [self.view addSubview:priceRangeLabel];
     
    
     
-    ticketCountLabel = [[UILabel alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/40), SCREEN_HEIGHT/2.5, 200, 200)];
-    ticketCountLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:30];
+    ticketCountLabel = [[UILabel alloc]initWithFrame:CGRectMake((SCREEN_WIDTH/40), SCREEN_HEIGHT/2.2, 200, 200)];
+    ticketCountLabel.font = [UIFont fontWithName:@"HelveticaNeue-Thin" size:30];
     ticketCountLabel.text = @"ticket count";
     [self.view addSubview:ticketCountLabel];
     
@@ -280,12 +311,6 @@
     
 }
 
-- (IBAction)backButton:(id)sender {
-
-    [self dismissViewControllerAnimated:YES completion:nil];
-
-
-}
 
 
 
@@ -296,6 +321,13 @@
    
     [eventTextLabel resignFirstResponder];
     return YES;
+}
+- (IBAction)backButton:(id)sender {
+ 
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+
+
 }
 
 
