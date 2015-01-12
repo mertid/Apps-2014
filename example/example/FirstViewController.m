@@ -1,18 +1,18 @@
 //
-//  ViewController.m
-//  blogreader
+//  FirstViewController.m
+//  example
 //
-//  Created by Merritt Tidwell on 1/5/15.
+//  Created by Merritt Tidwell on 1/8/15.
 //  Copyright (c) 2015 Merritt Tidwell. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "FirstViewController.h"
 
-@interface ViewController ()
+@interface FirstViewController ()
 
 @end
 
-@implementation ViewController
+@implementation FirstViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

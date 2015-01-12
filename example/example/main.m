@@ -1,9 +1,9 @@
 //
 //  main.m
-//  spot1
+//  example
 //
-//  Created by Merritt Tidwell on 10/27/14.
-//  Copyright (c) 2014 Merritt Tidwell. All rights reserved.
+//  Created by Merritt Tidwell on 1/8/15.
+//  Copyright (c) 2015 Merritt Tidwell. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
