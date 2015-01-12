@@ -1,14 +1,13 @@
 //
 //  AppDelegate.m
-//  spot1
+//  head2head
 //
-//  Created by Merritt Tidwell on 10/27/14.
+//  Created by Merritt Tidwell on 10/30/14.
 //  Copyright (c) 2014 Merritt Tidwell. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
-#import "ViewController.h"
+#import "h2hViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,26 +16,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main"
+                                                             bundle: nil];
+    
+    h2hViewController *controller = (h2hViewController*)[mainStoryboard
+                                                       instantiateViewControllerWithIdentifier: @"viewC"];
+    
+    
+    self.window.rootViewController = controller;
+    
+    
+    
     // Override point for customization after application launch.
-    
-    [Parse setApplicationId:@"g41gYScwH5smZVqbwCJb9vfFT8L5nAtZvJtQgFxU"
-                  clientKey:@"TkBtFZoIiSmeTrLI1FsyrVOq9obHCeJXh0dBB4Bq"];
-
-    
-    
-    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    UIViewController *viewController = [storyboard instantiateViewControllerWithIdentifier:@"map"];
-    
-    
-    self.window.rootViewController = viewController;
-    
+    self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    
-    
-    
+
     
     
     return YES;

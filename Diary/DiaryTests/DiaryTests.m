@@ -1,19 +1,19 @@
 //
-//  spot1Tests.m
-//  spot1Tests
+//  DiaryTests.m
+//  DiaryTests
 //
-//  Created by Merritt Tidwell on 10/27/14.
+//  Created by Merritt Tidwell on 12/15/14.
 //  Copyright (c) 2014 Merritt Tidwell. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface spot1Tests : XCTestCase
+@interface DiaryTests : XCTestCase
 
 @end
 
-@implementation spot1Tests
+@implementation DiaryTests
 
 - (void)setUp {
     [super setUp];

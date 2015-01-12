@@ -120,7 +120,7 @@
         
     } else {
         MKPinAnnotationView * annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"pin"];
-        annotationView.draggable = YES;
+        annotationView.draggable = NO;
         
         NSArray * markers = @[@(MKPinAnnotationColorRed),@(MKPinAnnotationColorPurple),@(MKPinAnnotationColorGreen)];
         int randomMarker = arc4random_uniform((int)markers.count);
