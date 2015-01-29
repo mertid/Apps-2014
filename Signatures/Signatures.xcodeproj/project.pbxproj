@@ -14,17 +14,14 @@
 		229D138E199CEE8400E240FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D138D199CEE8400E240FD /* main.m */; };
 		229D1392199CEE8400E240FD /* SIGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D1391199CEE8400E240FD /* SIGAppDelegate.m */; };
 		229D1394199CEE8400E240FD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229D1393199CEE8400E240FD /* Images.xcassets */; };
-		229D139B199CEE8400E240FD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229D139A199CEE8400E240FD /* XCTest.framework */; };
 		229D139C199CEE8400E240FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229D1381199CEE8400E240FD /* Foundation.framework */; };
 		229D139D199CEE8400E240FD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229D1385199CEE8400E240FD /* UIKit.framework */; };
 		229D13A5199CEE8400E240FD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 229D13A3199CEE8400E240FD /* InfoPlist.strings */; };
-		229D13A7199CEE8400E240FD /* SignaturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D13A6199CEE8400E240FD /* SignaturesTests.m */; };
 		229D13B3199CF03B00E240FD /* SIGRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D13B2199CF03B00E240FD /* SIGRootViewController.m */; };
 		229D13B6199CF06900E240FD /* SIGListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D13B5199CF06900E240FD /* SIGListTableViewController.m */; };
 		229D13BC199CF0B600E240FD /* SIGDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D13BB199CF0B600E240FD /* SIGDrawView.m */; };
 		229D13BF199CF0E100E240FD /* SIGListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D13BE199CF0E100E240FD /* SIGListTableViewCell.m */; };
 		229D13C3199CF14000E240FD /* SIGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 229D13C2199CF14000E240FD /* SIGDrawViewController.m */; };
-		22A1B5C219B772F100D6EB16 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1B5C119B772F100D6EB16 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +47,8 @@
 		229D1391199CEE8400E240FD /* SIGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIGAppDelegate.m; sourceTree = "<group>"; };
 		229D1393199CEE8400E240FD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		229D1399199CEE8400E240FD /* SignaturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignaturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		229D139A199CEE8400E240FD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		229D13A2199CEE8400E240FD /* SignaturesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SignaturesTests-Info.plist"; sourceTree = "<group>"; };
 		229D13A4199CEE8400E240FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		229D13A6199CEE8400E240FD /* SignaturesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignaturesTests.m; sourceTree = "<group>"; };
 		229D13B1199CF03B00E240FD /* SIGRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGRootViewController.h; path = Signatures/SIGRootViewController.h; sourceTree = "<group>"; };
 		229D13B2199CF03B00E240FD /* SIGRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGRootViewController.m; path = Signatures/SIGRootViewController.m; sourceTree = "<group>"; };
 		229D13B4199CF06900E240FD /* SIGListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGListTableViewController.h; path = Signatures/SIGListTableViewController.h; sourceTree = "<group>"; };
@@ -64,7 +59,6 @@
 		229D13BE199CF0E100E240FD /* SIGListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGListTableViewCell.m; path = Signatures/SIGListTableViewCell.m; sourceTree = "<group>"; };
 		229D13C1199CF14000E240FD /* SIGDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGDrawViewController.h; path = Signatures/SIGDrawViewController.h; sourceTree = "<group>"; };
 		229D13C2199CF14000E240FD /* SIGDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGDrawViewController.m; path = Signatures/SIGDrawViewController.m; sourceTree = "<group>"; };
-		22A1B5C119B772F100D6EB16 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +68,6 @@
 			files = (
 				229D1384199CEE8400E240FD /* CoreGraphics.framework in Frameworks */,
 				229D1386199CEE8400E240FD /* UIKit.framework in Frameworks */,
-				22A1B5C219B772F100D6EB16 /* Crashlytics.framework in Frameworks */,
 				229D1382199CEE8400E240FD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,7 +76,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229D139B199CEE8400E240FD /* XCTest.framework in Frameworks */,
 				229D139D199CEE8400E240FD /* UIKit.framework in Frameworks */,
 				229D139C199CEE8400E240FD /* Foundation.framework in Frameworks */,
 			);
@@ -117,11 +109,9 @@
 		229D1380199CEE8400E240FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				22A1B5C119B772F100D6EB16 /* Crashlytics.framework */,
 				229D1381199CEE8400E240FD /* Foundation.framework */,
 				229D1383199CEE8400E240FD /* CoreGraphics.framework */,
 				229D1385199CEE8400E240FD /* UIKit.framework */,
-				229D139A199CEE8400E240FD /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -151,7 +141,6 @@
 		229D13A0199CEE8400E240FD /* SignaturesTests */ = {
 			isa = PBXGroup;
 			children = (
-				229D13A6199CEE8400E240FD /* SignaturesTests.m */,
 				229D13A1199CEE8400E240FD /* Supporting Files */,
 			);
 			path = SignaturesTests;
@@ -300,8 +289,8 @@
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
 			shellScript = "./Crashlytics.framework/run f812e6cfe1ed18971a0b5b12e52ece240e3eefef dbe2a9bc9896d64e0677beb5b33771f3de1d30db8be32c558dc9b1aa77892740";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -324,7 +313,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				229D13A7199CEE8400E240FD /* SignaturesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
